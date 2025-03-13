@@ -32,6 +32,9 @@ This repository contains the following files.
 ├── figures : directory for all figures
 │   ├── descriptive : directory containing figures from the data visualization scripts
 │   └── inferential : directory containing figures from the data analysis scripts
+├── graphs : directory for all supplementary graphs
+│   ├── dag-adoption.graphml : manually generated causal DAG for the analysis of the adoption effect
+│   └── rq-mapping.graphml : graph visualizing the three RQs in their context
 ├── src : directory for all source code
 │   ├── analysis : source code pertaining to the actual data analysis
 │   │   ├── inferences : directory containing all inferential Bayesian data analyses
