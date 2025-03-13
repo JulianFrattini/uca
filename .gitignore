@@ -47,3 +47,9 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+fits/
+.venv/
+
+*.pyc
+__pycache__/
