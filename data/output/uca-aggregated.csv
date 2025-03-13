@@ -1,0 +1,1001 @@
+"","req","X","cplx","complexity","author","owner","nuc","form","procedural","location","level","textorder","dependencies","coherence","steps","steps.functional","steps.beyond","steps.mis.variations","steps.mis.main","steps.consistent","sequence.main","sequence.alt","numbering","entities","actors","actors_explicit","totalinteractions","interactions","pureinteractions","consecutive","month","lambda","s2"
+"1","req1",1,"High Complexity",3,"author8","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,125,134
+"2","req10",10,"Medium Complexity",2,"author23","owner8",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-04-01,100,86
+"3","req100",100,"Medium Complexity",2,"author1","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-01-01,95,96
+"4","req1000",1000,"High Complexity",3,"author12","owner10",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,125,113
+"5","req101",101,"Medium Complexity",2,"author24","owner9",2,"description",1,"Solution Proposal","System",1,1,0.387002428760752,7.5,6,1,0.5,0.5,0.5,1,1,1,0,0,0,16,8,3,4.5,2020-03-01,105,100
+"6","req102",102,"High Complexity",3,"author10","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,120,117
+"7","req103",103,"Low Complexity",1,"author23","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,60,57
+"8","req104",104,"High Complexity",3,"author30","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-10-01,125,128
+"9","req105",105,"Medium Complexity",2,"author22","owner3",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,90,79
+"10","req106",106,"Low Complexity",1,"author25","owner6",1,"description",1,"Solution Proposal","System",1,1,0.888289951253682,3,2,1,0,0,1,1,1,1,1,0,0,6,6,2,2,2020-10-01,70,61
+"11","req107",107,"Low Complexity",1,"author2","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-07-01,55,60
+"12","req108",108,"Low Complexity",1,"author5","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,65,70
+"13","req109",109,"Low Complexity",1,"author1","owner10",2,"description",1,"Business Background","(no level)",1,1,0.500413888716139,5.5,3.5,1,1.5,0,1.5,1,1,1,1,1,0,13,6.5,3.5,3.5,2022-02-01,75,80
+"14","req11",11,"Low Complexity",1,"author26","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,60,61
+"15","req110",110,"Medium Complexity",2,"author1","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-03-01,95,82
+"16","req111",111,"High Complexity",3,"author11","owner6",1,"description",1,"Solution Proposal","System",1,1,0.384354130132124,12,9,0,0,1,3,1,1,1,0,0,0,17,17,6,7,2022-05-01,120,122
+"17","req112",112,"Low Complexity",1,"author16","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,65,63
+"18","req113",113,"Medium Complexity",2,"author25","owner1",2,"description",1,"Solution Proposal","Business",1,1,0.751305849291384,5.5,5.5,1.5,0.5,1.5,1,1,1,1,1,0.5,0.5,13,6.5,3.5,2.5,2021-05-01,110,116
+"19","req114",114,"Low Complexity",1,"author28","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,60,58
+"20","req115",115,"Medium Complexity",2,"author24","owner8",2,"description",1,"Business Background","User",1,1,0.561666036141105,8,5,0,1,0.5,1.5,1,1,1,0.5,0,0,24,12,3.5,8.5,2021-10-01,95,99
+"21","req116",116,"Medium Complexity",2,"author28","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,90,85
+"22","req117",117,"Medium Complexity",2,"author5","owner4",1,"description",1,"default","Business",1,1,0.695161777548492,9,9,1,2,2,2,1,0,1,0,0,0,10,10,2,5,2021-05-01,100,87
+"23","req118",118,"Medium Complexity",2,"author24","owner2",1,"description",1,"Business Background","Business",1,1,0.464641635771841,2,1,1,0,0,0,1,1,1,1,0,0,3,3,2,2,2020-07-01,100,109
+"24","req119",119,"High Complexity",3,"author13","owner4",3,"description",1,"default","User",1,1,0.302645035476113,9,8,2.33333333333333,1.33333333333333,0.333333333333333,0.666666666666667,1,0.666666666666667,1,0.666666666666667,0.333333333333333,0,28,9.33333333333333,4.66666666666667,6.33333333333333,2023-02-01,153.333333333333,141
+"25","req12",12,"High Complexity",3,"author26","owner8",3,"description",1,"Business Requirements","System",1,0.666666666666667,0.35476718043598,8.66666666666667,7.33333333333333,1.66666666666667,2,0.333333333333333,1.66666666666667,1,1,1,1.33333333333333,0.666666666666667,0.333333333333333,36,12,6,6,2022-10-01,146.666666666667,148
+"26","req120",120,"Low Complexity",1,"author17","owner9",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,60,42
+"27","req121",121,"Medium Complexity",2,"author8","owner10",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,90,92
+"28","req122",122,"High Complexity",3,"author3","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-05-01,115,108
+"29","req123",123,"Medium Complexity",2,"author22","owner4",4,"description",1,"default","(no level)",1,1,0.542183615791145,8.25,6.25,0.5,1.5,0.5,0.75,1,1,0.75,1.25,1,0.5,42,10.5,6,6.25,2020-10-01,110,119
+"30","req124",124,"High Complexity",3,"author27","owner4",1,"description",1,"Business Requirements","(no level)",1,0,0.189321739599109,7,5,0,1,0,0,1,1,1,0,0,0,9,9,5,6,2023-10-01,120,118
+"31","req125",125,"Medium Complexity",2,"author9","owner9",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,95,108
+"32","req126",126,"Low Complexity",1,"author19","owner4",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,65,60
+"33","req127",127,"Low Complexity",1,"author7","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-12-01,55,43
+"34","req128",128,"Low Complexity",1,"author15","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-02-01,60,62
+"35","req129",129,"Low Complexity",1,"author30","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,65,76
+"36","req13",13,"Low Complexity",1,"author1","owner3",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-05-01,60,61
+"37","req130",130,"Low Complexity",1,"author8","owner10",3,"description",1,"Business Background","(no level)",1,0.666666666666667,0.463259504719948,7,5.66666666666667,1.33333333333333,1,0.666666666666667,0.333333333333333,1,1,1,1.33333333333333,0.333333333333333,0,29,9.66666666666667,2.66666666666667,6.33333333333333,2022-06-01,83.3333333333333,91
+"38","req131",131,"High Complexity",3,"author21","owner10",1,"description",1,"Business Requirements","Business",1,1,0.954689352074638,12,7,1,2,3,3,1,1,1,1,0,0,16,16,7,12,2021-08-01,130,137
+"39","req132",132,"Low Complexity",1,"author14","owner9",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,75,81
+"40","req133",133,"Medium Complexity",2,"author11","owner6",2,"description",1,"Business Background","Business",1,1,0.310051164939068,8.5,7.5,0.5,2,0.5,2,1,1,1,0.5,0.5,0.5,20,10,5,6,2022-04-01,100,95
+"41","req134",134,"Low Complexity",1,"author29","owner5",2,"description",1,"default","Business",1,0.5,0.575630582170561,7,3,0,0,0,1,1,1,1,0.5,0.5,0.5,17,8.5,3.5,5,2022-12-01,65,60
+"42","req135",135,"Medium Complexity",2,"author8","owner1",2,"description",1,"default","User",1,1,0.59316452301573,6,5,1.5,1,0.5,1.5,1,1,1,1,0.5,0,13,6.5,4.5,4,2020-03-01,110,96
+"43","req136",136,"High Complexity",3,"author6","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,120,122
+"44","req137",137,"High Complexity",3,"author17","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-08-01,115,118
+"45","req138",138,"Medium Complexity",2,"author27","owner3",3,"description",1,"Business Requirements","(no level)",1,0.666666666666667,0.623766360338777,8.33333333333333,7.33333333333333,1.66666666666667,1.33333333333333,0.666666666666667,1.33333333333333,1,1,1,1,1,0,26,8.66666666666667,4.66666666666667,4.66666666666667,2020-04-01,116.666666666667,121
+"46","req139",139,"Medium Complexity",2,"author22","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-01-01,85,91
+"47","req14",14,"Low Complexity",1,"author14","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,65,68
+"48","req140",140,"Low Complexity",1,"author2","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,60,71
+"49","req141",141,"High Complexity",3,"author12","owner9",2,"description",1,"default","(no level)",1,1,0.286688018124551,5.5,5,1,1.5,0.5,0.5,1,1,1,0,0,0,13,6.5,1.5,3,2022-05-01,135,131
+"50","req142",142,"Medium Complexity",2,"author21","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,90,86
+"51","req143",143,"Low Complexity",1,"author1","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,55,55
+"52","req144",144,"High Complexity",3,"author2","owner7",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,120,131
+"53","req145",145,"Medium Complexity",2,"author16","owner2",1,"description",1,"Business Requirements","(no level)",1,1,0.44545338768512,6,4,2,1,0,1,1,1,1,1,0,0,5,5,2,3,2024-02-01,110,95
+"54","req146",146,"Low Complexity",1,"author3","owner4",3,"description",1,"default","User",0.666666666666667,1,0.765246835692475,6,4,0.666666666666667,0.666666666666667,0,0.333333333333333,1,1,1,1,0.333333333333333,0.333333333333333,24,8,2.66666666666667,4,2023-08-01,76.6666666666667,92
+"55","req147",147,"Medium Complexity",2,"author2","owner7",1,"description",1,"default","Business",1,1,0.585886296117678,8,8,0,2,0,2,1,1,1,1,0,0,12,12,4,6,2023-02-01,90,100
+"56","req148",148,"Low Complexity",1,"author10","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-12-01,55,59
+"57","req149",149,"Medium Complexity",2,"author24","owner2",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,95,93
+"58","req15",15,"High Complexity",3,"author30","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,125,127
+"59","req150",150,"Medium Complexity",2,"author25","owner3",2,"description",1,"Business Requirements","User",1,1,0.804772309027612,7.5,7,0.5,2,1.5,0,1,1,1,0.5,0,0,17,8.5,3,3.5,2024-04-01,100,106
+"60","req151",151,"Medium Complexity",2,"author14","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,90,79
+"61","req152",152,"Low Complexity",1,"author29","owner3",1,"description",1,"Solution Proposal","(no level)",1,1,0.832116868114099,6,4,2,0,1,2,1,1,1,1,0,0,6,6,2,3,2022-10-01,80,78
+"62","req153",153,"Low Complexity",1,"author15","owner6",2,"description",1,"default","System",1,0.5,0.114285049494356,7,6,0.5,1.5,0,1,1,1,1,0.5,0.5,0,17,8.5,3.5,6,2021-05-01,70,69
+"63","req154",154,"Low Complexity",1,"author1","owner3",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,65,58
+"64","req155",155,"Low Complexity",1,"author3","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-09-01,55,65
+"65","req156",156,"Low Complexity",1,"author2","owner4",2,"description",1,"Business Requirements","Business",1,1,0.321118508349172,5.5,4,1,0.5,1.5,1,1,0.5,1,1.5,0,0,16,8,2,5,2023-05-01,75,84
+"66","req157",157,"High Complexity",3,"author2","owner4",3,"description",1,"Solution Proposal","Business",1,1,0.355766380360971,9.66666666666667,7,1.66666666666667,1,0.333333333333333,1,1,1,1,0,0,0,29,9.66666666666667,2,5.33333333333333,2024-03-01,146.666666666667,145
+"67","req158",158,"High Complexity",3,"author3","owner1",2,"description",1,"Business Background","System",0.5,0.5,0.693710474180989,9,5,0.5,0,1,0,1,1,1,1,0.5,0.5,25,12.5,5,7,2024-01-01,130,138
+"68","req159",159,"Medium Complexity",2,"author2","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-11-01,85,75
+"69","req16",16,"High Complexity",3,"author20","owner3",1,"description",1,"Business Background","System",1,1,0.78576384531334,11,9,1,1,1,2,1,1,1,1,1,0,10,10,9,6,2024-04-01,130,132
+"70","req160",160,"High Complexity",3,"author5","owner8",1,"description",1,"Business Requirements","User",1,1,0.946587254991755,11,7,1,2,0,1,1,1,1,3,2,1,13,13,9,10,2020-08-01,130,122
+"71","req161",161,"High Complexity",3,"author25","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-04-01,120,119
+"72","req162",162,"Medium Complexity",2,"author4","owner2",3,"description",1,"Solution Proposal","User",1,1,0.127790156829481,6.33333333333333,4.66666666666667,0.333333333333333,1.33333333333333,0,1.33333333333333,1,1,1,0.666666666666667,0.666666666666667,0.333333333333333,29,9.66666666666667,4.66666666666667,5,2021-01-01,103.333333333333,108
+"73","req163",163,"Low Complexity",1,"author21","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-11-01,55,57
+"74","req164",164,"High Complexity",3,"author6","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,120,122
+"75","req165",165,"Low Complexity",1,"author1","owner2",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,65,70
+"76","req166",166,"Low Complexity",1,"author5","owner9",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,70,75
+"77","req167",167,"High Complexity",3,"author11","owner1",2,"description",1,"Business Background","(no level)",0.5,1,0.297300040256232,6.5,6.5,0.5,1.5,1,1,1,1,1,1,0.5,0.5,16,8,3,6,2024-04-01,130,118
+"78","req168",168,"Medium Complexity",2,"author22","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,90,97
+"79","req169",169,"Low Complexity",1,"author20","owner9",2,"description",1,"Business Background","Business",1,1,0.439258496509865,6.5,4,0.5,1.5,0.5,0.5,1,1,1,0.5,0.5,0,13,6.5,1,3.5,2024-11-01,70,68
+"80","req17",17,"Medium Complexity",2,"author11","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,100,81
+"81","req170",170,"Medium Complexity",2,"author15","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-03-01,85,79
+"82","req171",171,"Low Complexity",1,"author3","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-04-01,55,52
+"83","req172",172,"High Complexity",3,"author3","owner8",2,"description",1,"Business Background","Business",1,1,0.91432855289895,10,10,0.5,0.5,1.5,0,1,1,1,0.5,0.5,0.5,28,14,5,8.5,2022-10-01,130,118
+"84","req173",173,"Low Complexity",1,"author20","owner4",1,"description",1,"Solution Proposal","System",1,1,0.0479730414226651,6,6,1,0,0,0,1,1,1,1,1,0,6,6,2,4,2020-12-01,70,75
+"85","req174",174,"Medium Complexity",2,"author19","owner1",4,"description",1,"Solution Proposal","Business",1,1,0.438526976155117,8.25,6.25,0.75,1,0,1.25,1,1,1,0.5,0.25,0,35,8.75,3.25,4.75,2020-03-01,112.5,116
+"86","req175",175,"Medium Complexity",2,"author23","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,95,87
+"87","req176",176,"High Complexity",3,"author2","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-08-01,115,130
+"88","req177",177,"High Complexity",3,"author21","owner3",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,125,100
+"89","req178",178,"Medium Complexity",2,"author30","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,95,83
+"90","req179",179,"Low Complexity",1,"author19","owner4",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,65,62
+"91","req18",18,"High Complexity",3,"author2","owner1",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,125,95
+"92","req180",180,"Low Complexity",1,"author8","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-06-01,55,55
+"93","req181",181,"Low Complexity",1,"author7","owner4",1,"description",1,"Business Requirements","User",1,1,0.281671973876655,6,5,0,2,0,0,1,1,1,2,0,0,8,8,0,6,2022-03-01,60,68
+"94","req182",182,"Low Complexity",1,"author7","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-12-01,55,70
+"95","req183",183,"Low Complexity",1,"author5","owner5",1,"description",1,"Business Requirements","Business",1,1,0.268280932446942,5,5,1,2,0,0,1,1,1,0,0,0,7,7,4,5,2021-03-01,70,89
+"96","req184",184,"Medium Complexity",2,"author29","owner10",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-09-01,90,86
+"97","req185",185,"Low Complexity",1,"author26","owner3",2,"description",1,"Solution Proposal","System",1,1,0.529464829480276,5,4,0,0,1,0.5,0.5,1,1,2.5,0.5,0,9,4.5,2,3.5,2022-02-01,65,61
+"98","req186",186,"Medium Complexity",2,"author30","owner5",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,100,89
+"99","req187",187,"Medium Complexity",2,"author7","owner5",3,"description",1,"Business Background","Business",1,1,0.515900684520602,7.66666666666667,6,1,2,1.33333333333333,0.333333333333333,1,1,1,1,0.666666666666667,0.333333333333333,31,10.3333333333333,4.66666666666667,6.66666666666667,2023-03-01,110,109
+"100","req188",188,"High Complexity",3,"author2","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,120,130
+"101","req189",189,"High Complexity",3,"author5","owner4",1,"description",1,"Business Background","Business",1,1,0.434750668006018,7,6,1,0,2,0,1,1,1,0,0,0,5,5,0,1,2023-03-01,130,140
+"102","req19",19,"Low Complexity",1,"author30","owner8",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,65,74
+"103","req190",190,"High Complexity",3,"author11","owner6",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,125,137
+"104","req191",191,"Low Complexity",1,"author28","owner3",3,"description",1,"default","(no level)",0.666666666666667,1,0.272522497689351,5.66666666666667,5,1.66666666666667,2,0.333333333333333,1.33333333333333,1,1,1,0.333333333333333,0,0,23,7.66666666666667,3,4,2020-03-01,86.6666666666667,92
+"105","req192",192,"High Complexity",3,"author6","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-06-01,115,107
+"106","req193",193,"Medium Complexity",2,"author26","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,90,88
+"107","req194",194,"High Complexity",3,"author6","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,125,139
+"108","req195",195,"High Complexity",3,"author10","owner8",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,120,103
+"109","req196",196,"Low Complexity",1,"author5","owner10",2,"description",1,"Business Requirements","System",1,1,0.847796294954606,5,4.5,0.5,1,0.5,0,1,1,1,0.5,0.5,0,13,6.5,2.5,4,2020-10-01,70,62
+"110","req197",197,"High Complexity",3,"author22","owner10",1,"description",1,"default","User",1,1,0.409344926010817,9,7,1,2,0,1,1,1,1,0,0,0,8,8,2,7,2024-02-01,130,146
+"111","req198",198,"High Complexity",3,"author22","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,120,89
+"112","req199",199,"Low Complexity",1,"author4","owner7",2,"description",1,"default","(no level)",0.5,1,0.505038056988269,5.5,5,2,1.5,0,0.5,1,1,1,0.5,0.5,0,15,7.5,3.5,3,2022-11-01,85,83
+"113","req2",2,"High Complexity",3,"author23","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,120,124
+"114","req20",20,"Medium Complexity",2,"author4","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,90,78
+"115","req200",200,"Medium Complexity",2,"author26","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-03-01,85,74
+"116","req201",201,"Low Complexity",1,"author7","owner1",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,65,70
+"117","req202",202,"Medium Complexity",2,"author24","owner4",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,95,110
+"118","req203",203,"High Complexity",3,"author13","owner9",3,"description",1,"default","User",1,1,0.48757850099355,8.66666666666667,7.66666666666667,0.666666666666667,2,0.333333333333333,1,1,1,1,0.666666666666667,0.666666666666667,0,29,9.66666666666667,4.66666666666667,5,2020-08-01,136.666666666667,148
+"119","req204",204,"Medium Complexity",2,"author15","owner5",1,"description",1,"Business Requirements","(no level)",1,1,0.774875358911231,6,4,2,0,1,1,1,1,1,1,1,0,7,7,6,4,2024-03-01,110,101
+"120","req205",205,"Low Complexity",1,"author3","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,55,42
+"121","req206",206,"Medium Complexity",2,"author12","owner7",2,"description",1,"default","System",1,0.5,0.13028819009196,6.5,5,1.5,1,0.5,0.5,1,1,1,1,0.5,0,16,8,2,6,2022-12-01,110,102
+"122","req207",207,"High Complexity",3,"author22","owner10",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,130,129
+"123","req208",208,"Medium Complexity",2,"author24","owner5",1,"description",1,"Business Requirements","Business",1,1,0.562713515013456,9,6,1,1,0,2,1,1,1,2,1,0,10,10,4,6,2024-10-01,100,88
+"124","req209",209,"Medium Complexity",2,"author7","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,95,103
+"125","req21",21,"Low Complexity",1,"author26","owner2",5,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,80,74
+"126","req210",210,"Low Complexity",1,"author25","owner3",2,"description",1,"Business Background","Business",1,1,0.332794301095419,4.5,2.5,0,0,0.5,0,1,1,1,0,0,0,11,5.5,2,4.5,2022-07-01,65,67
+"127","req211",211,"High Complexity",3,"author22","owner7",2,"description",1,"default","Business",1,0.5,0.396278528147377,8,7.5,1,1.5,0,1.5,1,1,1,1,0.5,0,16,8,3.5,5.5,2022-12-01,135,128
+"128","req212",212,"Low Complexity",1,"author30","owner4",2,"description",1,"Solution Proposal","Business",0.5,1,0.598698167130351,6,5,1,1.5,1.5,2,1,1,1,2,1,0.5,15,7.5,3.5,5.5,2020-04-01,75,70
+"129","req213",213,"High Complexity",3,"author20","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-03-01,115,102
+"130","req214",214,"Medium Complexity",2,"author25","owner10",1,"description",1,"Solution Proposal","System",1,1,0.251568838953972,6,5,2,2,1,0,1,1,1,2,2,1,9,9,3,8,2021-10-01,110,126
+"131","req215",215,"High Complexity",3,"author20","owner10",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,125,127
+"132","req216",216,"High Complexity",3,"author25","owner7",3,"description",1,"Business Background","System",1,1,0.553943809897949,7.66666666666667,6,0,2.66666666666667,0.666666666666667,1,1,1,1,1,0.333333333333333,0.333333333333333,27,9,2.66666666666667,3.66666666666667,2023-09-01,130,123
+"133","req217",217,"Low Complexity",1,"author17","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-12-01,60,52
+"134","req218",218,"Low Complexity",1,"author11","owner1",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,70,73
+"135","req219",219,"Medium Complexity",2,"author3","owner2",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-05-01,100,101
+"136","req22",22,"Medium Complexity",2,"author20","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-03-01,90,89
+"137","req220",220,"High Complexity",3,"author3","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-11-01,120,114
+"138","req221",221,"Medium Complexity",2,"author30","owner5",2,"description",1,"Business Requirements","System",1,0.5,0.35982272552792,6.5,6,3,3,0.5,0.5,1,0.5,1,0,0,0,18,9,2,4,2021-08-01,125,137
+"139","req222",222,"Low Complexity",1,"author28","owner5",4,"description",1,"Solution Proposal","(no level)",1,1,0.497017295798287,6.5,5.25,1.75,1.5,0.25,1,1,1,1,0.75,0.25,0,35,8.75,2,4.75,2021-06-01,92.5,104
+"140","req223",223,"Medium Complexity",2,"author23","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,95,87
+"141","req224",224,"Medium Complexity",2,"author26","owner7",2,"description",1,"Business Background","(no level)",1,1,0.608041622792371,6.5,5,0.5,0.5,1,1,1,1,1,0.5,0.5,0.5,17,8.5,4,4.5,2021-04-01,100,101
+"142","req225",225,"Low Complexity",1,"author9","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,60,46
+"143","req226",226,"Medium Complexity",2,"author14","owner4",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,95,86
+"144","req227",227,"High Complexity",3,"author5","owner5",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,125,123
+"145","req228",228,"Low Complexity",1,"author30","owner9",1,"description",1,"default","System",1,1,0.969555046642199,7,4,1,0,0,1,1,1,1,2,2,2,9,9,6,3,2024-10-01,70,69
+"146","req229",229,"High Complexity",3,"author13","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-03-01,120,107
+"147","req23",23,"Medium Complexity",2,"author5","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-05-01,90,96
+"148","req230",230,"Low Complexity",1,"author14","owner9",2,"description",1,"Business Background","System",1,1,0.518916524713859,6,4.5,1.5,0.5,0.5,0.5,1,0.5,1,0,0,0,17,8.5,1.5,4,2023-11-01,80,73
+"149","req231",231,"Low Complexity",1,"author13","owner2",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-04-01,60,64
+"150","req232",232,"Medium Complexity",2,"author8","owner1",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-03-01,90,109
+"151","req233",233,"Medium Complexity",2,"author5","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,100,114
+"152","req234",234,"Medium Complexity",2,"author13","owner2",1,"description",1,"Business Requirements","System",1,1,0.126424229936674,6,6,0,3,1,0,1,1,1,0,0,0,8,8,4,8,2024-03-01,90,87
+"153","req235",235,"Low Complexity",1,"author22","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,55,66
+"154","req236",236,"Medium Complexity",2,"author27","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-11-01,85,87
+"155","req237",237,"Low Complexity",1,"author27","owner3",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,70,75
+"156","req238",238,"Medium Complexity",2,"author5","owner2",1,"description",1,"default","Business",1,1,0.1307283192873,6,6,1,0,0,0,1,1,1,1,1,0,5,5,1,3,2023-07-01,100,97
+"157","req239",239,"High Complexity",3,"author13","owner3",1,"description",1,"default","System",1,1,0.50493233371526,8,6,0,0,0,0,1,1,1,1,1,0,7,7,3,2,2021-04-01,120,129
+"158","req24",24,"High Complexity",3,"author17","owner7",3,"description",1,"default","Business",1,1,0.0688147673693796,8.66666666666667,7,1,0,0.333333333333333,0.666666666666667,1,1,1,0,0,0,26,8.66666666666667,2,5.66666666666667,2024-07-01,140,148
+"159","req240",240,"Medium Complexity",2,"author20","owner9",2,"description",1,"Solution Proposal","Business",1,1,0.176904903026298,7,5.5,1.5,1,1.5,2,1,1,1,1.5,1,0,19,9.5,2.5,5,2020-12-01,110,97
+"160","req241",241,"Medium Complexity",2,"author13","owner8",2,"description",1,"default","Business",1,1,0.731073357281275,6.5,5.5,0.5,1.5,1,0.5,1,1,1,0.5,0,0,14,7,1,5,2020-06-01,100,100
+"161","req242",242,"Medium Complexity",2,"author10","owner3",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,95,89
+"162","req243",243,"Low Complexity",1,"author19","owner6",1,"description",1,"default","Business",1,1,0.307402237784117,7,7,0,0,0,0,1,1,1,2,1,0,6,6,4,6,2021-03-01,60,54
+"163","req244",244,"Low Complexity",1,"author25","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-07-01,55,45
+"164","req245",245,"High Complexity",3,"author22","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-09-01,115,111
+"165","req246",246,"Medium Complexity",2,"author10","owner8",2,"description",1,"Business Requirements","System",1,1,0.809293941478245,6,5.5,0.5,2.5,0.5,0.5,0.5,1,1,1,0.5,0,14,7,1,5,2023-03-01,100,96
+"166","req247",247,"High Complexity",3,"author25","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-08-01,115,117
+"167","req248",248,"High Complexity",3,"author25","owner4",1,"description",1,"Business Background","System",1,1,0.555078257573768,9,9,0,2,0,2,1,1,1,2,1,1,9,9,5,4,2020-08-01,120,135
+"168","req249",249,"Low Complexity",1,"author21","owner2",4,"description",1,"Solution Proposal","User",1,1,0.576606812712271,6,4.75,1,1.25,0.5,0.75,0.75,1,1,1,0.75,0.25,29,7.25,3,4,2024-01-01,85,88
+"169","req25",25,"High Complexity",3,"author17","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-03-01,115,119
+"170","req250",250,"Medium Complexity",2,"author27","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-09-01,85,91
+"171","req251",251,"High Complexity",3,"author4","owner1",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,125,124
+"172","req252",252,"Low Complexity",1,"author23","owner10",3,"description",1,"Solution Proposal","Business",0.666666666666667,1,0.397395824004586,5.33333333333333,4,1.66666666666667,0.333333333333333,0.333333333333333,1,1,1,1,0.666666666666667,0.666666666666667,0,17,5.66666666666667,3,2,2023-06-01,86.6666666666667,83
+"173","req253",253,"Low Complexity",1,"author26","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,55,59
+"174","req254",254,"Low Complexity",1,"author3","owner5",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,60,51
+"175","req255",255,"Medium Complexity",2,"author26","owner4",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,90,91
+"176","req256",256,"Low Complexity",1,"author5","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,70,69
+"177","req257",257,"Low Complexity",1,"author19","owner9",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,70,70
+"178","req258",258,"Low Complexity",1,"author30","owner10",3,"description",1,"Business Background","System",1,0.666666666666667,0.134093979063133,6.33333333333333,5,0.333333333333333,0.666666666666667,0.333333333333333,1,1,1,1,0.666666666666667,0.333333333333333,0.333333333333333,23,7.66666666666667,4,4,2022-04-01,73.3333333333333,79
+"179","req259",259,"Medium Complexity",2,"author26","owner9",2,"description",1,"default","(no level)",1,1,0.912867457023822,8,6,1.5,2,0.5,1.5,1,1,1,1.5,1,0.5,18,9,4,3.5,2023-08-01,110,106
+"180","req26",26,"Medium Complexity",2,"author9","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-10-01,85,72
+"181","req260",260,"Low Complexity",1,"author20","owner7",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,70,69
+"182","req261",261,"Medium Complexity",2,"author20","owner7",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,100,107
+"183","req262",262,"High Complexity",3,"author29","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,130,141
+"184","req263",263,"Low Complexity",1,"author5","owner7",2,"description",1,"Solution Proposal","User",1,1,0.197169574094005,5.5,5.5,2,1,0.5,1,1,1,1,0.5,0,0,13,6.5,2,4.5,2023-04-01,85,99
+"185","req264",264,"Low Complexity",1,"author22","owner8",2,"description",1,"Business Background","System",1,1,0.292030629236251,4.5,4,1,0,0.5,0.5,1,0.5,1,1,0.5,0.5,7,3.5,1.5,1.5,2024-06-01,75,76
+"186","req265",265,"High Complexity",3,"author18","owner6",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,120,117
+"187","req266",266,"High Complexity",3,"author18","owner3",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,125,132
+"188","req267",267,"High Complexity",3,"author18","owner3",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,120,118
+"189","req268",268,"Medium Complexity",2,"author1","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-05-01,85,83
+"190","req269",269,"Low Complexity",1,"author11","owner10",2,"description",1,"Business Background","Business",1,0.5,0.185368277947418,4.5,3.5,0.5,0.5,0,0.5,1,1,1,1,0.5,0,13,6.5,3.5,4,2022-12-01,70,67
+"191","req27",27,"Medium Complexity",2,"author18","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-01-01,85,78
+"192","req270",270,"High Complexity",3,"author30","owner7",2,"description",1,"default","(no level)",1,1,0.911496189888567,10,6.5,1.5,3,0.5,0,1,1,1,1,0.5,0,25,12.5,7,8.5,2022-07-01,140,117
+"193","req271",271,"Low Complexity",1,"author23","owner2",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,75,82
+"194","req272",272,"High Complexity",3,"author25","owner9",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,125,131
+"195","req273",273,"Medium Complexity",2,"author22","owner3",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,100,111
+"196","req274",274,"High Complexity",3,"author18","owner1",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,125,137
+"197","req275",275,"Medium Complexity",2,"author9","owner8",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,100,98
+"198","req276",276,"Low Complexity",1,"author25","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,60,60
+"199","req277",277,"High Complexity",3,"author1","owner8",2,"description",1,"Business Background","User",1,0.5,0.391091293073259,6.5,4.5,0,1,2,0.5,1,1,1,1,1,0,14,7,4.5,3.5,2023-07-01,125,124
+"200","req278",278,"Medium Complexity",2,"author9","owner5",2,"description",1,"Business Background","User",1,1,0.462073935545049,7,6,1,0.5,1,1.5,1,1,1,0.5,0.5,0,21,10.5,4.5,6,2021-11-01,105,92
+"201","req279",279,"High Complexity",3,"author21","owner9",1,"description",1,"default","User",1,1,0.999725037021562,9,7,0,1,0,1,1,1,1,0,0,0,9,9,3,4,2024-03-01,120,115
+"202","req28",28,"High Complexity",3,"author1","owner4",3,"description",1,"Solution Proposal","User",1,1,0.825642677179228,8.33333333333333,6.33333333333333,2,2,0.333333333333333,1.66666666666667,1,1,1,0.666666666666667,0.333333333333333,0,26,8.66666666666667,3,4.33333333333333,2021-06-01,150,141
+"203","req280",280,"Medium Complexity",2,"author19","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-09-01,85,87
+"204","req281",281,"Low Complexity",1,"author8","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,60,56
+"205","req282",282,"High Complexity",3,"author6","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-10-01,115,105
+"206","req283",283,"Medium Complexity",2,"author30","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,85,87
+"207","req284",284,"Low Complexity",1,"author11","owner7",1,"description",1,"Solution Proposal","System",1,1,0.383401637431234,8,5,3,1,1,2,1,1,1,1,1,0,12,12,4,5,2020-08-01,90,90
+"208","req285",285,"Low Complexity",1,"author18","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-05-01,55,59
+"209","req286",286,"Low Complexity",1,"author22","owner2",2,"description",1,"Business Requirements","Business",1,1,0.476626898860559,4.5,3.5,1,2.5,0.5,0,1,1,1,1.5,1,0,14,7,5.5,1.5,2021-03-01,75,77
+"210","req287",287,"Low Complexity",1,"author29","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-03-01,65,57
+"211","req288",288,"High Complexity",3,"author21","owner2",1,"description",1,"Solution Proposal","(no level)",1,1,0.33005800889805,8,6,3,4,0,0,1,1,1,0,0,0,10,10,3,4,2020-10-01,150,172
+"212","req289",289,"Medium Complexity",2,"author22","owner5",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-09-01,100,102
+"213","req29",29,"Low Complexity",1,"author28","owner3",1,"description",1,"Business Background","(no level)",1,1,0.0128438505344093,3,2,0,0,1,1,1,0,0,2,1,0,4,4,2,1,2023-02-01,60,69
+"214","req290",290,"Low Complexity",1,"author9","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,55,50
+"215","req291",291,"High Complexity",3,"author14","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,120,125
+"216","req292",292,"Medium Complexity",2,"author15","owner4",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-12-01,95,93
+"217","req293",293,"High Complexity",3,"author5","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,125,133
+"218","req294",294,"Medium Complexity",2,"author20","owner3",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,100,90
+"219","req295",295,"High Complexity",3,"author24","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,125,143
+"220","req296",296,"Medium Complexity",2,"author6","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,95,97
+"221","req297",297,"High Complexity",3,"author29","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-06-01,115,134
+"222","req298",298,"Medium Complexity",2,"author30","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-05-01,95,99
+"223","req299",299,"High Complexity",3,"author23","owner4",3,"description",1,"Business Requirements","System",0.666666666666667,1,0.608613278716802,8.33333333333333,6.66666666666667,0.666666666666667,1.33333333333333,0,1,1,1,1,0.666666666666667,0.333333333333333,0.333333333333333,35,11.6666666666667,5.33333333333333,6.33333333333333,2021-01-01,136.666666666667,117
+"224","req3",3,"High Complexity",3,"author24","owner3",2,"description",1,"Solution Proposal","(no level)",1,0.5,0.156094021047466,9.5,8.5,3.5,2,1,0.5,1,1,1,1,0.5,0.5,17,8.5,2.5,5,2023-02-01,160,159
+"225","req30",30,"Medium Complexity",2,"author27","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-11-01,85,91
+"226","req300",300,"Low Complexity",1,"author14","owner2",2,"description",1,"Solution Proposal","Business",1,1,0.270627707359381,7,6,3,1.5,1.5,1,1,1,1,1,0,0,16,8,1.5,3.5,2023-12-01,95,98
+"227","req301",301,"Low Complexity",1,"author2","owner6",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,60,65
+"228","req302",302,"Low Complexity",1,"author15","owner5",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-05-01,65,52
+"229","req303",303,"Medium Complexity",2,"author12","owner10",2,"description",1,"Solution Proposal","User",1,1,0.673185655963607,6,4,2.5,1,1,0,1,1,1,1.5,1,0.5,9,4.5,2,2.5,2020-07-01,120,126
+"230","req304",304,"Low Complexity",1,"author6","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,60,54
+"231","req305",305,"High Complexity",3,"author23","owner3",1,"description",1,"Business Requirements","Business",1,1,0.259493203368038,7,4,0,2,1,0,1,0,1,1,1,0,10,10,5,6,2021-11-01,120,122
+"232","req306",306,"High Complexity",3,"author29","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-05-01,115,110
+"233","req307",307,"Medium Complexity",2,"author16","owner6",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,90,95
+"234","req308",308,"Low Complexity",1,"author3","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-01-01,55,57
+"235","req309",309,"Medium Complexity",2,"author5","owner10",3,"description",1,"Business Requirements","Business",1,1,0.681884299498051,6.33333333333333,4.66666666666667,0.666666666666667,0.666666666666667,1.33333333333333,0.333333333333333,1,1,1,1.33333333333333,0.333333333333333,0,21,7,3,4.33333333333333,2023-09-01,106.666666666667,100
+"236","req31",31,"Low Complexity",1,"author11","owner9",1,"description",1,"Business Requirements","(no level)",1,1,0.698041235329583,4,3,0,0,0,1,1,1,1,2,1,0,2,2,0,2,2023-09-01,60,79
+"237","req310",310,"High Complexity",3,"author18","owner2",2,"description",1,"Business Requirements","System",1,1,0.675883971038274,11,9.5,0,1,0.5,0.5,1,1,1,1,0.5,0,26,13,4,7,2023-08-01,125,125
+"238","req311",311,"Medium Complexity",2,"author13","owner3",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,100,114
+"239","req312",312,"High Complexity",3,"author6","owner1",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-01-01,120,113
+"240","req313",313,"Medium Complexity",2,"author20","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-12-01,85,82
+"241","req314",314,"High Complexity",3,"author24","owner3",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,120,118
+"242","req315",315,"High Complexity",3,"author18","owner2",1,"description",1,"Solution Proposal","Business",1,0,0.266460098093376,10,8,3,4,0,1,1,1,1,1,0,0,11,11,1,7,2020-05-01,150,146
+"243","req316",316,"Medium Complexity",2,"author9","owner10",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-06-01,90,94
+"244","req317",317,"Medium Complexity",2,"author4","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,90,97
+"245","req318",318,"Medium Complexity",2,"author23","owner9",2,"description",1,"Business Background","Business",1,0.5,0.37101459747646,8.5,7.5,1,1.5,0.5,1,1,1,1,1.5,0,0,18,9,2,6,2021-02-01,105,95
+"246","req319",319,"Low Complexity",1,"author21","owner10",1,"description",1,"default","Business",1,1,0.450181634631008,3,2,0,0,0,0,1,1,1,1,1,0,2,2,2,2,2024-12-01,60,66
+"247","req32",32,"High Complexity",3,"author14","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-05-01,115,103
+"248","req320",320,"Low Complexity",1,"author28","owner9",2,"description",1,"Business Background","User",1,0,0.318242841400206,6,5,1,1.5,0.5,1,1,1,1,0.5,0.5,0,9,4.5,2.5,3,2020-04-01,75,69
+"249","req321",321,"Low Complexity",1,"author9","owner1",1,"description",1,"default","System",1,1,0.25914911320433,5,4,2,2,0,2,1,1,1,1,0,0,7,7,3,4,2020-02-01,80,83
+"250","req322",322,"Low Complexity",1,"author3","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,70,66
+"251","req323",323,"High Complexity",3,"author1","owner5",2,"description",1,"default","User",1,1,0.83469013730064,8,6.5,1.5,2,0,0.5,1,1,1,0,0,0,17,8.5,2.5,5,2022-06-01,140,146
+"252","req324",324,"High Complexity",3,"author21","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-09-01,125,120
+"253","req325",325,"Medium Complexity",2,"author18","owner4",1,"description",1,"Business Requirements","System",1,1,0.287792305927724,9,9,1,1,1,0,1,0,1,0,0,0,14,14,3,11,2022-02-01,100,97
+"254","req326",326,"Medium Complexity",2,"author27","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,85,58
+"255","req327",327,"Low Complexity",1,"author17","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-09-01,55,37
+"256","req328",328,"Medium Complexity",2,"author18","owner1",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,90,76
+"257","req329",329,"Low Complexity",1,"author4","owner1",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,75,76
+"258","req33",33,"Medium Complexity",2,"author3","owner6",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-01-01,105,107
+"259","req330",330,"High Complexity",3,"author12","owner5",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-01-01,120,112
+"260","req331",331,"Medium Complexity",2,"author25","owner7",1,"description",1,"Solution Proposal","(no level)",1,1,0.58110081939958,7,6,3,4,0,0,1,1,1,2,1,0,8,8,3,6,2024-02-01,120,133
+"261","req332",332,"Medium Complexity",2,"author11","owner1",1,"description",1,"Solution Proposal","(no level)",1,1,0.571832136716694,5,4,1,0,0,0,1,1,1,1,1,1,5,5,5,0,2023-01-01,100,114
+"262","req333",333,"High Complexity",3,"author17","owner10",2,"description",1,"Solution Proposal","(no level)",1,1,0.694991634343751,8.5,7.5,2.5,1.5,1.5,1,1,1,1,1.5,0,0,22,11,4,6,2024-12-01,150,163
+"263","req334",334,"Low Complexity",1,"author21","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-05-01,55,54
+"264","req335",335,"High Complexity",3,"author8","owner7",2,"description",1,"Business Background","(no level)",1,1,0.428192869294435,8,5,0.5,0,0.5,0,1,1,1,1,0.5,0.5,20,10,3,3.5,2023-04-01,130,115
+"265","req336",336,"Low Complexity",1,"author12","owner3",2,"description",1,"Business Background","System",1,1,0.352748612756841,4.5,2.5,0.5,0,0.5,0.5,1,1,1,1.5,0.5,0.5,10,5,0.5,1.5,2020-11-01,70,72
+"266","req337",337,"Medium Complexity",2,"author20","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-09-01,85,66
+"267","req338",338,"High Complexity",3,"author5","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-06-01,115,140
+"268","req339",339,"High Complexity",3,"author26","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-07-01,115,99
+"269","req34",34,"Medium Complexity",2,"author8","owner6",1,"description",1,"Business Requirements","System",1,1,0.163310207659379,9,6,1,0,0,1,1,1,1,0,0,0,13,13,6,9,2020-11-01,100,103
+"270","req340",340,"Low Complexity",1,"author25","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,60,59
+"271","req341",341,"Low Complexity",1,"author24","owner10",2,"description",1,"Business Requirements","System",1,1,0.406360948225483,5,4.5,0,1.5,1,0,1,1,0.5,0,0,0,11,5.5,3,3.5,2023-11-01,65,53
+"272","req342",342,"High Complexity",3,"author27","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,125,148
+"273","req343",343,"Medium Complexity",2,"author25","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,85,86
+"274","req344",344,"Medium Complexity",2,"author18","owner8",1,"description",1,"Business Requirements","User",1,0,0.352875485084951,9,5,1,0,1,2,1,1,0,1,1,0,12,12,6,10,2024-04-01,100,100
+"275","req345",345,"High Complexity",3,"author20","owner3",2,"description",1,"Business Background","System",1,1,0.726117974263616,9.5,8,0.5,2.5,0.5,2.5,1,1,1,1,0.5,0,26,13,4.5,6,2022-03-01,130,131
+"276","req346",346,"Low Complexity",1,"author16","owner5",2,"description",1,"Solution Proposal","Business",1,0.5,0.496161587536335,4.5,3,1,0.5,0,0.5,1,1,1,1.5,1,0.5,10,5,2.5,4,2024-04-01,75,82
+"277","req347",347,"Medium Complexity",2,"author23","owner2",2,"description",1,"Business Background","(no level)",1,1,0.367829283932224,6.5,5.5,2,0.5,0.5,0.5,1,1,1,1.5,0.5,0,16,8,4,4.5,2021-07-01,115,121
+"278","req348",348,"Medium Complexity",2,"author8","owner2",1,"description",1,"default","User",1,1,0.0989913600496948,7,5,1,1,0,0,1,1,1,1,1,0,9,9,2,7,2022-06-01,100,104
+"279","req349",349,"High Complexity",3,"author19","owner7",2,"description",1,"default","(no level)",1,0.5,0.660887283273041,9,6,0,3,1.5,0,1,1,0.5,0.5,0.5,0,22,11,4.5,5.5,2022-08-01,125,126
+"280","req35",35,"High Complexity",3,"author19","owner10",2,"description",1,"Business Background","(no level)",1,0.5,0.339315262739546,10,8.5,1,0.5,0,1,1,1,1,1.5,0.5,0,26,13,2,7,2020-07-01,135,121
+"281","req350",350,"Low Complexity",1,"author12","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-05-01,55,57
+"282","req351",351,"High Complexity",3,"author18","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-10-01,115,113
+"283","req352",352,"Medium Complexity",2,"author14","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-06-01,85,93
+"284","req353",353,"Medium Complexity",2,"author25","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-03-01,100,96
+"285","req354",354,"High Complexity",3,"author2","owner2",1,"description",1,"Business Background","System",1,1,0.87199967331253,8,8,1,1,2,1,1,1,1,1,1,0,11,11,9,8,2022-11-01,130,109
+"286","req355",355,"Medium Complexity",2,"author8","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-02-01,85,94
+"287","req356",356,"Medium Complexity",2,"author10","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,90,98
+"288","req357",357,"Medium Complexity",2,"author25","owner7",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,95,115
+"289","req358",358,"Medium Complexity",2,"author1","owner1",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-02-01,95,111
+"290","req359",359,"High Complexity",3,"author23","owner9",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,120,114
+"291","req36",36,"High Complexity",3,"author28","owner9",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,130,141
+"292","req360",360,"Medium Complexity",2,"author6","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-05-01,85,92
+"293","req361",361,"High Complexity",3,"author18","owner1",2,"description",1,"default","User",0.5,1,0.8433253710391,8.5,7,1,1,1,1,1,1,1,0.5,0.5,0.5,19,9.5,4,4.5,2020-06-01,135,120
+"294","req362",362,"Low Complexity",1,"author7","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,65,56
+"295","req363",363,"Low Complexity",1,"author17","owner1",3,"description",1,"Solution Proposal","(no level)",0.666666666666667,1,0.453339817545687,7,4.33333333333333,1.66666666666667,1.33333333333333,0.666666666666667,0.666666666666667,1,1,1,0.333333333333333,0.333333333333333,0.333333333333333,28,9.33333333333333,2.33333333333333,5.66666666666667,2020-03-01,86.6666666666667,77
+"296","req364",364,"Low Complexity",1,"author28","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-02-01,55,56
+"297","req365",365,"Low Complexity",1,"author14","owner5",3,"description",1,"default","Business",1,1,0.708696774207056,7,6.33333333333333,0.666666666666667,2,0.333333333333333,0.666666666666667,1,1,1,0.666666666666667,0.333333333333333,0,25,8.33333333333333,2.33333333333333,5.33333333333333,2023-10-01,76.6666666666667,67
+"298","req366",366,"Medium Complexity",2,"author8","owner3",1,"description",1,"Business Background","Business",1,1,0.259271729271859,7,6,1,1,0,1,1,1,1,1,1,0,10,10,6,4,2020-12-01,100,93
+"299","req367",367,"Medium Complexity",2,"author18","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,90,77
+"300","req368",368,"Medium Complexity",2,"author1","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-07-01,85,82
+"301","req369",369,"High Complexity",3,"author22","owner7",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,125,119
+"302","req37",37,"Medium Complexity",2,"author24","owner9",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,100,110
+"303","req370",370,"Medium Complexity",2,"author5","owner8",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-03-01,95,103
+"304","req371",371,"Low Complexity",1,"author12","owner2",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,70,81
+"305","req372",372,"High Complexity",3,"author18","owner8",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,130,116
+"306","req373",373,"Low Complexity",1,"author5","owner10",3,"description",1,"default","(no level)",0.666666666666667,1,0.397385371150449,6.33333333333333,5,0,1.33333333333333,0.666666666666667,1,1,1,1,0.666666666666667,0.666666666666667,0,20,6.66666666666667,3,4,2023-12-01,70,76
+"307","req374",374,"Low Complexity",1,"author7","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,65,49
+"308","req375",375,"Medium Complexity",2,"author12","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-03-01,85,88
+"309","req376",376,"High Complexity",3,"author12","owner4",1,"description",1,"Solution Proposal","User",1,1,0.911935527808964,7,7,3,1,0,1,1,1,1,2,1,1,7,7,3,2,2020-03-01,150,160
+"310","req377",377,"High Complexity",3,"author21","owner1",1,"description",1,"Business Requirements","(no level)",1,1,0.0980501419398934,5,4,0,0,0,1,1,1,1,1,1,0,5,5,3,3,2024-11-01,120,122
+"311","req378",378,"High Complexity",3,"author29","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,120,120
+"312","req379",379,"High Complexity",3,"author6","owner1",3,"description",1,"Business Requirements","System",1,1,0.533969139913097,9.66666666666667,8.33333333333333,0.666666666666667,2.66666666666667,0.333333333333333,0.666666666666667,1,1,0.666666666666667,1,0,0,35,11.6666666666667,3.66666666666667,6,2024-10-01,136.666666666667,151
+"313","req38",38,"Low Complexity",1,"author1","owner8",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,65,55
+"314","req380",380,"Low Complexity",1,"author28","owner4",3,"description",1,"default","System",1,0.666666666666667,0.652065999495486,6.33333333333333,5,0.666666666666667,2.33333333333333,0.333333333333333,0.333333333333333,0.666666666666667,1,1,0.666666666666667,0.333333333333333,0,17,5.66666666666667,2.33333333333333,3,2020-08-01,76.6666666666667,88
+"315","req381",381,"Medium Complexity",2,"author11","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-05-01,85,80
+"316","req382",382,"High Complexity",3,"author28","owner8",4,"description",1,"Business Requirements","Business",1,0.75,0.56182759674266,11,9,0.75,1.25,1.25,1.5,0.75,1,1,0.75,0,0,49,12.25,3.5,7.75,2021-11-01,142.5,137
+"317","req383",383,"Low Complexity",1,"author3","owner2",2,"description",1,"Business Background","Business",1,1,0.481058761128224,5,3.5,0.5,1.5,0,0.5,1,1,1,1,1,0.5,11,5.5,2.5,5,2021-10-01,70,62
+"318","req384",384,"High Complexity",3,"author16","owner1",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,120,120
+"319","req385",385,"Low Complexity",1,"author22","owner5",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-03-01,60,54
+"320","req386",386,"Low Complexity",1,"author10","owner2",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,65,69
+"321","req387",387,"Low Complexity",1,"author5","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,60,43
+"322","req388",388,"High Complexity",3,"author22","owner4",2,"description",1,"Business Background","User",1,1,0.43779466766864,11,9.5,1.5,1.5,0.5,1,1,1,1,0.5,0.5,0,22,11,4.5,9.5,2022-07-01,140,146
+"323","req389",389,"Medium Complexity",2,"author21","owner2",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,90,74
+"324","req39",39,"Low Complexity",1,"author16","owner4",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,70,57
+"325","req390",390,"High Complexity",3,"author29","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-10-01,120,118
+"326","req391",391,"High Complexity",3,"author28","owner3",4,"description",1,"default","User",0.75,1,0.553583351371344,8.25,5.5,1,0.25,0.5,1.25,1,1,1,0.25,0,0,42,10.5,2.5,6.5,2023-07-01,145,143
+"327","req392",392,"High Complexity",3,"author15","owner9",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-11-01,125,140
+"328","req393",393,"Low Complexity",1,"author5","owner9",1,"description",1,"default","User",1,1,0.729581965133548,5,3,1,1,1,0,1,1,1,0,0,0,5,5,1,2,2020-02-01,70,64
+"329","req394",394,"Medium Complexity",2,"author4","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-01-01,85,69
+"330","req395",395,"Low Complexity",1,"author12","owner9",2,"description",1,"Business Requirements","User",0.5,0.5,0.435199712519534,6.5,4.5,0,1.5,0,0,1,1,1,0.5,0.5,0.5,17,8.5,3.5,6.5,2024-05-01,65,48
+"331","req396",396,"Medium Complexity",2,"author13","owner8",1,"description",1,"Business Background","User",1,1,0.0635786959901452,4,2,0,1,1,0,1,0,1,0,0,0,3,3,2,3,2022-05-01,90,91
+"332","req397",397,"High Complexity",3,"author28","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-05-01,115,126
+"333","req398",398,"Low Complexity",1,"author26","owner9",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,60,76
+"334","req399",399,"High Complexity",3,"author24","owner3",3,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-05-01,130,150
+"335","req4",4,"Medium Complexity",2,"author13","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-10-01,85,84
+"336","req40",40,"Medium Complexity",2,"author23","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,90,86
+"337","req400",400,"High Complexity",3,"author20","owner2",2,"description",1,"Solution Proposal","(no level)",1,1,0.445230822544545,7,6,2,1.5,0,0.5,1,1,1,1,1,0.5,19,9.5,5.5,6,2023-06-01,145,147
+"338","req401",401,"High Complexity",3,"author25","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,120,119
+"339","req402",402,"High Complexity",3,"author3","owner10",3,"description",1,"Business Background","(no level)",1,0.333333333333333,0.604614108257617,7.66666666666667,5.33333333333333,2.33333333333333,1.33333333333333,1,1.33333333333333,1,1,1,0,0,0,22,7.33333333333333,3,3.66666666666667,2024-01-01,153.333333333333,133
+"340","req403",403,"High Complexity",3,"author19","owner4",2,"description",1,"default","Business",0.5,1,0.424844629364089,8.5,7,2,1,1,1.5,0.5,1,1,0,0,0,19,9.5,2.5,4.5,2021-08-01,145,134
+"341","req404",404,"High Complexity",3,"author24","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,125,88
+"342","req405",405,"Medium Complexity",2,"author14","owner6",2,"description",1,"Business Background","(no level)",1,1,0.381888865493238,7,6,0,1.5,0,1.5,1,1,1,0.5,0.5,0,16,8,5,3.5,2023-10-01,95,104
+"343","req406",406,"Medium Complexity",2,"author30","owner9",3,"description",1,"Business Requirements","User",0.666666666666667,0.666666666666667,0.480697574714819,8,6,0.333333333333333,1.66666666666667,0.666666666666667,1.33333333333333,1,1,1,1.66666666666667,0.666666666666667,0.333333333333333,29,9.66666666666667,4.33333333333333,5.66666666666667,2022-09-01,103.333333333333,94
+"344","req407",407,"Medium Complexity",2,"author27","owner3",2,"description",1,"Business Background","Business",1,1,0.815262122428976,8,7.5,1.5,1.5,1,1.5,1,1,1,1,0.5,0,17,8.5,6,5,2024-09-01,110,109
+"345","req408",408,"Medium Complexity",2,"author1","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,95,84
+"346","req409",409,"Low Complexity",1,"author30","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,65,69
+"347","req41",41,"Medium Complexity",2,"author24","owner7",2,"description",1,"Business Requirements","Business",1,1,0.179625575430691,6,4.5,1,1,0.5,0.5,1,1,1,1,0,0,15,7.5,2.5,4.5,2020-05-01,105,113
+"348","req410",410,"Low Complexity",1,"author11","owner9",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,70,73
+"349","req411",411,"Low Complexity",1,"author15","owner4",2,"description",1,"Solution Proposal","Business",0.5,1,0.464032545220107,7,5.5,3,1,1,0,1,1,1,0,0,0,16,8,3.5,4.5,2023-12-01,95,78
+"350","req412",412,"Medium Complexity",2,"author17","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,95,96
+"351","req413",413,"Medium Complexity",2,"author29","owner1",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-05-01,100,116
+"352","req414",414,"Low Complexity",1,"author6","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,60,56
+"353","req415",415,"High Complexity",3,"author10","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-07-01,115,121
+"354","req416",416,"High Complexity",3,"author5","owner9",1,"description",1,"Solution Proposal","User",1,1,0.390416247304529,11,9,2,1,1,0,1,1,1,2,1,1,13,13,10,7,2020-09-01,140,145
+"355","req417",417,"Low Complexity",1,"author16","owner3",4,"description",1,"Solution Proposal","User",1,0.75,0.518374158767983,5,4.25,0.5,1,0.75,0.25,1,1,1,0.5,0.25,0,19,4.75,1.25,2.75,2021-07-01,80,93
+"356","req418",418,"Low Complexity",1,"author9","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-08-01,55,59
+"357","req419",419,"Low Complexity",1,"author5","owner5",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,70,64
+"358","req42",42,"Low Complexity",1,"author17","owner3",1,"description",1,"Business Requirements","Business",1,1,0.973104126751423,5,4,0,2,1,1,1,1,1,0,0,0,8,8,1,3,2020-04-01,60,49
+"359","req420",420,"Medium Complexity",2,"author25","owner5",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-09-01,105,124
+"360","req421",421,"Medium Complexity",2,"author19","owner4",2,"description",1,"Business Background","User",1,1,0.109415645827539,6.5,6,0.5,2,0.5,0.5,1,1,1,0,0,0,14,7,3.5,3.5,2021-01-01,100,110
+"361","req422",422,"High Complexity",3,"author12","owner10",3,"description",1,"default","System",1,1,0.534902756645655,6.66666666666667,5.66666666666667,0.666666666666667,2.33333333333333,0.666666666666667,0.333333333333333,1,1,1,1,0.666666666666667,0.333333333333333,25,8.33333333333333,5.66666666666667,5,2020-10-01,136.666666666667,135
+"362","req423",423,"Low Complexity",1,"author4","owner5",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-01-01,60,71
+"363","req424",424,"Low Complexity",1,"author4","owner8",2,"description",1,"default","Business",1,1,0.530090121785179,4,3,0.5,0.5,0.5,0,1,1,1,1.5,1,0.5,10,5,1,2,2021-01-01,70,65
+"364","req425",425,"High Complexity",3,"author6","owner2",1,"description",1,"Business Requirements","User",1,1,0.00187986087985337,11,6,0,1,0,0,1,1,1,1,0,0,13,13,2,8,2023-03-01,120,95
+"365","req426",426,"Low Complexity",1,"author13","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,60,56
+"366","req427",427,"Medium Complexity",2,"author18","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,90,108
+"367","req428",428,"Low Complexity",1,"author21","owner7",2,"description",1,"Business Background","User",1,0.5,0.451096608885564,5.5,5,2,1,0.5,1,1,1,1,1.5,0,0,12,6,1.5,3.5,2021-12-01,85,87
+"368","req429",429,"Medium Complexity",2,"author3","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,95,99
+"369","req43",43,"Low Complexity",1,"author15","owner9",2,"description",1,"Business Background","User",1,1,0.97401280363556,7.5,6,1,1.5,0.5,3,1,1,1,0.5,0,0,21,10.5,2,6.5,2020-06-01,75,73
+"370","req430",430,"Low Complexity",1,"author28","owner9",2,"description",1,"default","Business",1,1,0.506065153167583,6.5,5.5,0.5,1.5,1,0.5,1,1,1,1.5,1,0,13,6.5,3,4.5,2024-12-01,70,66
+"371","req431",431,"Medium Complexity",2,"author5","owner8",3,"description",1,"default","Business",1,1,0.655858166981489,7.33333333333333,7,1,0.333333333333333,0.666666666666667,0.333333333333333,1,1,1,0.333333333333333,0,0,27,9,2.66666666666667,6.33333333333333,2022-10-01,110,96
+"372","req432",432,"Medium Complexity",2,"author24","owner2",3,"description",1,"default","System",1,1,0.719170230207965,7.66666666666667,6.66666666666667,0.333333333333333,0.333333333333333,1,0.666666666666667,1,1,1,1,0.333333333333333,0,26,8.66666666666667,3,5,2023-11-01,103.333333333333,103
+"373","req433",433,"Medium Complexity",2,"author24","owner5",2,"description",1,"Business Background","User",1,1,0.53702696657274,8,7.5,2.5,1.5,0.5,1.5,1,0.5,1,1,0.5,0,18,9,4,5.5,2022-08-01,120,129
+"374","req434",434,"Low Complexity",1,"author30","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-01-01,55,54
+"375","req435",435,"High Complexity",3,"author10","owner3",1,"description",1,"default","Business",1,1,0.393632325576618,12,11,2,1,0,2,1,1,1,1,1,1,14,14,4,8,2020-06-01,140,150
+"376","req436",436,"Low Complexity",1,"author20","owner2",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,65,66
+"377","req437",437,"Medium Complexity",2,"author1","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-11-01,85,75
+"378","req438",438,"High Complexity",3,"author10","owner8",4,"description",1,"Business Background","User",1,0.75,0.620870037644636,8.75,6,1.5,1.5,0.5,0.5,1,1,1,0.75,0.5,0,50,12.5,6.75,6,2022-01-01,150,164
+"379","req439",439,"High Complexity",3,"author6","owner5",1,"description",1,"default","Business",1,1,0.450453364290297,5,3,1,0,0,2,1,1,1,0,0,0,3,3,1,2,2021-08-01,130,147
+"380","req44",44,"High Complexity",3,"author12","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,120,111
+"381","req440",440,"Medium Complexity",2,"author19","owner2",1,"description",1,"Solution Proposal","(no level)",1,1,0.76380316214636,6,4,0,3,1,0,1,1,1,1,0,0,5,5,0,3,2022-11-01,90,101
+"382","req441",441,"Low Complexity",1,"author15","owner5",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,60,54
+"383","req442",442,"Low Complexity",1,"author17","owner9",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,65,77
+"384","req443",443,"Low Complexity",1,"author21","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-07-01,55,59
+"385","req444",444,"Low Complexity",1,"author16","owner1",1,"description",1,"Solution Proposal","System",1,1,0.406629746546969,6,5,5,0,0,1,1,1,1,1,0,0,8,8,4,4,2022-04-01,110,126
+"386","req445",445,"Low Complexity",1,"author24","owner3",3,"description",1,"default","System",1,0.666666666666667,0.608741761107619,7,6.33333333333333,1,1.33333333333333,0,1.66666666666667,1,1,1,0.333333333333333,0,0,26,8.66666666666667,2,5.33333333333333,2023-11-01,80,71
+"387","req446",446,"High Complexity",3,"author6","owner10",2,"description",1,"Solution Proposal","System",1,0.5,0.76944052579347,5.5,3.5,0.5,1,0.5,1,1,1,1,1.5,0.5,0,15,7.5,2,6.5,2020-08-01,130,139
+"388","req447",447,"Medium Complexity",2,"author17","owner2",1,"description",1,"Solution Proposal","System",1,1,0.481675671413541,8,6,2,4,0,0,1,1,1,1,1,1,8,8,2,7,2021-01-01,110,99
+"389","req448",448,"High Complexity",3,"author24","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,115,115
+"390","req449",449,"High Complexity",3,"author12","owner3",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,125,112
+"391","req45",45,"Low Complexity",1,"author11","owner3",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,60,55
+"392","req450",450,"Medium Complexity",2,"author12","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-06-01,85,71
+"393","req451",451,"High Complexity",3,"author6","owner3",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,125,141
+"394","req452",452,"Low Complexity",1,"author17","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-05-01,65,58
+"395","req453",453,"Medium Complexity",2,"author2","owner10",3,"description",1,"Solution Proposal","Business",1,0.666666666666667,0.614448079839349,9,6.66666666666667,1,1,1,1,1,1,1,0.333333333333333,0,0,26,8.66666666666667,2.66666666666667,6,2020-07-01,110,116
+"396","req454",454,"High Complexity",3,"author10","owner4",2,"description",1,"Business Background","User",1,1,0.891764897736721,8,5,0.5,1,0,0.5,1,0.5,1,0.5,0.5,0,19,9.5,3.5,5.5,2023-03-01,130,129
+"397","req455",455,"Low Complexity",1,"author4","owner10",2,"description",1,"Business Background","System",1,1,0.574964429135434,6.5,5,1,1,0.5,1,1,1,1,1.5,0.5,0,14,7,3.5,5,2020-10-01,75,86
+"398","req456",456,"High Complexity",3,"author27","owner9",2,"description",1,"Business Requirements","(no level)",1,1,0.871715357294306,7,6,0,1.5,1.5,0,1,1,1,0,0,0,16,8,3.5,3.5,2023-09-01,125,120
+"399","req457",457,"Medium Complexity",2,"author20","owner4",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-12-01,100,88
+"400","req458",458,"High Complexity",3,"author9","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-10-01,115,110
+"401","req459",459,"High Complexity",3,"author24","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,115,117
+"402","req46",46,"Medium Complexity",2,"author24","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-01-01,90,109
+"403","req460",460,"Medium Complexity",2,"author3","owner6",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-04-01,90,84
+"404","req461",461,"High Complexity",3,"author16","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-04-01,120,112
+"405","req462",462,"High Complexity",3,"author21","owner3",3,"description",1,"Business Background","System",0.666666666666667,1,0.186731277033687,10,8.33333333333333,1,1.66666666666667,0.666666666666667,0.666666666666667,1,1,0.666666666666667,1.33333333333333,0.666666666666667,0,37,12.3333333333333,6,7.66666666666667,2021-09-01,140,129
+"406","req463",463,"Low Complexity",1,"author18","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,65,61
+"407","req464",464,"High Complexity",3,"author11","owner6",2,"description",1,"Solution Proposal","User",1,0.5,0.738840715377592,9,8,1,1.5,1.5,0.5,1,1,1,0,0,0,21,10.5,3.5,4.5,2021-07-01,135,125
+"408","req465",465,"Low Complexity",1,"author11","owner5",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,60,55
+"409","req466",466,"Medium Complexity",2,"author9","owner4",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,100,123
+"410","req467",467,"Low Complexity",1,"author21","owner9",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-01-01,70,64
+"411","req468",468,"Medium Complexity",2,"author19","owner10",2,"description",1,"Solution Proposal","System",1,1,0.551919970661402,7,5.5,1,2,0,1,1,1,1,0,0,0,17,8.5,2,5,2022-09-01,105,122
+"412","req469",469,"High Complexity",3,"author26","owner1",3,"description",1,"Solution Proposal","(no level)",1,0.666666666666667,0.536933215257401,9.33333333333333,7.66666666666667,1,2,0.333333333333333,0.666666666666667,1,1,1,1,0.333333333333333,0,28,9.33333333333333,3.33333333333333,5.66666666666667,2020-07-01,140,135
+"413","req47",47,"Low Complexity",1,"author11","owner1",1,"description",1,"Business Requirements","Business",1,1,0.84632186871022,6,4,0,0,2,2,1,1,1,0,0,0,10,10,4,7,2023-06-01,60,69
+"414","req470",470,"Medium Complexity",2,"author11","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-12-01,85,93
+"415","req471",471,"Low Complexity",1,"author2","owner8",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,65,62
+"416","req472",472,"Low Complexity",1,"author20","owner8",2,"description",1,"Business Background","System",1,0.5,0.322353883530013,6,5,1,1,0,0,1,1,1,0.5,0.5,0.5,17,8.5,4,5,2020-07-01,75,89
+"417","req473",473,"Low Complexity",1,"author2","owner3",2,"description",1,"Business Requirements","(no level)",1,1,0.376451865187846,8,6.5,2,1,1,1,1,1,1,0.5,0,0,20,10,2.5,7.5,2024-12-01,85,86
+"418","req474",474,"Medium Complexity",2,"author7","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,100,87
+"419","req475",475,"High Complexity",3,"author20","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,125,132
+"420","req476",476,"High Complexity",3,"author25","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,120,127
+"421","req477",477,"Medium Complexity",2,"author1","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-10-01,85,96
+"422","req478",478,"Medium Complexity",2,"author26","owner9",2,"description",1,"Business Background","(no level)",1,1,0.536124218255282,7.5,5,0.5,1,0.5,0,1,1,1,1.5,0.5,0.5,16,8,5.5,3.5,2024-07-01,100,91
+"423","req479",479,"Medium Complexity",2,"author14","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-10-01,85,76
+"424","req48",48,"High Complexity",3,"author17","owner6",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,120,114
+"425","req480",480,"High Complexity",3,"author8","owner2",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,130,139
+"426","req481",481,"Medium Complexity",2,"author6","owner7",3,"description",1,"Business Background","User",1,1,0.561235922699173,7.66666666666667,6.66666666666667,1.33333333333333,2,1,0.666666666666667,1,1,1,0,0,0,31,10.3333333333333,3.66666666666667,6.66666666666667,2024-04-01,113.333333333333,115
+"427","req482",482,"Low Complexity",1,"author17","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-12-01,55,54
+"428","req483",483,"High Complexity",3,"author26","owner4",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,125,128
+"429","req484",484,"High Complexity",3,"author10","owner2",2,"description",1,"Solution Proposal","User",1,1,0.327545464038849,9,7.5,4,2,0,2,1,1,1,0.5,0.5,0.5,26,13,5.5,7.5,2020-11-01,165,162
+"430","req485",485,"Low Complexity",1,"author10","owner3",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,60,61
+"431","req486",486,"Medium Complexity",2,"author25","owner3",1,"description",1,"Business Requirements","Business",1,1,0.169611356221139,7,6,1,0,1,2,1,1,1,1,0,0,9,9,4,5,2021-07-01,100,87
+"432","req487",487,"High Complexity",3,"author24","owner4",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,125,119
+"433","req488",488,"Low Complexity",1,"author27","owner7",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,65,64
+"434","req489",489,"Low Complexity",1,"author24","owner7",3,"description",1,"default","Business",1,1,0.390518105123192,5.33333333333333,4,1.66666666666667,0,0.333333333333333,0,1,1,1,0.333333333333333,0,0,22,7.33333333333333,2.33333333333333,5,2023-12-01,86.6666666666667,95
+"435","req49",49,"High Complexity",3,"author23","owner5",3,"description",1,"Solution Proposal","User",1,1,0.705416915550207,9,6.66666666666667,2.33333333333333,0.333333333333333,0,0.333333333333333,0.666666666666667,1,1,1,0.666666666666667,0.333333333333333,36,12,3.66666666666667,8,2022-11-01,153.333333333333,163
+"436","req490",490,"High Complexity",3,"author12","owner9",2,"description",1,"Solution Proposal","System",1,0.5,0.552006728365086,8.5,6.5,1.5,1,0,0.5,1,1,1,0,0,0,17,8.5,2,4.5,2022-11-01,140,148
+"437","req491",491,"Medium Complexity",2,"author3","owner4",1,"description",1,"Solution Proposal","Business",1,1,0.00991009501740336,7,6,3,3,0,0,1,1,1,1,1,0,9,9,6,7,2023-04-01,120,116
+"438","req492",492,"Low Complexity",1,"author12","owner7",2,"description",1,"Business Requirements","Business",1,1,0.454339054762386,7,6,1,1.5,0.5,0.5,1,1,1,1.5,1,0,15,7.5,3.5,5.5,2020-04-01,75,79
+"439","req493",493,"Medium Complexity",2,"author11","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-08-01,85,97
+"440","req494",494,"Medium Complexity",2,"author29","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-05-01,85,76
+"441","req495",495,"Medium Complexity",2,"author23","owner5",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-04-01,90,95
+"442","req496",496,"Low Complexity",1,"author9","owner4",1,"description",1,"Business Background","System",1,1,0.543132560327649,7,4,1,1,1,0,1,1,1,1,1,0,7,7,3,2,2022-08-01,70,61
+"443","req497",497,"Medium Complexity",2,"author19","owner7",1,"description",1,"Business Background","System",1,1,0.195303727639839,9,9,1,1,1,1,1,1,1,0,0,0,11,11,5,9,2020-12-01,100,88
+"444","req498",498,"Medium Complexity",2,"author7","owner2",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-09-01,95,106
+"445","req499",499,"High Complexity",3,"author18","owner1",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,130,128
+"446","req5",5,"High Complexity",3,"author30","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-03-01,115,113
+"447","req50",50,"Low Complexity",1,"author9","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,65,72
+"448","req500",500,"Medium Complexity",2,"author16","owner5",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,90,76
+"449","req501",501,"Low Complexity",1,"author2","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,65,70
+"450","req502",502,"High Complexity",3,"author25","owner3",3,"description",1,"Solution Proposal","User",0.666666666666667,1,0.283517411832387,7.66666666666667,6,1,2.33333333333333,0.666666666666667,0.666666666666667,1,1,1,1,0.666666666666667,0,32,10.6666666666667,4.66666666666667,8,2023-05-01,140,155
+"451","req503",503,"Medium Complexity",2,"author10","owner10",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,90,89
+"452","req504",504,"High Complexity",3,"author28","owner4",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,125,139
+"453","req505",505,"High Complexity",3,"author9","owner2",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,130,134
+"454","req506",506,"Medium Complexity",2,"author20","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,95,95
+"455","req507",507,"Medium Complexity",2,"author6","owner1",2,"description",1,"Solution Proposal","Business",1,0.5,0.793538925470785,9,8.5,3.5,1.5,1,0,1,1,1,1,0.5,0,28,14,7,8.5,2022-10-01,130,155
+"456","req508",508,"Medium Complexity",2,"author19","owner3",2,"description",1,"Solution Proposal","Business",1,0.5,0.416498872451484,8,6.5,2.5,2,1,0.5,1,1,1,1,1,0.5,19,9.5,6.5,3.5,2022-12-01,120,122
+"457","req509",509,"Medium Complexity",2,"author14","owner2",1,"description",1,"Business Requirements","Business",1,1,0.505726729752496,5,4,0,0,1,0,1,1,1,1,0,0,6,6,2,4,2022-05-01,90,80
+"458","req51",51,"Medium Complexity",2,"author24","owner3",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-05-01,100,93
+"459","req510",510,"Low Complexity",1,"author18","owner5",2,"description",1,"Solution Proposal","User",0.5,1,0.512012454681098,5.5,5.5,2.5,1,0.5,1,1,1,1,1,0.5,0,16,8,3.5,3.5,2024-06-01,90,88
+"460","req511",511,"High Complexity",3,"author2","owner4",2,"description",1,"default","(no level)",1,0.5,0.882898574694991,10,10,2.5,1.5,2,3,1,1,0.5,0.5,0.5,0.5,25,12.5,6.5,7,2024-01-01,150,164
+"461","req512",512,"Low Complexity",1,"author7","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,65,75
+"462","req513",513,"Medium Complexity",2,"author8","owner8",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,95,111
+"463","req514",514,"Medium Complexity",2,"author21","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,95,96
+"464","req515",515,"High Complexity",3,"author10","owner3",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,130,124
+"465","req516",516,"Medium Complexity",2,"author24","owner4",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,90,91
+"466","req517",517,"Medium Complexity",2,"author4","owner3",1,"description",1,"Business Background","Business",1,1,0.14198580943048,8,7,1,1,1,1,1,1,1,0,0,0,10,10,2,6,2022-02-01,100,101
+"467","req518",518,"High Complexity",3,"author17","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-05-01,115,100
+"468","req519",519,"Low Complexity",1,"author23","owner5",1,"description",1,"Solution Proposal","Business",1,1,0.466482721734792,6,5,2,2,1,1,1,1,1,0,0,0,6,6,3,3,2024-03-01,80,85
+"469","req52",52,"Low Complexity",1,"author21","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,55,52
+"470","req520",520,"High Complexity",3,"author20","owner4",2,"description",1,"Solution Proposal","System",1,0,0.770464255008847,10.5,7,0.5,2,0.5,0.5,1,1,1,0,0,0,27,13.5,3.5,7.5,2021-10-01,130,130
+"471","req521",521,"High Complexity",3,"author1","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-08-01,115,122
+"472","req522",522,"Medium Complexity",2,"author3","owner1",3,"description",1,"Solution Proposal","(no level)",1,1,0.31838304308864,6,5.33333333333333,1.33333333333333,1.33333333333333,1.33333333333333,0.666666666666667,0.666666666666667,1,1,1,0.333333333333333,0.333333333333333,20,6.66666666666667,2.33333333333333,4,2024-09-01,113.333333333333,98
+"473","req523",523,"Low Complexity",1,"author21","owner7",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,70,62
+"474","req524",524,"Medium Complexity",2,"author25","owner3",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-11-01,90,88
+"475","req525",525,"Medium Complexity",2,"author5","owner9",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,90,80
+"476","req526",526,"Medium Complexity",2,"author18","owner2",4,"description",1,"Business Background","Business",0.5,1,0.684802302974276,8.5,7.25,1.75,1.75,0.75,0.25,1,1,1,2,1.5,0.25,38,9.5,5.75,5.25,2021-09-01,122.5,117
+"477","req527",527,"Medium Complexity",2,"author6","owner2",1,"description",1,"default","System",1,1,0.96962765045464,6,5,0,0,1,3,1,1,1,1,1,0,8,8,4,4,2022-05-01,90,86
+"478","req528",528,"High Complexity",3,"author1","owner3",1,"description",1,"Business Requirements","Business",1,1,0.501834906172007,5,4,1,1,2,0,1,1,1,0,0,0,8,8,4,4,2022-09-01,130,121
+"479","req529",529,"Low Complexity",1,"author12","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,65,54
+"480","req53",53,"Low Complexity",1,"author23","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-08-01,55,63
+"481","req530",530,"Low Complexity",1,"author17","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,55,51
+"482","req531",531,"Medium Complexity",2,"author1","owner3",2,"description",1,"Solution Proposal","Business",1,1,0.448735607787967,6.5,4.5,1.5,1,0,1,1,1,1,1,0.5,0,19,9.5,4.5,5.5,2023-10-01,110,103
+"483","req532",532,"High Complexity",3,"author20","owner10",2,"description",1,"default","Business",1,1,0.30350207106676,8,7,0,2,0,0.5,1,1,1,1,0.5,0,21,10.5,4,5.5,2024-06-01,125,140
+"484","req533",533,"High Complexity",3,"author13","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-11-01,115,117
+"485","req534",534,"Low Complexity",1,"author15","owner10",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,65,69
+"486","req535",535,"Medium Complexity",2,"author21","owner8",2,"description",1,"default","User",1,1,0.288055640296079,7,6,0,0.5,0,0,1,1,1,0.5,0.5,0,19,9.5,4,7.5,2020-08-01,95,92
+"487","req536",536,"Medium Complexity",2,"author24","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-10-01,85,91
+"488","req537",537,"Medium Complexity",2,"author22","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-02-01,85,89
+"489","req538",538,"Low Complexity",1,"author7","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,65,69
+"490","req539",539,"High Complexity",3,"author3","owner6",3,"description",1,"Business Background","System",0.666666666666667,0.666666666666667,0.697459722170606,9.66666666666667,6.66666666666667,1,1.33333333333333,0.666666666666667,1.66666666666667,1,1,1,0.666666666666667,0.333333333333333,0,37,12.3333333333333,5,8,2020-05-01,140,146
+"491","req54",54,"High Complexity",3,"author13","owner10",3,"description",1,"Solution Proposal","(no level)",1,1,0.337737757712603,6.66666666666667,5,1.66666666666667,0,0.333333333333333,1.33333333333333,1,1,1,1,0.333333333333333,0,23,7.66666666666667,2.33333333333333,4,2023-08-01,146.666666666667,146
+"492","req540",540,"Medium Complexity",2,"author8","owner10",3,"description",1,"Business Requirements","System",1,1,0.345457619366546,7,5.33333333333333,0.333333333333333,0.666666666666667,0.666666666666667,1,1,0.666666666666667,1,0.333333333333333,0,0,22,7.33333333333333,2.66666666666667,6,2022-12-01,103.333333333333,128
+"493","req541",541,"High Complexity",3,"author1","owner5",2,"description",1,"Solution Proposal","System",1,1,0.49620267667342,8,7,1.5,2,1,0,1,1,0.5,0.5,0,0,16,8,1.5,3,2022-06-01,140,134
+"494","req542",542,"Medium Complexity",2,"author1","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,100,92
+"495","req543",543,"High Complexity",3,"author6","owner3",2,"description",1,"Business Requirements","System",1,0.5,0.621043171151541,7,4.5,1,1,0.5,0.5,1,1,1,0.5,0.5,0,17,8.5,3.5,4,2023-06-01,135,125
+"496","req544",544,"Medium Complexity",2,"author22","owner10",1,"description",1,"Solution Proposal","(no level)",1,1,0.303923131665215,10,9,3,0,0,0,1,1,0,1,0,0,11,11,4,6,2024-07-01,120,118
+"497","req545",545,"Medium Complexity",2,"author12","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,90,83
+"498","req546",546,"Medium Complexity",2,"author18","owner4",4,"description",1,"default","System",1,1,0.536323816981167,7.5,6.5,1.5,0.5,1,1,1,1,1,0.5,0.25,0,37,9.25,3,4.25,2020-12-01,120,119
+"499","req547",547,"Low Complexity",1,"author8","owner2",1,"description",1,"default","Business",0,1,0.526667474769056,6,6,0,2,1,0,1,1,1,1,0,0,6,6,4,6,2024-12-01,60,47
+"500","req548",548,"High Complexity",3,"author21","owner8",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,130,136
+"501","req549",549,"Medium Complexity",2,"author5","owner3",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-05-01,95,85
+"502","req55",55,"Low Complexity",1,"author27","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,60,63
+"503","req550",550,"High Complexity",3,"author6","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,115,127
+"504","req551",551,"High Complexity",3,"author21","owner7",2,"description",1,"Solution Proposal","System",0.5,0.5,0.736121786059812,6.5,5.5,1,0.5,0,2,1,1,1,0,0,0,17,8.5,2.5,5,2020-09-01,135,126
+"505","req552",552,"High Complexity",3,"author27","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,120,128
+"506","req553",553,"High Complexity",3,"author4","owner4",1,"description",1,"Solution Proposal","(no level)",1,1,0.955908191623166,9,7,3,1,1,0,1,1,1,1,1,1,9,9,3,6,2022-02-01,150,152
+"507","req554",554,"Medium Complexity",2,"author15","owner8",1,"description",1,"Business Requirements","(no level)",1,1,0.587423531338573,8,8,1,3,1,0,1,1,1,0,0,0,10,10,6,7,2020-09-01,100,104
+"508","req555",555,"Low Complexity",1,"author17","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-10-01,55,50
+"509","req556",556,"High Complexity",3,"author15","owner1",2,"description",1,"Solution Proposal","(no level)",1,0.5,0.387379315099679,7,5.5,3,2.5,0,1,0.5,1,1,2,2,0,19,9.5,5.5,5,2023-09-01,155,148
+"510","req557",557,"Low Complexity",1,"author7","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-11-01,55,48
+"511","req558",558,"Medium Complexity",2,"author23","owner4",2,"description",1,"Business Background","(no level)",1,1,0.615692400722765,7.5,6,0,0,0,0.5,1,1,1,1.5,0.5,0,18,9,2,5.5,2022-05-01,95,93
+"512","req559",559,"Low Complexity",1,"author8","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-10-01,55,51
+"513","req56",56,"High Complexity",3,"author5","owner6",1,"description",1,"Business Requirements","(no level)",1,1,0.0886981810908765,7,4,0,2,0,0,1,1,1,2,0,0,6,6,1,5,2022-01-01,120,129
+"514","req560",560,"High Complexity",3,"author10","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-02-01,115,117
+"515","req561",561,"Low Complexity",1,"author20","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-08-01,55,56
+"516","req562",562,"Low Complexity",1,"author1","owner10",4,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,75,76
+"517","req563",563,"High Complexity",3,"author24","owner9",3,"description",1,"default","Business",1,0.666666666666667,0.786911032084997,9,7.33333333333333,0.333333333333333,1.66666666666667,0.333333333333333,0.666666666666667,1,1,1,1,0.333333333333333,0.333333333333333,33,11,4,6.33333333333333,2021-08-01,133.333333333333,125
+"518","req564",564,"Low Complexity",1,"author9","owner3",2,"description",1,"Business Background","User",1,1,0.481215366045945,6,5,0.5,1.5,0,1,1,1,1,1.5,0.5,0,13,6.5,1.5,3,2021-07-01,70,71
+"519","req565",565,"Medium Complexity",2,"author5","owner6",3,"description",1,"Solution Proposal","System",1,1,0.348249283231174,6.66666666666667,5.66666666666667,1.66666666666667,0.666666666666667,1,1.33333333333333,1,1,1,1.33333333333333,0.666666666666667,0,22,7.33333333333333,2.33333333333333,4,2022-01-01,116.666666666667,95
+"520","req566",566,"Medium Complexity",2,"author13","owner10",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,90,85
+"521","req567",567,"High Complexity",3,"author10","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,125,140
+"522","req568",568,"Medium Complexity",2,"author30","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,90,79
+"523","req569",569,"Medium Complexity",2,"author5","owner10",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-08-01,90,92
+"524","req57",57,"Low Complexity",1,"author5","owner5",2,"description",1,"Business Background","(no level)",1,1,0.409906404325739,8,6.5,0.5,0.5,2,1,0.5,1,1,0.5,0,0,24,12,6,7,2022-02-01,70,91
+"525","req570",570,"Low Complexity",1,"author16","owner8",1,"description",1,"Business Requirements","(no level)",1,1,0.662350005004555,10,8,1,2,0,1,1,1,1,0,0,0,11,11,7,6,2021-11-01,70,65
+"526","req571",571,"Low Complexity",1,"author8","owner9",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,60,69
+"527","req572",572,"Medium Complexity",2,"author11","owner3",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-09-01,100,97
+"528","req573",573,"High Complexity",3,"author4","owner7",2,"description",1,"Solution Proposal","(no level)",1,1,0.325332764652558,7.5,7,1.5,1,1.5,1.5,1,1,1,0.5,0.5,0,18,9,3.5,6,2023-05-01,140,140
+"529","req574",574,"High Complexity",3,"author27","owner8",1,"description",1,"Business Requirements","System",1,1,0.110893010161817,8,6,1,0,0,1,1,1,1,2,1,0,10,10,3,5,2020-10-01,130,124
+"530","req575",575,"Low Complexity",1,"author18","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,60,69
+"531","req576",576,"Low Complexity",1,"author24","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,60,64
+"532","req577",577,"Low Complexity",1,"author16","owner6",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,60,51
+"533","req578",578,"Low Complexity",1,"author5","owner3",1,"description",1,"Business Background","System",1,1,0.395356597146019,3,3,0,1,0,1,1,1,1,0,0,0,4,4,0,2,2023-01-01,60,61
+"534","req579",579,"High Complexity",3,"author11","owner10",1,"description",1,"Business Requirements","User",1,1,0.821451551746577,11,7,0,2,1,1,1,1,1,1,1,1,15,15,8,9,2022-11-01,120,101
+"535","req58",58,"High Complexity",3,"author26","owner6",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-04-01,125,125
+"536","req580",580,"High Complexity",3,"author28","owner3",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,130,140
+"537","req581",581,"High Complexity",3,"author13","owner7",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,135,112
+"538","req582",582,"Low Complexity",1,"author25","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-04-01,60,68
+"539","req583",583,"High Complexity",3,"author23","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,120,100
+"540","req584",584,"High Complexity",3,"author21","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-12-01,125,109
+"541","req585",585,"Medium Complexity",2,"author5","owner8",2,"description",1,"Business Background","User",1,1,0.806115914718248,8,5,0,2,0.5,0,1,0.5,1,1,0,0,17,8.5,1.5,5,2024-08-01,95,89
+"542","req586",586,"Medium Complexity",2,"author14","owner7",3,"description",1,"Business Requirements","(no level)",0.666666666666667,0.666666666666667,0.385994532067949,6.66666666666667,6,0.333333333333333,0.666666666666667,1,0.666666666666667,1,1,1,1,0.333333333333333,0,23,7.66666666666667,2,5.66666666666667,2023-03-01,103.333333333333,103
+"543","req587",587,"Low Complexity",1,"author29","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-01-01,55,48
+"544","req588",588,"Low Complexity",1,"author2","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,60,71
+"545","req589",589,"Medium Complexity",2,"author11","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,95,86
+"546","req59",59,"Medium Complexity",2,"author11","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,95,100
+"547","req590",590,"High Complexity",3,"author23","owner2",3,"description",1,"default","User",1,0.666666666666667,0.366326492745429,7.33333333333333,5.33333333333333,0,1.33333333333333,1,0,1,1,1,1,0.333333333333333,0,30,10,3.66666666666667,5,2024-07-01,130,133
+"548","req591",591,"High Complexity",3,"author7","owner5",1,"description",1,"Solution Proposal","User",1,1,0.500019648112357,7,4,1,1,0,1,1,1,1,0,0,0,7,7,1,3,2022-06-01,130,119
+"549","req592",592,"Low Complexity",1,"author20","owner3",3,"description",1,"Business Requirements","User",1,1,0.33433626863795,4.66666666666667,4,0.666666666666667,1.33333333333333,0,0,1,1,1,1,0.666666666666667,0.333333333333333,19,6.33333333333333,2.66666666666667,3.66666666666667,2024-06-01,76.6666666666667,85
+"550","req593",593,"High Complexity",3,"author15","owner2",2,"description",1,"default","System",1,0.5,0.755316742579452,8,5.5,2,0.5,0.5,1,1,1,1,0,0,0,16,8,2,6,2022-07-01,145,150
+"551","req594",594,"Medium Complexity",2,"author30","owner5",1,"description",1,"Solution Proposal","Business",1,1,0.465178339509293,5,4,0,0,1,2,1,1,1,1,0,0,6,6,1,2,2023-08-01,90,93
+"552","req595",595,"Medium Complexity",2,"author5","owner5",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,95,104
+"553","req596",596,"Low Complexity",1,"author19","owner4",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-05-01,65,49
+"554","req597",597,"Low Complexity",1,"author2","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-04-01,60,67
+"555","req598",598,"High Complexity",3,"author24","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,115,126
+"556","req599",599,"High Complexity",3,"author28","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,120,110
+"557","req6",6,"Medium Complexity",2,"author18","owner8",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,100,81
+"558","req60",60,"Low Complexity",1,"author28","owner6",2,"description",1,"Solution Proposal","Business",1,1,0.240754157304764,5.5,4.5,0.5,0.5,0.5,1,1,1,1,1,0.5,0,10,5,2,3.5,2022-01-01,70,75
+"559","req600",600,"High Complexity",3,"author11","owner10",2,"description",1,"Business Background","Business",1,1,0.639394331956282,7.5,5.5,0,0.5,2.5,0,1,1,0.5,0.5,0.5,0.5,16,8,3,6,2021-07-01,125,124
+"560","req601",601,"Medium Complexity",2,"author26","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-09-01,95,103
+"561","req602",602,"Medium Complexity",2,"author25","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-01-01,85,64
+"562","req603",603,"Low Complexity",1,"author9","owner1",2,"description",1,"Solution Proposal","User",1,1,0.605389567906969,8,5.5,0.5,1,0,2,1,1,1,1,1,1,18,9,4,6.5,2023-02-01,70,75
+"563","req604",604,"Medium Complexity",2,"author13","owner2",1,"description",1,"Business Requirements","User",0,1,0.25192691734992,7,5,0,1,1,1,1,1,1,0,0,0,7,7,4,4,2024-03-01,90,82
+"564","req605",605,"Medium Complexity",2,"author18","owner9",1,"description",1,"Business Background","(no level)",1,1,0.17858449020423,7,6,0,2,1,1,1,1,1,1,1,0,9,9,3,6,2024-12-01,90,81
+"565","req606",606,"Medium Complexity",2,"author28","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-05-01,100,77
+"566","req607",607,"Medium Complexity",2,"author28","owner5",1,"description",1,"Solution Proposal","Business",0,1,0.924771321704611,8,7,3,1,0,1,1,1,1,1,1,0,11,11,4,5,2020-02-01,120,113
+"567","req608",608,"High Complexity",3,"author6","owner9",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,120,107
+"568","req609",609,"High Complexity",3,"author17","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-10-01,115,97
+"569","req61",61,"Medium Complexity",2,"author3","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,95,81
+"570","req610",610,"Medium Complexity",2,"author17","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,95,92
+"571","req611",611,"High Complexity",3,"author29","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-10-01,115,95
+"572","req612",612,"Medium Complexity",2,"author23","owner6",2,"description",1,"Business Background","System",1,1,0.529838706250302,7,4.5,0.5,0.5,0.5,0.5,1,1,1,1,0.5,0.5,15,7.5,3,3,2023-10-01,100,101
+"573","req613",613,"Low Complexity",1,"author14","owner9",1,"description",1,"Solution Proposal","User",1,1,0.718068051384762,7,6,3,2,0,0,1,1,1,2,0,0,6,6,2,2,2020-05-01,90,89
+"574","req614",614,"Medium Complexity",2,"author23","owner3",1,"description",1,"default","(no level)",1,1,0.856149963103235,7,4,0,2,0,0,1,1,1,1,0,0,10,10,4,5,2022-06-01,90,69
+"575","req615",615,"Medium Complexity",2,"author23","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,95,86
+"576","req616",616,"Low Complexity",1,"author22","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,60,66
+"577","req617",617,"High Complexity",3,"author25","owner6",2,"description",1,"Business Background","System",1,1,0.267186592682265,10,7,2,2,0.5,1,1,1,1,0,0,0,24,12,3.5,7,2021-01-01,145,140
+"578","req618",618,"Low Complexity",1,"author15","owner6",1,"description",1,"Business Requirements","(no level)",1,1,0.283122711349279,4,3,1,1,1,0,1,0,1,0,0,0,5,5,3,2,2023-07-01,70,63
+"579","req619",619,"Medium Complexity",2,"author19","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-06-01,95,96
+"580","req62",62,"Low Complexity",1,"author2","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-06-01,55,50
+"581","req620",620,"Low Complexity",1,"author3","owner5",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,65,81
+"582","req621",621,"Medium Complexity",2,"author7","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-11-01,85,76
+"583","req622",622,"Medium Complexity",2,"author26","owner1",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,95,98
+"584","req623",623,"High Complexity",3,"author15","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,120,113
+"585","req624",624,"Medium Complexity",2,"author14","owner8",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,95,80
+"586","req625",625,"High Complexity",3,"author25","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-09-01,115,105
+"587","req626",626,"Low Complexity",1,"author7","owner1",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,60,61
+"588","req627",627,"Medium Complexity",2,"author21","owner3",1,"description",1,"default","User",1,1,0.0453323149122298,8,7,1,2,0,0,1,1,1,1,1,0,8,8,3,4,2020-05-01,100,113
+"589","req628",628,"High Complexity",3,"author5","owner6",3,"description",1,"Business Requirements","(no level)",1,1,0.458384627786776,8.66666666666667,6.33333333333333,1,1.66666666666667,0,0,1,0.666666666666667,1,1,0.666666666666667,0,37,12.3333333333333,6.66666666666667,6.66666666666667,2023-10-01,140,142
+"590","req629",629,"High Complexity",3,"author8","owner2",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,125,135
+"591","req63",63,"High Complexity",3,"author27","owner2",3,"description",1,"Business Background","User",0.666666666666667,1,0.647510230230788,6,5,1.33333333333333,1,0.666666666666667,0,1,1,1,1.66666666666667,0.666666666666667,0,17,5.66666666666667,3,2.66666666666667,2022-06-01,143.333333333333,140
+"592","req630",630,"High Complexity",3,"author11","owner8",2,"description",1,"Business Requirements","User",1,1,0.646654035313986,9,8,0,0.5,1,1.5,1,1,1,0,0,0,14,7,1.5,4.5,2024-01-01,125,140
+"593","req631",631,"High Complexity",3,"author2","owner1",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,125,137
+"594","req632",632,"Medium Complexity",2,"author1","owner9",3,"description",1,"Business Requirements","User",1,1,0.495988187923407,6.66666666666667,5,0.333333333333333,1,0.333333333333333,0,1,1,1,2,0.333333333333333,0,29,9.66666666666667,3.66666666666667,6,2024-08-01,103.333333333333,102
+"595","req633",633,"Low Complexity",1,"author24","owner4",3,"description",1,"Business Background","System",1,0.666666666666667,0.216114660724998,5.33333333333333,3.33333333333333,0.333333333333333,1,0.333333333333333,0.666666666666667,1,1,1,1,0.333333333333333,0.333333333333333,19,6.33333333333333,2.66666666666667,3,2022-03-01,73.3333333333333,72
+"596","req634",634,"High Complexity",3,"author9","owner8",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-05-01,120,120
+"597","req635",635,"Medium Complexity",2,"author29","owner4",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,100,100
+"598","req636",636,"High Complexity",3,"author22","owner7",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,120,131
+"599","req637",637,"Medium Complexity",2,"author22","owner7",1,"description",1,"Solution Proposal","(no level)",1,1,0.0132643808610737,6,3,1,1,0,1,1,1,1,2,1,1,8,8,4,4,2022-07-01,100,102
+"600","req638",638,"High Complexity",3,"author14","owner1",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-04-01,120,108
+"601","req639",639,"Medium Complexity",2,"author13","owner5",1,"description",1,"Solution Proposal","(no level)",0,1,0.952828876441345,8,7,4,2,0,0,1,1,1,0,0,0,11,11,3,8,2022-02-01,130,133
+"602","req64",64,"Low Complexity",1,"author16","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,70,65
+"603","req640",640,"High Complexity",3,"author24","owner4",1,"description",1,"Business Requirements","System",1,1,0.600212126271799,10,9,2,0,1,1,1,1,1,0,0,0,10,10,0,6,2022-01-01,140,145
+"604","req641",641,"Low Complexity",1,"author10","owner2",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,65,61
+"605","req642",642,"Low Complexity",1,"author17","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,65,61
+"606","req643",643,"Medium Complexity",2,"author27","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-04-01,85,87
+"607","req644",644,"Low Complexity",1,"author8","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-04-01,55,69
+"608","req645",645,"Medium Complexity",2,"author19","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-08-01,95,100
+"609","req646",646,"Low Complexity",1,"author24","owner10",3,"description",1,"Business Background","(no level)",1,1,0.438573656448474,6.33333333333333,5,0.666666666666667,2,0,0.666666666666667,1,1,1,0.666666666666667,0,0,22,7.33333333333333,2.33333333333333,4.33333333333333,2024-02-01,76.6666666666667,65
+"610","req647",647,"High Complexity",3,"author24","owner9",2,"description",1,"Solution Proposal","System",1,1,0.928245397633873,9,7,3,2.5,1.5,1,1,1,1,0,0,0,18,9,2,7,2022-08-01,155,147
+"611","req648",648,"High Complexity",3,"author1","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-11-01,115,102
+"612","req649",649,"Medium Complexity",2,"author17","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,90,86
+"613","req65",65,"High Complexity",3,"author19","owner5",2,"description",1,"default","Business",0.5,1,0.49884830613155,11,9.5,0,1.5,1,1.5,1,1,1,1.5,0.5,0,34,17,9,8,2021-06-01,125,121
+"614","req650",650,"Medium Complexity",2,"author11","owner1",3,"description",1,"Business Requirements","System",1,1,0.486904617554198,7,4.66666666666667,1,1.33333333333333,1,0.333333333333333,1,0.666666666666667,1,0.333333333333333,0,0,19,6.33333333333333,1.33333333333333,3.33333333333333,2021-09-01,110,112
+"615","req651",651,"High Complexity",3,"author26","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-07-01,115,108
+"616","req652",652,"Low Complexity",1,"author4","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-03-01,65,60
+"617","req653",653,"Medium Complexity",2,"author22","owner2",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,95,105
+"618","req654",654,"High Complexity",3,"author5","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-04-01,115,120
+"619","req655",655,"Medium Complexity",2,"author19","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-04-01,90,95
+"620","req656",656,"Low Complexity",1,"author29","owner7",2,"description",1,"Business Background","Business",1,1,0.539639341761358,6.5,4.5,0.5,1,0.5,1,1,1,1,1,0.5,0,17,8.5,3.5,5,2021-04-01,70,87
+"621","req657",657,"Low Complexity",1,"author17","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,65,68
+"622","req658",658,"High Complexity",3,"author28","owner1",2,"description",1,"Solution Proposal","System",1,1,0.311927597038448,11,8.5,1.5,1.5,0,0,0.5,1,1,0.5,0,0,26,13,5.5,7.5,2020-12-01,140,133
+"623","req659",659,"Low Complexity",1,"author22","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-08-01,55,45
+"624","req66",66,"Medium Complexity",2,"author27","owner8",3,"description",1,"default","User",1,0.666666666666667,0.577557768439874,7,5.66666666666667,0.333333333333333,1,1,0.333333333333333,1,1,1,1,0,0,24,8,1.66666666666667,5.33333333333333,2023-11-01,103.333333333333,88
+"625","req660",660,"Low Complexity",1,"author25","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,60,63
+"626","req661",661,"Low Complexity",1,"author19","owner6",2,"description",1,"default","Business",1,1,0.792282806825824,6.5,5.5,1.5,0.5,0,1,1,1,1,1.5,1.5,0,18,9,5,6.5,2021-01-01,80,80
+"627","req662",662,"Medium Complexity",2,"author22","owner4",2,"description",1,"Business Background","System",0.5,1,0.450956906541251,9.5,8.5,2,3,1,0.5,1,1,1,1,0,0,23,11.5,4.5,7.5,2020-03-01,115,119
+"628","req663",663,"Medium Complexity",2,"author26","owner10",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-02-01,90,87
+"629","req664",664,"Low Complexity",1,"author22","owner8",2,"description",1,"Business Requirements","(no level)",1,0.5,0.276039410964586,6.5,5,1,1,1,1,1,1,1,2,1.5,0.5,16,8,5,7,2020-10-01,75,81
+"630","req665",665,"High Complexity",3,"author28","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,120,123
+"631","req666",666,"Medium Complexity",2,"author3","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,90,94
+"632","req667",667,"Medium Complexity",2,"author13","owner1",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,100,89
+"633","req668",668,"Medium Complexity",2,"author29","owner2",2,"description",1,"default","Business",1,1,0.760659752995708,7.5,6,1,0.5,1,1,1,0.5,1,1,0,0,19,9.5,3.5,5.5,2022-10-01,105,100
+"634","req669",669,"Low Complexity",1,"author19","owner1",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,65,68
+"635","req67",67,"High Complexity",3,"author17","owner10",1,"description",1,"default","Business",1,1,0.134256404591724,11,11,2,1,1,3,1,1,1,1,1,1,15,15,5,8,2020-11-01,140,134
+"636","req670",670,"Low Complexity",1,"author11","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-12-01,55,61
+"637","req671",671,"Low Complexity",1,"author12","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-05-01,55,57
+"638","req672",672,"Low Complexity",1,"author22","owner2",1,"description",1,"Business Background","(no level)",1,0,0.639524050988257,7,6,0,0,2,1,1,1,1,0,0,0,9,9,3,5,2021-09-01,60,66
+"639","req673",673,"Medium Complexity",2,"author30","owner7",1,"description",1,"Business Background","(no level)",1,1,0.665652974741533,10,9,1,2,0,0,1,1,1,2,0,0,14,14,6,8,2023-06-01,100,112
+"640","req674",674,"Medium Complexity",2,"author24","owner9",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-10-01,90,79
+"641","req675",675,"Medium Complexity",2,"author18","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-10-01,85,80
+"642","req676",676,"High Complexity",3,"author22","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,120,111
+"643","req677",677,"High Complexity",3,"author3","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-11-01,115,120
+"644","req678",678,"Low Complexity",1,"author27","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-01-01,60,68
+"645","req679",679,"Medium Complexity",2,"author9","owner5",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-01-01,100,108
+"646","req68",68,"High Complexity",3,"author9","owner1",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,130,120
+"647","req680",680,"Low Complexity",1,"author30","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,65,73
+"648","req681",681,"Medium Complexity",2,"author19","owner5",2,"description",1,"Business Requirements","User",0.5,1,0.584102738997899,6,4.5,0,1.5,0.5,0,1,1,1,0,0,0,14,7,2.5,3,2021-01-01,95,95
+"649","req682",682,"Medium Complexity",2,"author9","owner5",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,100,76
+"650","req683",683,"Medium Complexity",2,"author9","owner7",2,"description",1,"default","User",1,0,0.183958846493624,7,6,1,1,0.5,1,1,1,1,1,0.5,0,12,6,3.5,2.5,2020-06-01,105,96
+"651","req684",684,"Low Complexity",1,"author20","owner10",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-11-01,65,68
+"652","req685",685,"High Complexity",3,"author20","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-05-01,115,101
+"653","req686",686,"Low Complexity",1,"author20","owner10",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-10-01,65,74
+"654","req687",687,"High Complexity",3,"author19","owner8",4,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,135,100
+"655","req688",688,"High Complexity",3,"author20","owner9",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,120,108
+"656","req689",689,"Medium Complexity",2,"author6","owner9",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-05-01,90,77
+"657","req69",69,"Medium Complexity",2,"author25","owner1",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,95,114
+"658","req690",690,"Low Complexity",1,"author8","owner7",2,"description",1,"default","User",1,1,0.338975111139007,7,7,0.5,2.5,1,1,1,1,1,1,0,0,19,9.5,4,7.5,2020-03-01,70,59
+"659","req691",691,"Low Complexity",1,"author22","owner1",1,"description",1,"Business Background","(no level)",1,1,0.513659729855135,4,3,2,0,0,0,1,1,1,0,0,0,5,5,2,4,2023-10-01,80,88
+"660","req692",692,"High Complexity",3,"author4","owner1",1,"description",1,"Business Requirements","(no level)",1,1,0.550977617502213,9,8,0,1,1,3,1,0,1,1,0,0,10,10,4,2,2024-04-01,120,124
+"661","req693",693,"High Complexity",3,"author4","owner2",3,"description",1,"Business Requirements","System",1,1,0.545208661273743,7.66666666666667,5.66666666666667,0.333333333333333,1.66666666666667,0.333333333333333,0.333333333333333,1,1,1,0.333333333333333,0,0,25,8.33333333333333,1.66666666666667,5.66666666666667,2024-11-01,133.333333333333,107
+"662","req694",694,"Low Complexity",1,"author13","owner10",2,"description",1,"Solution Proposal","Business",1,1,0.872751038521528,5.5,4.5,1.5,0,0.5,1,1,1,1,1,0,0,11,5.5,1.5,3.5,2020-02-01,80,66
+"663","req695",695,"Medium Complexity",2,"author28","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,100,114
+"664","req696",696,"High Complexity",3,"author17","owner1",2,"description",1,"Solution Proposal","User",1,1,0.752542295958847,8.5,7.5,2,2.5,1.5,0.5,1,1,0.5,0,0,0,16,8,1,4,2023-02-01,145,155
+"665","req697",697,"Low Complexity",1,"author21","owner6",2,"description",1,"Business Requirements","Business",1,1,0.777092725387774,6.5,5,1,0.5,1,1,1,1,1,1.5,1,0,15,7.5,3.5,4,2020-10-01,75,67
+"666","req698",698,"Medium Complexity",2,"author30","owner9",2,"description",1,"Business Background","(no level)",1,1,0.821319982991554,10.5,9,0.5,0.5,0,2,1,0.5,1,1.5,1,0.5,26,13,7.5,6.5,2020-01-01,100,102
+"667","req699",699,"Low Complexity",1,"author23","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,65,73
+"668","req7",7,"Low Complexity",1,"author29","owner3",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,70,76
+"669","req70",70,"Low Complexity",1,"author25","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-10-01,55,67
+"670","req700",700,"High Complexity",3,"author5","owner8",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,130,142
+"671","req701",701,"Medium Complexity",2,"author30","owner2",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,95,106
+"672","req702",702,"Low Complexity",1,"author29","owner4",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,70,65
+"673","req703",703,"Medium Complexity",2,"author29","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-04-01,95,81
+"674","req704",704,"Low Complexity",1,"author9","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-02-01,55,44
+"675","req705",705,"Low Complexity",1,"author24","owner4",2,"description",1,"Solution Proposal","(no level)",1,1,0.590546415769495,5,4,1.5,0,0.5,0.5,1,1,1,1.5,1,0.5,10,5,3.5,3.5,2020-04-01,80,95
+"676","req706",706,"High Complexity",3,"author14","owner1",2,"description",1,"Solution Proposal","(no level)",1,1,0.622542029828764,9,8,2,1,1.5,2,1,1,1,0.5,0.5,0,20,10,3,5.5,2024-10-01,145,141
+"677","req707",707,"Medium Complexity",2,"author1","owner4",1,"description",1,"default","Business",1,1,0.23769614030607,6,6,0,1,1,0,1,1,1,0,0,0,6,6,2,6,2024-02-01,90,74
+"678","req708",708,"High Complexity",3,"author27","owner5",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,135,134
+"679","req709",709,"Medium Complexity",2,"author25","owner10",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-12-01,90,96
+"680","req71",71,"High Complexity",3,"author3","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-05-01,120,107
+"681","req710",710,"High Complexity",3,"author27","owner2",1,"description",1,"Business Requirements","Business",1,1,0.833939129952341,9,8,0,3,0,1,1,1,1,1,0,0,7,7,3,4,2023-11-01,120,118
+"682","req711",711,"Medium Complexity",2,"author13","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-11-01,85,84
+"683","req712",712,"High Complexity",3,"author2","owner6",2,"description",1,"Business Requirements","Business",1,1,0.83052127121482,5,4.5,1.5,0,0.5,1,1,1,1,1.5,1,0.5,6,3,2,1,2024-11-01,140,137
+"684","req713",713,"High Complexity",3,"author10","owner5",3,"description",1,"default","System",1,1,0.169697261182591,7.33333333333333,5.66666666666667,0.333333333333333,1,1.66666666666667,1,1,0.666666666666667,1,0.666666666666667,0,0,29,9.66666666666667,2,5.33333333333333,2022-09-01,133.333333333333,134
+"685","req714",714,"Low Complexity",1,"author12","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-08-01,55,49
+"686","req715",715,"High Complexity",3,"author23","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,120,123
+"687","req716",716,"Low Complexity",1,"author16","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,60,71
+"688","req717",717,"Medium Complexity",2,"author26","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-12-01,90,83
+"689","req718",718,"Medium Complexity",2,"author21","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-12-01,85,90
+"690","req719",719,"Low Complexity",1,"author25","owner9",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,65,67
+"691","req72",72,"Medium Complexity",2,"author22","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,90,81
+"692","req720",720,"Medium Complexity",2,"author28","owner7",4,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,105,96
+"693","req721",721,"Medium Complexity",2,"author18","owner4",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-01-01,100,104
+"694","req722",722,"High Complexity",3,"author11","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-04-01,125,123
+"695","req723",723,"Medium Complexity",2,"author17","owner2",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-01-01,95,103
+"696","req724",724,"Low Complexity",1,"author1","owner4",1,"description",1,"Business Background","(no level)",1,1,0.863936073612422,7,5,1,3,0,2,1,1,1,0,0,0,8,8,1,5,2020-01-01,70,72
+"697","req725",725,"Low Complexity",1,"author16","owner3",1,"description",1,"Solution Proposal","System",1,1,0.837919590529054,6,5,1,0,0,0,1,1,1,0,0,0,6,6,2,3,2022-11-01,70,75
+"698","req726",726,"High Complexity",3,"author8","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-10-01,115,113
+"699","req727",727,"Medium Complexity",2,"author16","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,90,92
+"700","req728",728,"Medium Complexity",2,"author28","owner3",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-01-01,90,96
+"701","req729",729,"Low Complexity",1,"author26","owner3",1,"description",1,"default","System",1,0,0.137324762297794,4,3,1,0,0,0,1,1,1,1,0,0,5,5,3,3,2024-05-01,70,65
+"702","req73",73,"Low Complexity",1,"author29","owner1",2,"description",1,"Solution Proposal","Business",1,1,0.332815682515502,4.5,3.5,0.5,0.5,0,0.5,1,1,1,0.5,0,0,12,6,3,4,2022-07-01,70,79
+"703","req730",730,"Low Complexity",1,"author14","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,60,71
+"704","req731",731,"Low Complexity",1,"author23","owner10",2,"description",1,"Business Requirements","Business",1,1,0.834511506021954,5,4,0.5,0.5,1.5,0.5,1,1,1,1.5,1.5,0,12,6,1.5,4,2024-09-01,70,72
+"705","req732",732,"Low Complexity",1,"author23","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-03-01,55,49
+"706","req733",733,"Low Complexity",1,"author10","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-11-01,55,54
+"707","req734",734,"High Complexity",3,"author29","owner5",2,"description",1,"Business Background","(no level)",1,1,0.400894783088006,7,7,1.5,2.5,0,0,1,1,1,0.5,0.5,0.5,21,10.5,4.5,8,2022-04-01,140,142
+"708","req735",735,"High Complexity",3,"author1","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,120,127
+"709","req736",736,"Medium Complexity",2,"author7","owner1",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,100,101
+"710","req737",737,"High Complexity",3,"author2","owner5",2,"description",1,"Business Background","System",1,1,0.329091426450759,9,7,1.5,1,0,3,0.5,1,1,0.5,0,0,19,9.5,3,6.5,2023-02-01,140,151
+"711","req738",738,"High Complexity",3,"author28","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,125,123
+"712","req739",739,"Medium Complexity",2,"author1","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,90,82
+"713","req74",74,"Low Complexity",1,"author5","owner9",2,"description",1,"Business Requirements","Business",1,1,0.573320185649209,5,4,0,1.5,0,1.5,1,1,1,0,0,0,11,5.5,1.5,4.5,2024-09-01,65,73
+"714","req740",740,"Medium Complexity",2,"author18","owner10",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-10-01,90,87
+"715","req741",741,"High Complexity",3,"author9","owner1",3,"description",1,"default","Business",1,0.666666666666667,0.557810530920202,8.66666666666667,8,0.666666666666667,1.33333333333333,1,0.333333333333333,1,1,1,1,0,0,33,11,4.33333333333333,5.33333333333333,2021-06-01,136.666666666667,158
+"716","req742",742,"Low Complexity",1,"author7","owner7",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,70,84
+"717","req743",743,"Medium Complexity",2,"author5","owner4",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,100,100
+"718","req744",744,"Medium Complexity",2,"author21","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-12-01,85,74
+"719","req745",745,"High Complexity",3,"author11","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,130,136
+"720","req746",746,"Medium Complexity",2,"author11","owner7",2,"description",1,"Business Background","(no level)",1,1,0.332504789810628,8.5,6,0,1.5,1,1,1,1,1,0.5,0,0,23,11.5,4,8,2020-12-01,95,110
+"721","req747",747,"Medium Complexity",2,"author5","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-07-01,85,97
+"722","req748",748,"Low Complexity",1,"author15","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,60,53
+"723","req749",749,"Low Complexity",1,"author19","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,65,61
+"724","req75",75,"High Complexity",3,"author26","owner5",2,"description",1,"default","User",1,1,0.341187871876172,9.5,8,1,0.5,2,1,1,1,1,0.5,0.5,0,22,11,2.5,6,2024-11-01,135,158
+"725","req750",750,"High Complexity",3,"author20","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-06-01,115,117
+"726","req751",751,"High Complexity",3,"author10","owner3",1,"description",1,"default","System",1,1,0.762525824597105,8,6,0,3,1,2,1,1,1,2,1,0,12,12,4,6,2020-03-01,120,109
+"727","req752",752,"Low Complexity",1,"author6","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-01-01,55,43
+"728","req753",753,"Medium Complexity",2,"author21","owner1",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-03-01,95,103
+"729","req754",754,"Medium Complexity",2,"author24","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,90,95
+"730","req755",755,"High Complexity",3,"author4","owner3",1,"description",1,"Business Background","System",1,1,0.476199226919562,6,6,0,1,2,0,1,1,1,0,0,0,5,5,1,5,2020-04-01,120,138
+"731","req756",756,"Low Complexity",1,"author6","owner4",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-03-01,65,55
+"732","req757",757,"Medium Complexity",2,"author30","owner2",2,"description",1,"default","(no level)",1,1,0.598389808787033,6.5,5,1,0.5,1,0,1,1,1,0.5,0,0,15,7.5,2.5,3.5,2020-05-01,105,126
+"733","req758",758,"High Complexity",3,"author26","owner7",1,"description",1,"default","User",1,1,0.671883076429367,9,7,0,1,0,2,1,1,1,0,0,0,7,7,3,3,2021-08-01,120,151
+"734","req759",759,"Medium Complexity",2,"author14","owner2",4,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,105,116
+"735","req76",76,"High Complexity",3,"author1","owner2",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,120,137
+"736","req760",760,"Medium Complexity",2,"author17","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,95,92
+"737","req761",761,"Low Complexity",1,"author11","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,60,65
+"738","req762",762,"Medium Complexity",2,"author7","owner9",1,"description",1,"Solution Proposal","User",1,1,0.286709843436256,7,7,4,0,1,0,1,1,1,1,0,0,5,5,1,3,2023-10-01,130,155
+"739","req763",763,"High Complexity",3,"author24","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-09-01,125,118
+"740","req764",764,"High Complexity",3,"author16","owner9",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,130,135
+"741","req765",765,"High Complexity",3,"author22","owner9",2,"description",1,"Business Requirements","(no level)",1,0.5,0.752311908290721,7.5,7,2,1.5,1.5,1.5,1,1,1,2,1,0,20,10,5,3,2020-04-01,145,136
+"742","req766",766,"High Complexity",3,"author11","owner5",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,120,102
+"743","req767",767,"Low Complexity",1,"author17","owner2",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,60,70
+"744","req768",768,"Medium Complexity",2,"author21","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,90,74
+"745","req769",769,"High Complexity",3,"author9","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,120,101
+"746","req77",77,"Low Complexity",1,"author3","owner4",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,70,54
+"747","req770",770,"High Complexity",3,"author18","owner3",2,"description",1,"default","Business",1,1,0.6670101727359,7,4.5,1,0,0,0.5,1,1,1,1.5,1,0,17,8.5,5,6.5,2023-10-01,135,137
+"748","req771",771,"High Complexity",3,"author26","owner5",3,"description",1,"Solution Proposal","Business",1,0.666666666666667,0.662293827005972,7.66666666666667,5.66666666666667,1,1.33333333333333,0.333333333333333,0.666666666666667,1,1,1,1,0.666666666666667,0,25,8.33333333333333,2.66666666666667,6,2021-01-01,140,136
+"749","req772",772,"Medium Complexity",2,"author3","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,90,86
+"750","req773",773,"Medium Complexity",2,"author7","owner10",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,95,98
+"751","req774",774,"Low Complexity",1,"author4","owner1",4,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-06-01,75,62
+"752","req775",775,"High Complexity",3,"author6","owner10",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,130,116
+"753","req776",776,"Medium Complexity",2,"author13","owner4",1,"description",1,"Solution Proposal","User",1,0,0.884741480462253,9,7,0,1,0,0,1,1,0,0,0,0,10,10,4,5,2023-08-01,90,98
+"754","req777",777,"Medium Complexity",2,"author1","owner9",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-05-01,95,78
+"755","req778",778,"High Complexity",3,"author11","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-04-01,115,116
+"756","req779",779,"Medium Complexity",2,"author19","owner7",2,"description",1,"Solution Proposal","(no level)",1,1,0.234528383356519,7.5,6.5,1.5,0.5,0,1.5,1,1,1,1,0.5,0,16,8,3.5,4.5,2024-08-01,110,122
+"757","req78",78,"High Complexity",3,"author1","owner3",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,125,111
+"758","req780",780,"Low Complexity",1,"author12","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-10-01,55,60
+"759","req781",781,"Low Complexity",1,"author23","owner1",1,"description",1,"Solution Proposal","(no level)",1,1,0.53408456617035,7,4,2,0,0,1,1,1,1,1,0,0,7,7,1,3,2022-06-01,80,77
+"760","req782",782,"Medium Complexity",2,"author22","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-03-01,85,76
+"761","req783",783,"Medium Complexity",2,"author7","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-04-01,85,86
+"762","req784",784,"Low Complexity",1,"author20","owner7",1,"description",1,"Business Background","(no level)",1,1,0.249908783705905,7,6,1,3,0,0,1,1,1,2,2,0,8,8,5,7,2021-05-01,70,65
+"763","req785",785,"High Complexity",3,"author22","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,120,112
+"764","req786",786,"Medium Complexity",2,"author10","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-12-01,85,74
+"765","req787",787,"Medium Complexity",2,"author9","owner2",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,95,72
+"766","req788",788,"High Complexity",3,"author10","owner3",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-05-01,120,91
+"767","req789",789,"Low Complexity",1,"author27","owner5",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-02-01,65,85
+"768","req79",79,"Medium Complexity",2,"author15","owner9",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-02-01,100,92
+"769","req790",790,"Low Complexity",1,"author28","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,60,61
+"770","req791",791,"High Complexity",3,"author13","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-11-01,125,118
+"771","req792",792,"Low Complexity",1,"author8","owner10",1,"description",1,"default","System",1,1,0.751892495201901,6,6,1,2,1,0,1,1,1,2,0,0,7,7,2,4,2021-04-01,70,69
+"772","req793",793,"Low Complexity",1,"author8","owner5",2,"description",1,"Business Requirements","User",1,1,0.571175714489073,7.5,6,0,1,0.5,1,1,1,1,0,0,0,18,9,1.5,4.5,2024-11-01,65,64
+"773","req794",794,"Medium Complexity",2,"author10","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-07-01,85,80
+"774","req795",795,"Medium Complexity",2,"author29","owner8",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,90,86
+"775","req796",796,"High Complexity",3,"author16","owner4",1,"description",1,"Business Requirements","System",1,1,0.736196662997827,11,8,0,0,0,2,1,1,1,1,0,0,7,7,1,5,2024-12-01,120,124
+"776","req797",797,"High Complexity",3,"author29","owner9",4,"description",1,"Solution Proposal","Business",0.75,0.75,0.645955640007742,6.5,5.5,0.75,1,0.5,0.25,1,1,1,1,0.75,0,29,7.25,2.25,4.5,2021-10-01,142.5,143
+"777","req798",798,"High Complexity",3,"author7","owner2",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,125,112
+"778","req799",799,"Medium Complexity",2,"author5","owner1",4,"description",1,"Business Background","Business",0.75,1,0.238345868478063,6.5,6,2.5,0.75,0.25,1.25,1,1,1,1,0.25,0.25,33,8.25,3.5,5,2020-09-01,130,145
+"779","req8",8,"Low Complexity",1,"author26","owner5",4,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,75,77
+"780","req80",80,"High Complexity",3,"author23","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-05-01,115,120
+"781","req800",800,"Medium Complexity",2,"author3","owner4",1,"description",1,"Solution Proposal","User",1,1,0.902926339302212,5,3,2,0,0,0,1,1,1,1,1,0,8,8,4,4,2020-07-01,110,120
+"782","req801",801,"Medium Complexity",2,"author21","owner10",3,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-03-01,100,104
+"783","req802",802,"Medium Complexity",2,"author5","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,95,89
+"784","req803",803,"Medium Complexity",2,"author30","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-06-01,90,88
+"785","req804",804,"Low Complexity",1,"author28","owner10",1,"description",1,"default","System",0,1,0.157420661998913,9,6,2,1,0,1,1,1,1,0,0,0,14,14,3,10,2023-09-01,80,73
+"786","req805",805,"Low Complexity",1,"author4","owner1",2,"description",1,"Solution Proposal","(no level)",1,1,0.170673180255107,5.5,3.5,1,2,0,0.5,1,1,1,1.5,0.5,0,14,7,1.5,3,2020-05-01,75,72
+"787","req806",806,"High Complexity",3,"author1","owner3",2,"description",1,"default","System",1,1,0.620253717177548,7.5,6.5,1.5,2,0.5,0.5,1,1,1,0,0,0,16,8,1.5,4.5,2023-04-01,140,139
+"788","req807",807,"Medium Complexity",2,"author15","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-04-01,90,86
+"789","req808",808,"Low Complexity",1,"author24","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-02-01,55,55
+"790","req809",809,"Medium Complexity",2,"author7","owner1",1,"description",1,"Solution Proposal","(no level)",1,1,0.655963537516072,11,9,4,1,2,2,1,1,1,0,0,0,12,12,4,7,2020-04-01,130,117
+"791","req81",81,"Medium Complexity",2,"author22","owner10",2,"description",1,"Solution Proposal","Business",1,1,0.915899280342274,7,4,1.5,0,0,2,1,1,1,0.5,0.5,0,16,8,3,5,2024-11-01,110,107
+"792","req810",810,"Medium Complexity",2,"author7","owner2",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-04-01,95,95
+"793","req811",811,"High Complexity",3,"author12","owner5",1,"description",1,"Business Requirements","User",1,1,0.0632752827368677,8,8,2,3,0,2,1,1,1,2,2,2,10,10,8,6,2020-03-01,140,155
+"794","req812",812,"Medium Complexity",2,"author11","owner5",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,90,84
+"795","req813",813,"High Complexity",3,"author12","owner9",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,125,115
+"796","req814",814,"Medium Complexity",2,"author10","owner8",2,"description",1,"Business Requirements","User",1,0,0.628306168830022,5,5,0,0.5,1,0.5,1,1,1,0.5,0,0,12,6,0.5,5.5,2020-02-01,95,92
+"797","req815",815,"Medium Complexity",2,"author6","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-08-01,85,84
+"798","req816",816,"Medium Complexity",2,"author12","owner6",4,"description",1,"Business Requirements","User",1,0.75,0.327079169917852,8,6.75,0.5,1.5,0.75,1,1,1,1,0.5,0.25,0,36,9,2.25,5.25,2022-10-01,110,82
+"799","req817",817,"Low Complexity",1,"author13","owner9",1,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,60,57
+"800","req818",818,"High Complexity",3,"author15","owner6",1,"description",1,"default","Business",1,1,0.876031434861943,6,4,0,4,0,1,1,1,1,1,1,0,6,6,4,2,2022-02-01,120,131
+"801","req819",819,"Medium Complexity",2,"author21","owner3",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,95,97
+"802","req82",82,"Medium Complexity",2,"author24","owner3",4,"description",1,"Business Requirements","(no level)",1,1,0.545496261736844,6.5,4.5,0.5,1,0.75,0.5,1,1,0.75,0.5,0.25,0,31,7.75,2.5,4.25,2022-11-01,110,102
+"803","req820",820,"Medium Complexity",2,"author26","owner6",2,"description",1,"Business Requirements","System",0.5,1,0.363487677881494,7,5.5,2,1,1.5,1,1,1,1,0.5,0.5,0,14,7,3.5,5,2021-06-01,115,120
+"804","req821",821,"Medium Complexity",2,"author1","owner1",4,"description",1,"Solution Proposal","System",1,0.75,0.546855530119501,6.5,5.5,1,0.25,0.25,0.75,1,0.75,1,0.25,0.25,0,28,7,3.25,3,2020-11-01,115,115
+"805","req822",822,"High Complexity",3,"author21","owner7",1,"description",1,"Business Requirements","System",1,1,0.0535220820456743,6,5,1,1,0,2,1,1,1,1,1,1,7,7,4,4,2021-03-01,130,150
+"806","req823",823,"Medium Complexity",2,"author14","owner6",1,"description",1,"Solution Proposal","User",1,1,0.616116135381162,5,3,3,0,0,0,1,1,1,1,0,0,5,5,1,3,2022-11-01,120,128
+"807","req824",824,"Medium Complexity",2,"author17","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,95,93
+"808","req825",825,"Low Complexity",1,"author29","owner10",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,65,55
+"809","req826",826,"High Complexity",3,"author29","owner8",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,120,113
+"810","req827",827,"Medium Complexity",2,"author4","owner8",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-03-01,100,96
+"811","req828",828,"High Complexity",3,"author25","owner10",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-05-01,120,119
+"812","req829",829,"Low Complexity",1,"author28","owner10",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-09-01,65,51
+"813","req83",83,"Low Complexity",1,"author22","owner7",3,"description",1,"default","System",1,1,0.617195485703026,7,5.66666666666667,0.666666666666667,0.666666666666667,1,0.333333333333333,1,1,1,1,0.333333333333333,0,20,6.66666666666667,1.33333333333333,3.66666666666667,2023-09-01,76.6666666666667,85
+"814","req830",830,"Medium Complexity",2,"author4","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,90,86
+"815","req831",831,"Medium Complexity",2,"author23","owner6",3,"description",1,"default","(no level)",1,1,0.500128055767466,6.33333333333333,5,0.333333333333333,0.333333333333333,0.333333333333333,1.33333333333333,1,1,1,0.333333333333333,0,0,21,7,1.66666666666667,5.33333333333333,2022-04-01,103.333333333333,101
+"816","req832",832,"Low Complexity",1,"author9","owner2",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,65,65
+"817","req833",833,"Low Complexity",1,"author18","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-10-01,65,61
+"818","req834",834,"Medium Complexity",2,"author9","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-04-01,85,85
+"819","req835",835,"High Complexity",3,"author4","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-02-01,115,107
+"820","req836",836,"High Complexity",3,"author28","owner9",1,"description",1,"Solution Proposal","Business",1,0,0.150467197876424,7,5,3,1,1,2,1,1,1,0,0,0,4,4,1,2,2022-04-01,150,151
+"821","req837",837,"Medium Complexity",2,"author1","owner4",2,"description",1,"Business Background","User",1,1,0.522588954423554,9.5,9,1,1,0.5,1,1,1,1,2,1.5,0,22,11,6,6,2023-07-01,105,104
+"822","req838",838,"Medium Complexity",2,"author27","owner3",1,"description",1,"Business Requirements","User",0,1,0.997184233274311,8,3,0,1,1,1,1,1,1,1,1,0,10,10,2,8,2023-05-01,90,98
+"823","req839",839,"Medium Complexity",2,"author10","owner10",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,95,112
+"824","req84",84,"Medium Complexity",2,"author6","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-10-01,85,91
+"825","req840",840,"Low Complexity",1,"author1","owner1",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,65,68
+"826","req841",841,"Medium Complexity",2,"author29","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,90,95
+"827","req842",842,"Medium Complexity",2,"author27","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-12-01,90,97
+"828","req843",843,"Low Complexity",1,"author21","owner7",1,"description",1,"default","Business",0,1,0.788120953831822,6,4,1,0,0,2,0,1,1,0,0,0,7,7,3,4,2022-08-01,70,65
+"829","req844",844,"Medium Complexity",2,"author11","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,90,91
+"830","req845",845,"Low Complexity",1,"author25","owner2",2,"description",1,"Business Requirements","(no level)",1,1,0.234473537304438,6,5,0,0,0,0.5,1,1,1,1,0,0,12,6,2,3.5,2021-02-01,65,57
+"831","req846",846,"Low Complexity",1,"author2","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-06-01,65,64
+"832","req847",847,"Medium Complexity",2,"author7","owner7",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,90,79
+"833","req848",848,"Low Complexity",1,"author21","owner9",3,"description",1,"default","User",1,0.666666666666667,0.444498280140882,4.33333333333333,4,1,0.333333333333333,0.333333333333333,0.666666666666667,0.666666666666667,1,1,0.333333333333333,0.333333333333333,0,15,5,1,2.33333333333333,2022-02-01,80,76
+"834","req849",849,"Medium Complexity",2,"author13","owner6",2,"description",1,"Solution Proposal","User",1,1,0.834284415468574,6,4.5,3,0.5,0,1,0.5,1,1,0.5,0.5,0.5,14,7,2.5,4.5,2023-11-01,125,105
+"835","req85",85,"High Complexity",3,"author13","owner3",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,120,122
+"836","req850",850,"High Complexity",3,"author29","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,125,133
+"837","req851",851,"Medium Complexity",2,"author7","owner3",2,"description",1,"Solution Proposal","Business",1,1,0.823060071095824,7,6,2.5,1.5,0.5,1,1,1,1,1.5,0.5,0,17,8.5,5.5,3.5,2020-09-01,120,108
+"838","req852",852,"Low Complexity",1,"author23","owner2",2,"description",1,"Business Requirements","System",1,1,0.487706737592816,4,3,1,0,0.5,0.5,1,1,1,0.5,0.5,0.5,12,6,1.5,3.5,2022-01-01,75,70
+"839","req853",853,"Low Complexity",1,"author7","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-04-01,55,68
+"840","req854",854,"High Complexity",3,"author5","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-03-01,115,123
+"841","req855",855,"Medium Complexity",2,"author27","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-06-01,85,91
+"842","req856",856,"High Complexity",3,"author5","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-03-01,115,114
+"843","req857",857,"Medium Complexity",2,"author23","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,95,89
+"844","req858",858,"Low Complexity",1,"author13","owner3",2,"description",1,"Solution Proposal","System",1,1,0.469990423647687,5.5,5,1.5,1.5,1,1,1,1,1,0.5,0,0,13,6.5,3,5,2024-03-01,80,99
+"845","req859",859,"High Complexity",3,"author3","owner1",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,120,114
+"846","req86",86,"High Complexity",3,"author29","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-03-01,115,122
+"847","req860",860,"High Complexity",3,"author26","owner7",1,"description",1,"Business Background","System",1,1,0.402516171801835,6,4,0,1,0,0,1,1,1,0,0,0,8,8,2,4,2023-03-01,120,123
+"848","req861",861,"High Complexity",3,"author25","owner1",1,"description",1,"default","Business",1,1,0.236168551491573,6,5,1,0,0,1,1,1,1,2,2,0,5,5,3,2,2023-06-01,130,142
+"849","req862",862,"Low Complexity",1,"author6","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-01-01,55,56
+"850","req863",863,"Medium Complexity",2,"author25","owner8",1,"description",1,"Business Background","User",1,0,0.202928893268108,8,6,1,0,0,3,1,1,1,1,0,0,12,12,3,7,2024-07-01,100,100
+"851","req864",864,"Medium Complexity",2,"author18","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,95,106
+"852","req865",865,"Low Complexity",1,"author16","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-01-01,65,75
+"853","req866",866,"Medium Complexity",2,"author29","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-05-01,95,88
+"854","req867",867,"Low Complexity",1,"author16","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,65,69
+"855","req868",868,"Low Complexity",1,"author26","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-06-01,60,60
+"856","req869",869,"Medium Complexity",2,"author11","owner9",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,95,87
+"857","req87",87,"Medium Complexity",2,"author21","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-05-01,95,102
+"858","req870",870,"Medium Complexity",2,"author4","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-06-01,85,74
+"859","req871",871,"Low Complexity",1,"author21","owner4",1,"description",1,"default","User",1,1,0.253220131155103,8,8,1,1,0,0,1,1,1,1,0,0,9,9,6,4,2021-06-01,70,76
+"860","req872",872,"Low Complexity",1,"author7","owner1",2,"description",1,"Solution Proposal","User",1,1,0.426922711892985,6,5,1.5,1.5,0,1,1,1,1,1,1,0,18,9,4,6,2020-01-01,80,74
+"861","req873",873,"High Complexity",3,"author3","owner7",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-04-01,130,118
+"862","req874",874,"Medium Complexity",2,"author6","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-03-01,85,92
+"863","req875",875,"Low Complexity",1,"author17","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-02-01,55,53
+"864","req876",876,"High Complexity",3,"author23","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-11-01,115,101
+"865","req877",877,"High Complexity",3,"author12","owner10",2,"description",1,"Business Requirements","(no level)",1,1,0.803656752570532,9.5,7.5,0,2,1,0.5,1,1,1,1,1,0,23,11.5,6.5,5.5,2024-11-01,125,120
+"866","req878",878,"Medium Complexity",2,"author11","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-11-01,85,91
+"867","req879",879,"High Complexity",3,"author16","owner7",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-02-01,120,102
+"868","req88",88,"Low Complexity",1,"author1","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,60,54
+"869","req880",880,"High Complexity",3,"author28","owner3",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,125,129
+"870","req881",881,"High Complexity",3,"author8","owner1",1,"description",1,"default","User",1,1,0.726985895773396,7,2,0,0,0,0,1,1,1,1,1,0,10,10,5,7,2020-12-01,120,127
+"871","req882",882,"Low Complexity",1,"author13","owner5",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-08-01,60,62
+"872","req883",883,"Low Complexity",1,"author28","owner5",2,"description",1,"default","Business",0.5,1,0.726241680211388,7,4.5,0.5,1.5,0.5,0.5,1,1,1,1,1,0,17,8.5,4,5.5,2022-08-01,70,53
+"873","req884",884,"Low Complexity",1,"author20","owner8",2,"description",1,"Business Requirements","(no level)",1,1,0.901771663920954,6.5,5,1,0,0,0.5,1,1,1,1,1,1,17,8.5,6.5,2.5,2021-09-01,75,70
+"874","req885",885,"High Complexity",3,"author16","owner7",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-04-01,120,116
+"875","req886",886,"Medium Complexity",2,"author17","owner8",1,"description",1,"Solution Proposal","(no level)",1,1,0.0268204791937023,8,7,2,1,1,1,1,1,1,0,0,0,12,12,0,6,2024-03-01,110,102
+"876","req887",887,"Medium Complexity",2,"author22","owner10",2,"description",1,"default","(no level)",0.5,1,0.352858023019508,4.5,4,0.5,0.5,0.5,0,1,1,1,0.5,0,0,12,6,1.5,4,2020-11-01,100,101
+"877","req888",888,"Medium Complexity",2,"author13","owner5",1,"description",1,"Business Requirements","Business",1,1,0.801306217908859,8,3,1,1,1,0,1,1,1,0,0,0,7,7,4,1,2024-09-01,100,90
+"878","req889",889,"High Complexity",3,"author8","owner9",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,120,142
+"879","req89",89,"High Complexity",3,"author19","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-11-01,115,93
+"880","req890",890,"Low Complexity",1,"author1","owner9",1,"description",1,"Business Background","System",1,1,0.0733709558844566,7,6,0,1,0,2,1,1,1,1,1,0,6,6,3,1,2022-08-01,60,59
+"881","req891",891,"Low Complexity",1,"author4","owner10",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-02-01,65,75
+"882","req892",892,"Medium Complexity",2,"author10","owner6",2,"description",1,"Business Background","(no level)",1,0.5,0.560758453793823,7,5.5,0.5,0.5,1,1,1,1,1,1.5,1.5,0.5,10,5,2.5,2,2023-12-01,100,90
+"883","req893",893,"High Complexity",3,"author14","owner7",3,"description",1,"Solution Proposal","(no level)",1,0.666666666666667,0.626143763307482,7.33333333333333,6,0.333333333333333,1.66666666666667,0.333333333333333,0.333333333333333,1,1,1,1.33333333333333,0.333333333333333,0.333333333333333,34,11.3333333333333,3.66666666666667,5.66666666666667,2020-04-01,133.333333333333,124
+"884","req894",894,"Medium Complexity",2,"author28","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,85,79
+"885","req895",895,"High Complexity",3,"author28","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-10-01,115,111
+"886","req896",896,"High Complexity",3,"author21","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,125,152
+"887","req897",897,"High Complexity",3,"author16","owner1",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-08-01,130,135
+"888","req898",898,"Low Complexity",1,"author12","owner7",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-09-01,60,51
+"889","req899",899,"Medium Complexity",2,"author19","owner3",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,100,109
+"890","req9",9,"Low Complexity",1,"author22","owner1",2,"description",1,"Business Requirements","User",1,1,0.0910019137663765,6.5,5.5,1,1.5,0.5,0.5,1,1,1,1,0.5,0,18,9,4.5,7.5,2024-09-01,75,78
+"891","req90",90,"Low Complexity",1,"author17","owner8",2,"description",1,"Solution Proposal","System",1,0.5,0.422167168580927,6.5,5,1,1,0.5,0,0.5,1,1,0,0,0,16,8,0.5,4.5,2024-02-01,75,86
+"892","req900",900,"Low Complexity",1,"author27","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-11-01,55,60
+"893","req901",901,"Low Complexity",1,"author22","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-12-01,55,44
+"894","req902",902,"High Complexity",3,"author13","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-09-01,115,122
+"895","req903",903,"High Complexity",3,"author13","owner6",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,120,113
+"896","req904",904,"Medium Complexity",2,"author27","owner2",2,"description",1,"Business Requirements","(no level)",1,1,0.784034485928714,7.5,5,1,0.5,0.5,1,1,1,1,0.5,0.5,0,19,9.5,4.5,5,2020-06-01,105,95
+"897","req905",905,"High Complexity",3,"author21","owner3",2,"description",1,"Business Requirements","Business",0.5,1,0.775539589347318,9,7,1.5,1.5,1,0.5,1,1,1,1,0,0,22,11,2,5.5,2024-12-01,140,126
+"898","req906",906,"Low Complexity",1,"author7","owner9",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,60,53
+"899","req907",907,"Low Complexity",1,"author21","owner5",1,"description",1,"Business Requirements","(no level)",1,1,0.336384914349765,5,4,1,2,0,1,1,1,0,0,0,0,7,7,1,4,2022-05-01,70,63
+"900","req908",908,"Low Complexity",1,"author8","owner5",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-12-01,65,78
+"901","req909",909,"Low Complexity",1,"author1","owner4",3,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-02-01,70,76
+"902","req91",91,"High Complexity",3,"author1","owner5",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-07-01,120,105
+"903","req910",910,"Low Complexity",1,"author4","owner2",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-06-01,70,66
+"904","req911",911,"Low Complexity",1,"author29","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,60,62
+"905","req912",912,"Low Complexity",1,"author15","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-04-01,55,50
+"906","req913",913,"Medium Complexity",2,"author21","owner7",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,95,87
+"907","req914",914,"Low Complexity",1,"author23","owner3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-02-01,55,56
+"908","req915",915,"Medium Complexity",2,"author7","owner2",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-12-01,95,89
+"909","req916",916,"Low Complexity",1,"author23","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-01-01,65,67
+"910","req917",917,"Low Complexity",1,"author15","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-03-01,55,59
+"911","req918",918,"High Complexity",3,"author24","owner5",1,"description",1,"Solution Proposal","System",1,1,0.730499868048355,10,9,5,0,2,1,1,1,1,1,1,1,9,9,7,6,2020-11-01,170,170
+"912","req919",919,"Low Complexity",1,"author5","owner4",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-06-01,65,65
+"913","req92",92,"Low Complexity",1,"author6","owner5",1,"description",1,"default","System",1,1,0.550894605694339,5,3,0,0,0,1,1,1,1,1,1,0,6,6,5,3,2021-12-01,60,61
+"914","req920",920,"Low Complexity",1,"author29","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,65,76
+"915","req921",921,"Low Complexity",1,"author12","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-09-01,55,53
+"916","req922",922,"High Complexity",3,"author23","owner5",1,"description",1,"default","(no level)",0,1,0.390766277676448,10,7,1,3,0,0,1,1,1,0,0,0,15,15,5,4,2022-03-01,130,138
+"917","req923",923,"Medium Complexity",2,"author9","owner1",4,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-07-01,105,110
+"918","req924",924,"Medium Complexity",2,"author18","owner8",1,"description",1,"Business Background","Business",1,1,0.861273237038404,8,8,3,3,1,0,1,1,1,0,0,0,7,7,2,6,2024-09-01,120,124
+"919","req925",925,"Medium Complexity",2,"author15","owner3",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,90,115
+"920","req926",926,"Medium Complexity",2,"author8","owner1",1,"description",1,"default","System",1,1,0.35651496401988,7,6,0,0,1,0,1,1,1,0,0,0,9,9,2,5,2022-06-01,90,84
+"921","req927",927,"Low Complexity",1,"author24","owner3",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-11-01,60,66
+"922","req928",928,"High Complexity",3,"author8","owner9",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-11-01,130,162
+"923","req929",929,"High Complexity",3,"author26","owner7",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-01-01,130,118
+"924","req93",93,"Medium Complexity",2,"author22","owner7",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,95,104
+"925","req930",930,"High Complexity",3,"author28","owner9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-02-01,115,109
+"926","req931",931,"Low Complexity",1,"author21","owner8",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,65,66
+"927","req932",932,"Medium Complexity",2,"author5","owner5",3,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,100,119
+"928","req933",933,"Medium Complexity",2,"author24","owner9",3,"description",1,"Business Requirements","(no level)",1,1,0.710263827660431,8,7,2,1.66666666666667,1.66666666666667,0.333333333333333,1,1,1,0.333333333333333,0.333333333333333,0.333333333333333,27,9,3,4.66666666666667,2024-09-01,120,126
+"929","req934",934,"High Complexity",3,"author3","owner9",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-05-01,125,95
+"930","req935",935,"Low Complexity",1,"author6","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-09-01,55,58
+"931","req936",936,"Low Complexity",1,"author2","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,55,54
+"932","req937",937,"High Complexity",3,"author7","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-09-01,115,98
+"933","req938",938,"Medium Complexity",2,"author24","owner3",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-09-01,90,92
+"934","req939",939,"Medium Complexity",2,"author8","owner2",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-12-01,95,90
+"935","req94",94,"Medium Complexity",2,"author26","owner2",3,"description",1,"Solution Proposal","(no level)",1,1,0.636067991998667,6.33333333333333,6,2,1.33333333333333,1,0.666666666666667,1,1,1,0.666666666666667,0,0,24,8,2,5.66666666666667,2024-09-01,120,123
+"936","req940",940,"Medium Complexity",2,"author4","owner1",2,"description",1,"Solution Proposal","(no level)",1,1,0.21599056199193,6,4.5,0,0.5,0,0.5,1,1,1,0,0,0,14,7,2.5,3.5,2021-01-01,95,86
+"937","req941",941,"Medium Complexity",2,"author7","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-04-01,85,90
+"938","req942",942,"High Complexity",3,"author12","owner2",2,"description",1,"Business Background","(no level)",0.5,0.5,0.576236534514465,9.5,7.5,2.5,2,0.5,2,1,1,1,1.5,0,0,23,11.5,2.5,6,2021-09-01,150,148
+"939","req943",943,"Low Complexity",1,"author5","owner3",2,"description",0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-08-01,65,55
+"940","req944",944,"Medium Complexity",2,"author4","owner8",3,"description",1,"Solution Proposal","Business",0.666666666666667,1,0.42897634433272,8.66666666666667,8,1.66666666666667,1,0.333333333333333,1.33333333333333,1,1,1,0.666666666666667,0,0,31,10.3333333333333,3.33333333333333,5.66666666666667,2021-08-01,116.666666666667,115
+"941","req945",945,"High Complexity",3,"author12","owner9",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-11-01,125,129
+"942","req946",946,"High Complexity",3,"author25","owner2",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-09-01,130,137
+"943","req947",947,"High Complexity",3,"author28","owner10",1,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-11-01,120,123
+"944","req948",948,"Medium Complexity",2,"author18","owner7",2,"user story",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-10-01,95,88
+"945","req949",949,"High Complexity",3,"author16","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-03-01,115,126
+"946","req95",95,"Low Complexity",1,"author9","owner2",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-08-01,65,64
+"947","req950",950,"High Complexity",3,"author21","owner8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-02-01,115,112
+"948","req951",951,"Medium Complexity",2,"author8","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-07-01,85,85
+"949","req952",952,"Low Complexity",1,"author10","owner6",1,"description",1,"default","Business",1,1,0.391335239633918,3,2,0,0,0,1,1,1,1,1,1,0,3,3,0,2,2022-08-01,60,45
+"950","req953",953,"Medium Complexity",2,"author11","owner2",3,"description",1,"Solution Proposal","System",1,1,0.674985385189454,8.33333333333333,6,2.33333333333333,1,0,2,1,1,1,1,0.666666666666667,0,28,9.33333333333333,3.66666666666667,7.33333333333333,2020-05-01,123.333333333333,125
+"951","req954",954,"High Complexity",3,"author2","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-10-01,115,121
+"952","req955",955,"High Complexity",3,"author6","owner4",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,120,118
+"953","req956",956,"Low Complexity",1,"author21","owner6",2,"description",1,"Business Background","System",1,1,0.0213997296523303,7,6,2.5,1,0,0.5,1,1,1,0.5,0.5,0,20,10,4,6.5,2024-04-01,90,98
+"954","req957",957,"Low Complexity",1,"author4","owner5",1,"description",1,"Business Background","User",1,1,0.989726295229048,8,7,0,2,1,2,1,1,1,1,1,0,11,11,7,4,2021-12-01,60,54
+"955","req958",958,"High Complexity",3,"author17","owner4",3,"description",1,"default","(no level)",1,1,0.392311794140065,8.66666666666667,6.33333333333333,1,2,0.666666666666667,1,1,1,1,1,0.333333333333333,0,32,10.6666666666667,3.33333333333333,7,2021-09-01,140,135
+"956","req959",959,"Low Complexity",1,"author14","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-09-01,55,61
+"957","req96",96,"Low Complexity",1,"author21","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-07-01,55,49
+"958","req960",960,"Medium Complexity",2,"author7","owner2",1,"description",1,"Solution Proposal","Business",1,1,0.453615797916427,7,5,2,0,0,1,1,1,1,0,0,0,8,8,1,7,2024-02-01,110,119
+"959","req961",961,"Low Complexity",1,"author3","owner5",2,"description",1,"default","System",0.5,1,0.820039301761426,6,4.5,0.5,1.5,0,0,1,1,1,1.5,1,0.5,15,7.5,4,5.5,2021-08-01,70,65
+"960","req962",962,"Low Complexity",1,"author21","owner10",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-10-01,60,76
+"961","req963",963,"Medium Complexity",2,"author14","owner5",2,"description",1,"Business Background","(no level)",1,1,0.458775518462062,7.5,4,0.5,1.5,0.5,1,1,1,0.5,1,0.5,0,13,6.5,4,5.5,2022-03-01,100,95
+"962","req964",964,"High Complexity",3,"author16","owner10",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-05-01,120,109
+"963","req965",965,"Low Complexity",1,"author11","owner10",1,"description",1,"default","System",1,1,0.191036477219313,5,3,0,0,0,0,1,1,1,2,1,0,8,8,3,5,2024-03-01,60,55
+"964","req966",966,"Low Complexity",1,"author27","owner5",1,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-10-01,60,76
+"965","req967",967,"Medium Complexity",2,"author24","owner5",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,90,93
+"966","req968",968,"Medium Complexity",2,"author25","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-08-01,95,91
+"967","req969",969,"High Complexity",3,"author28","owner6",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-05-01,120,128
+"968","req97",97,"High Complexity",3,"author5","owner1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-04-01,115,105
+"969","req970",970,"Medium Complexity",2,"author15","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2021-05-01,85,74
+"970","req971",971,"Medium Complexity",2,"author25","owner7",3,"description",1,"Business Background","(no level)",1,0.333333333333333,0.583520742443701,6.66666666666667,5.66666666666667,0.666666666666667,0.333333333333333,0.333333333333333,0.333333333333333,1,0.666666666666667,1,0.333333333333333,0.333333333333333,0,31,10.3333333333333,4.66666666666667,6.33333333333333,2024-09-01,106.666666666667,106
+"971","req972",972,"Low Complexity",1,"author1","owner7",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-01-01,65,96
+"972","req973",973,"Medium Complexity",2,"author29","owner10",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-05-01,95,84
+"973","req974",974,"Low Complexity",1,"author28","owner1",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-08-01,65,75
+"974","req975",975,"High Complexity",3,"author28","owner4",1,"description",1,"Business Requirements","Business",1,1,0.0304525315295905,7,5,1,1,0,0,1,1,1,1,0,0,8,8,2,5,2020-09-01,130,124
+"975","req976",976,"Low Complexity",1,"author4","owner9",2,"description",1,"Solution Proposal","System",1,1,0.552338680601679,4.5,3.5,0.5,0.5,0,0.5,1,1,1,0,0,0,10,5,2.5,2,2024-03-01,70,82
+"976","req977",977,"High Complexity",3,"author28","owner8",2,"description",1,"Solution Proposal","Business",1,1,0.482976231374778,8,5.5,0.5,1,0,1.5,1,1,1,0.5,0,0,16,8,1.5,5,2023-11-01,130,142
+"977","req978",978,"High Complexity",3,"author14","owner4",1,"description",1,"Business Requirements","User",1,1,0.148947224020958,6,4,1,0,1,0,1,1,1,2,1,1,8,8,7,8,2020-07-01,130,133
+"978","req979",979,"Medium Complexity",2,"author3","owner4",3,"description",1,"Business Background","(no level)",1,1,0.685260967661937,7.33333333333333,5.66666666666667,1.66666666666667,1.66666666666667,0.666666666666667,2,1,1,1,1,0.333333333333333,0,24,8,3,4,2023-01-01,116.666666666667,117
+"979","req98",98,"Medium Complexity",2,"author23","owner4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-03-01,85,90
+"980","req980",980,"High Complexity",3,"author22","owner1",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-10-01,130,138
+"981","req981",981,"Low Complexity",1,"author29","owner8",2,"informal",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2023-07-01,65,58
+"982","req982",982,"Medium Complexity",2,"author20","owner6",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-02-01,95,106
+"983","req983",983,"Low Complexity",1,"author20","owner1",1,"description",1,"Business Requirements","(no level)",1,1,0.319717770209536,8,5,0,0,1,0,1,1,1,1,1,0,7,7,5,4,2024-06-01,60,66
+"984","req984",984,"Medium Complexity",2,"author4","owner9",3,"description",1,"Solution Proposal","System",1,0.666666666666667,0.548398393283909,6.66666666666667,5,0.333333333333333,1,0.666666666666667,0.666666666666667,0.666666666666667,1,0.666666666666667,1.33333333333333,0.333333333333333,0,23,7.66666666666667,2.66666666666667,5.33333333333333,2021-10-01,103.333333333333,98
+"985","req985",985,"Medium Complexity",2,"author20","owner5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-03-01,85,92
+"986","req986",986,"Medium Complexity",2,"author27","owner7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2020-02-01,85,95
+"987","req987",987,"Low Complexity",1,"author10","owner6",1,"description",1,"Business Requirements","System",1,0,0.18822341109626,5,4,0,0,1,1,1,1,1,0,0,0,6,6,2,5,2023-12-01,60,50
+"988","req988",988,"High Complexity",3,"author11","owner6",3,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-10-01,130,132
+"989","req989",989,"Medium Complexity",2,"author27","owner6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2022-01-01,85,88
+"990","req99",99,"High Complexity",3,"author4","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2020-07-01,125,122
+"991","req990",990,"High Complexity",3,"author9","owner2",1,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2022-03-01,120,124
+"992","req991",991,"Low Complexity",1,"author3","owner10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-02-01,55,56
+"993","req992",992,"Low Complexity",1,"author25","owner10",1,"description",1,"Business Background","User",1,1,0.200233858311549,9,7,0,1,0,0,1,1,1,1,1,0,6,6,3,3,2023-08-01,60,62
+"994","req993",993,"High Complexity",3,"author24","owner1",2,"description",1,"default","System",1,1,0.522918459842913,7,5,0.5,1.5,1,1,1,0.5,1,0.5,0.5,0.5,18,9,3,6.5,2023-11-01,130,127
+"995","req994",994,"High Complexity",3,"author12","owner4",3,"description",1,"Business Background","System",1,1,0.565878824951748,10,8.66666666666667,1.33333333333333,1,1.33333333333333,3.33333333333333,1,1,1,1,0.666666666666667,0,41,13.6666666666667,6.33333333333333,7.66666666666667,2023-02-01,143.333333333333,139
+"996","req995",995,"High Complexity",3,"author25","owner9",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2024-07-01,125,117
+"997","req996",996,"Low Complexity",1,"author17","owner2",1,"description",1,"default","(no level)",1,1,0.835549391806126,6,4,0,1,0,1,1,1,1,0,0,0,7,7,0,4,2021-10-01,60,72
+"998","req997",997,"Low Complexity",1,"author12","owner1",1,"description",1,"Business Requirements","Business",1,1,0.630511698313057,7,7,0,1,1,1,1,1,1,2,1,0,10,10,5,9,2024-08-01,60,59
+"999","req998",998,"High Complexity",3,"author10","owner5",2,"title",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,NA,NA,2021-12-01,125,111
+"1000","req999",999,"Low Complexity",1,"author3","owner2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2024-03-01,55,50

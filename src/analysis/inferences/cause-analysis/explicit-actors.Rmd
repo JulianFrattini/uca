@@ -1,0 +1,192 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+
+# library for Bayesian modeling
+library(brms)
+library(ggdag)
+```
+
+# Inferential Analysis: Causes of Number of Explicit Actors
+
+This notebook contains the inferential analysis about the causes of use case description quality.
+In particular, we investigate which factors influence the number of explicit actors in a use case.
+
+The analysis consists of three steps according to the framework for statistical causal inference by Siebert:[^1]
+
+1. Modeling: explicit visualization of causal assumptions
+2. Identification: selection of variables from the causal model to involve in the statistical model
+3. Estimation: implementation of a regression model to detect statistically significant effects.
+
+```{r figdir}
+figdir <- 'figures/inferential/causes/explicitactors/'
+```
+
+## Modeling
+
+We start by making our causal assumptions explicit.
+The following directed, acyclic graph represents a set of variables connected by edges where we assume a causal relationship.
+
+```{r dag}
+dag <- dagify(
+        actors ~ cplx + author + owner + location,
+        location ~ cplx + author + owner,
+
+        exposure = "cplx",
+        outcome = "actors",
+
+        labels = c(owner = "requirements owner", author = "requirements author", cplx = "complexity", 
+                    actors = "explicit actors", location = "location"),
+        coords = list(x = c(cplx = 0, owner = 0, author = 0, actors = 1, location = 1),
+                        y = c(cplx = 1, owner = 2, author = 0, actors = 1, location = 0))
+)
+
+ggdag_status(dag, use_labels="label", text = FALSE) +
+  guides(fill = "none", color = "none") + 
+  theme_dag()
+```
+
+## Identification
+
+To deconfound the effect of the exposure on the outcome variable, we need to identify the adjustment set, i.e., the set of variables to control.
+
+```{r identification}
+ggdag_adjustment_set(dag, exposure = "cplx", outcome = "actors") +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title.x = element_blank(), 
+        axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.title.y = element_blank())
+```
+
+## Estimation
+
+In the third step, we estimate the average causal effect (ACE) of the exposure on the outcome.
+
+### Formula and Distribution
+
+The following regression formula represents our statistical model derived from the causal model.
+
+```{r formula}
+f <- bf(actors.explicit | trials(entities) ~ cplx + Location + (1|owner) + (1|author))
+```
+
+Since the number of explicit actors is bounded by the number of entities in a use case, we can model the regression with a binomial distribution.
+
+### Data Preparation
+
+Since we do not require the design time attribute in this analysis, we can perform the inference on the un-aggregated use case data.
+
+```{r data-loading}
+d.uc <- read.csv('data/output/uca-annotations.csv')
+```
+
+Still, we add the requirements-level attributes of interest (`cplx` and `owner`) to each use case.
+
+```{r attribute-addition}
+d.req <- read.csv('data/output/uca-aggregated.csv')
+d.req$cplx <- factor(d$cplx, levels=c("Low Complexity", "Medium Complexity", "High Complexity"), ordered=TRUE)
+
+d.req.rel <- d.req %>% 
+    select(req, cplx, owner, author)
+
+d <- left_join(d.uc, d.req.rel)
+```
+
+Finally, we filter out all incomplete data points.
+
+```{r filter-complete}
+d  <- d[complete.cases(d$cplx), ]
+d  <- d[complete.cases(d$owner), ]
+d  <- d[complete.cases(d$author), ]
+d <- d  %>% filter(Form == "description" & Procedural == TRUE)
+```
+
+### Priors
+
+We need to assign a prior distribution to the coefficient of each predictor involved in the statistical model.
+
+```{r eligible-priors}
+get_prior(f, family = binomial, data = d)
+```
+
+We select uninformative priors for each coefficient.
+
+```{r set-priors}
+priors <- c(
+    prior(normal(0, 0.2), class=Intercept),
+    prior(normal(0, 0.2), class=b),
+    prior(exponential(1), class=sd)
+  )
+```
+
+To confirm the eligibility of the priors, we run a prior predictive check.
+To this end, we sample from the model without updating the coefficients based on the data.
+
+```{r model-prior}
+m.prior <-
+  brm(data = d, family = binomial, f, prior = priors,
+    iter = 4000, warmup = 1000, chains = 4, cores = 4,
+    seed = 4, sample_prior="only",
+    file = "./src/analysis/fits/cause.explicitactors.prior"
+  )
+```
+
+Then, we draw 100 random samples from the prior model to assess, whether the priors are proper.
+
+```{r prior-predictive-check}
+brms::pp_check(m.prior, type="bars", ndraws = 100)
+```
+
+Note that we would typically aim to see that the samples $y_{rep}$ encompass the actually observed data $y$. 
+This may not be the case for the mocked data.
+
+### Model Training
+
+With the priors confirmed, we can train the model, i.e., update the coefficients based on the observed data.
+
+```{r model}
+m <-
+  brm(data = d, family = binomial, f, prior = priors,
+    iter = 4000, warmup = 1000, chains = 4, cores = 4,
+    seed = 4, 
+    file = "./src/analysis/fits/cause.explicitactors"
+  )
+```
+
+Similarly, we can draw 100 random samples from the trained model to confirm that the model has updated its priors accordingly.
+
+```{r posterior-predictive-check}
+brms::pp_check(m, type="bars", ndraws = 100)
+```
+
+Since the predicted values $y_{rep}$ have grown closer to the actually observed values $y$, we can confirm that the model has properly trained and improved its predictive power.
+
+### Evaluation
+
+Finally, we can evaluate the model and derive conclusions from it.
+
+#### Path Coefficients
+
+To evaluate the model, we can inspect the posterior distribution of the path coefficients.
+
+```{r coefficients}
+summary(m)
+```
+
+These can also be visualized in an `mcmc_plot`.
+Factors where the confidence does not overlap with 0 can be considered significant.
+
+```{r mcmc-plot}
+mcmc_plot(m)
+```
+
+#### Marginal Plots
+
+Additionally, we can plot the marginal effects of specific predictors on the response variable of interest.
+These marginal effects represent the isolated effect of the predictor on the response variable while holding all other predictors constant at representative values.
+
+```{r marginal-cplx}
+conditional_effects(m, effects="cplx")
+```
+
+```{r marginal-location}
+conditional_effects(m, effects="Location")
+```

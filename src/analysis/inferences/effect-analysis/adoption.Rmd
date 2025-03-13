@@ -1,0 +1,218 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+
+# library for Bayesian modeling
+library(brms)
+library(ggdag)
+```
+
+# Inferential Analysis: Effects of Adoption
+
+This notebook contains the inferential analysis about the effects of use case adoption.
+We investigate whether the use of a specific form of use cases (in our case: template-style use case descriptions) have a positive effect on the time it takes to infer a solution design from the requirement.
+
+The analysis consists of three steps according to the framework for statistical causal inference by Siebert:[^1]
+
+1. Modeling: explicit visualization of causal assumptions
+2. Identification: selection of variables from the causal model to involve in the statistical model
+3. Estimation: implementation of a regression model to detect statistically significant effects.
+
+```{r figdir}
+figdir <- 'figures/inferential/effects/adoption/'
+```
+
+## Modeling
+
+We start by making our causal assumptions explicit.
+The following directed, acyclic graph represents a set of variables connected by edges where we assume a causal relationship.
+
+```{r dag}
+dag <- dagify(
+  s2 ~ cplx + form,
+  form ~ cplx, # more complex requirements might be preferrably written in specific forms
+
+  exposure = "form",
+  outcome = "s2",
+  labels = c(cplx = "complexity", form = "requirements form", s2 = "design time"),
+  coords = list(x = c(cplx = 0, form = 1, s2 = 2),
+                y = c(cplx = 0, form = 1, s2 = 1))
+)
+
+ggdag_status(dag, use_labels="label", text = FALSE) +
+  guides(fill = "none", color = "none") + 
+  theme_dag()
+
+ggsave(paste0(figdir, 'dag.pdf'), width=6, height=1.8)
+```
+
+## Identification
+
+To deconfound the effect of the exposure on the outcome variable, we need to identify the adjustment set, i.e., the set of variables to control.
+
+```{r identification}
+ggdag_adjustment_set(dag, exposure = "form", outcome = "s2") +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title.x = element_blank(), 
+        axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.title.y = element_blank())
+```
+
+The adjustment set indicates that we need to control the the complexity variable `cplx`.
+
+## Estimation
+
+In the third step, we estimate the average causal effect (ACE) of the exposure on the outcome.
+
+```{r data-loading}
+d <- read.csv('data/output/uca-aggregated.csv')
+d$cplx <- factor(d$cplx, levels=c("Low Complexity", "Medium Complexity", "High Complexity"), ordered=TRUE)
+d <- d[complete.cases(d$cplx), ]
+d <- d %>% mutate(form = replace_na(form, "none")) 
+```
+
+### Formula and Distribution
+
+The following regression formula represents our statistical model derived from the causal model.
+
+```{r formula}
+f <- bf(s2 ~ cplx*form)
+```
+
+In order to determine an eligible distribution type, we inspect the response variable.
+
+```{r response-distribution}
+d %>% 
+  ggplot(aes(x = s2, fill = cplx)) +
+  geom_histogram()
+```
+
+The response variable resembles a Poisson-distribution.
+To determine, which distribution can be used to model the response variable, we need to determine the index of dispersion.
+
+```{r dispersion}
+mean <- mean(d$s2)
+stdev <- sd(d$s2)
+index.of.dispersion <- (stdev^2)/mean
+
+print(index.of.dispersion)
+```
+
+Since the index of dispersion exceeds 1 (i.e., the variabel is overdispersed), we need to select a negative binomial distribution.
+To account for potential values of 0, we chose the `zero_inflated_negbinomial` distribution, a general distribution of the Poisson family.
+
+### Priors
+
+We need to assign a prior distribution to the coefficient of each predictor involved in the statistical model.
+
+```{r eligible-priors}
+get_prior(f, data=d, family = zero_inflated_negbinomial())
+```
+
+We select uninformative priors for each coefficient.
+
+```{r set-priors}
+priors_zinb <- c(
+    prior(normal(0, 1), class = Intercept),
+    prior(normal(0, 0.5), class = b),
+    prior(gamma(2, 3), class=shape),
+    prior(beta(1, 3), class=zi)
+)
+```
+
+To confirm the eligibility of the priors, we run a prior predictive check.
+To this end, we sample from the model without updating the coefficients based on the data.
+
+```{r model-prior-training}
+m.prior <-
+  brm(data = d, family = zero_inflated_negbinomial, f, prior = priors_zinb,
+    iter = 4000, warmup = 1000, chains = 4, cores = 4,
+    seed = 4, sample_prior="only",
+    file = "./src/analysis/fits/effect.uca.prior"
+  )
+```
+
+Then, we draw 100 random samples from the prior model to assess, whether the priors are proper.
+
+```{r prior-predictive-check}
+brms::pp_check(m.prior, ndraws = 100)
+```
+
+Note that we would typically aim to see that the samples $y_{rep}$ encompass the actually observed data $y$. 
+This may not be the case for the mocked data.
+
+### Model Training
+
+With the priors confirmed, we can train the model, i.e., update the coefficients based on the observed data.
+
+```{r model-training}
+m <-
+  brm(data = d, family = zero_inflated_negbinomial, f, prior = priors_zinb,
+    iter = 4000, warmup = 1000, chains = 4, cores = 4,
+    seed = 4, 
+    file = "./src/analysis/fits/effect.uca"
+  )
+```
+
+Similarly, we can draw 100 random samples from the trained model to confirm that the model has updated its priors accordingly.
+
+```{r posterior-predictive-check}
+brms::pp_check(m, ndraws = 100)
+```
+
+Since the predicted values $y_{rep}$ have grown closer to the actually observed values $y$, we can confirm that the model has properly trained and improved its predictive power.
+
+### Evaluation
+
+Finally, we can evaluate the model and derive conclusions from it.
+
+#### Path Coefficients
+
+To evaluate the model, we can inspect the posterior distribution of the path coefficients directly.
+
+```{r coefficients}
+summary(m)
+```
+
+These can also be visualized in an `mcmc_plot`.
+Factors where the confidence does not overlap with 0 can be considered significant.
+
+```{r mcmc-plot}
+mcmc_plot(m)
+```
+
+#### Marginal Plots
+
+Additionally, we can plot the marginal effects of specific predictors on the response variable of interest.
+These marginal effects represent the isolated effect of the predictor on the response variable while holding all other predictors constant at representative values.
+
+```{r marginal-form}
+c_eff <- conditional_effects(m, effects="form")
+plot(c_eff, plot = FALSE)[[1]] +
+  theme(axis.title.y = element_blank()) +
+  labs(y = "Design Time") +
+  coord_flip()
+  
+# ggsave(paste0(figdir, 'marginal-form.pdf'), width=5, height=1.7)
+```
+
+```{r marginal-form}
+c_eff <- conditional_effects(m, effects="cplx")
+plot(c_eff, plot = FALSE)[[1]] +
+  theme(axis.title.y = element_blank()) +
+  scale_x_discrete(limits = rev)+
+  labs(y = "Design Time") +
+  coord_flip()
+  
+#ggsave(paste0(figdir, 'marginal-cplx.pdf'), width=5, height=1.2)
+```
+
+```{r conditional-cplx-form}
+c_eff <- conditional_effects(m, effects="cplx:form")
+plot(c_eff, plot = FALSE)[[1]] +
+  theme(axis.title.y = element_blank()) +
+  scale_x_discrete(limits = rev)+
+  labs(y = "Design Time", color = "Form", fill = "Form") +
+  theme(legend.position = "bottom") +
+  coord_flip()
+
+#ggsave(paste0(figdir, 'conditional-cplx-form.pdf'), width=6, height=3.5)
+```

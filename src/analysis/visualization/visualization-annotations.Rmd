@@ -1,0 +1,135 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+```
+
+# Data Visualization: Annotations
+
+This notebook visualizes the annotation data generated in scope of this project.
+The unit of analysis is per use case (not aggregated per requirement).
+
+```{r data-loading}
+d <- read.csv('data/output/uca-annotations.csv')
+figdir <- 'figures/descriptive/uc/'
+```
+
+## Base Attributes
+
+First, we visualize the different forms that are used to capture use cases.
+
+```{r uc-form}
+d %>% ggplot(aes(x=Form)) +
+    geom_histogram(stat="count") + 
+    geom_text(stat='count', aes(label=..count..), nudge_y=10, size=4) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+
+#ggsave(paste0(figdir, 'forms.pdf'), width=5, height=6)
+```
+
+Next, we visualize the frequency with which the different fields appear in the use cases.
+
+```{r uc-fields}
+field.order = c("title", "actor", "level", "preconditions", "postconditions", "main scenario", "extensions",
+    "assumptions", "additional information", "solution hints", "dependencies", "limitations", "revision history")
+
+d %>% 
+    filter(Form == "description") %>% # focus only on use case descriptions
+    select(req, ucid, Fields) %>% 
+    mutate(field = strsplit(Fields, "; ")) %>% # split the Fields column into a list
+    unnest(field)  %>% # "unnest" the column, which creates one entry per UC per field
+    mutate(field = factor(field, levels=field.order)) %>% 
+    ggplot(aes(y=field)) + # visualize the occurrence of fields in a histogram
+        geom_histogram(stat="count") + 
+        geom_text(stat='count', aes(label=..count..), nudge_x=10, size=4) +
+        scale_y_discrete(limits=rev) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+
+#ggsave(paste0(figdir, 'fields.pdf'), width=5, height=6)
+```
+
+Addditionally, we visualize where the use cases are located.
+
+```{r uc-location}
+d %>% 
+    filter(Location != "NA") %>% 
+    ggplot(aes(x=Location)) +
+        geom_histogram(stat="count") + 
+        geom_text(stat='count', aes(label=..count..), nudge_y=10, size=4) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+
+#ggsave(paste0(figdir, 'location.pdf'), width=5, height=6)
+```
+
+The level of a use case is only rarely given.
+
+```{r uc-level}
+d %>% 
+    filter(Level != "NA") %>% 
+    ggplot(aes(x=Level)) +
+        geom_histogram(stat="count") + 
+        geom_text(stat='count', aes(label=..count..), nudge_y=10, size=4) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+        
+#ggsave(paste0(figdir, 'level.pdf'), width=5, height=6)
+```
+
+## Scenario Attributes
+
+Next are the attributes of the scenarios described in the use case.
+First are the number and types of steps.
+
+```{r steps}
+step.order <- c("Steps", "Functional.Steps", "Whitebox.Steps", "Consistent.Grammar", "Misplaced.Variations", "Misplaced.Main")
+
+d %>% 
+    filter(Form=="description" & Procedural) %>% 
+    pivot_longer(
+        cols = c(Steps, Functional.Steps, Whitebox.Steps, Misplaced.Variations, Misplaced.Main, Consistent.Grammar), 
+        names_to = "metric") %>% 
+    mutate(metric = factor(metric, levels=step.order)) %>% 
+    ggplot(aes(x=value, y=metric)) +
+        geom_boxplot() +
+        scale_y_discrete(labels = c("Misplaced main steps", "Misplaced variations", "Consistent grammar", "White-box steps", "Functional steps", "Steps"), limits=rev) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+
+#ggsave(paste0(figdir, 'steps.pdf'), width=4, height=3)
+```
+
+Next are the number and types of entities.
+
+```{r entities}
+entity.order <- c("entities", "actors", "actors.explicit")
+
+d %>% 
+    filter(Form=="description" & Procedural) %>% 
+    pivot_longer(
+        cols = c(entities, actors, actors.explicit), 
+        names_to = "metric") %>% 
+    mutate(metric = factor(metric, levels=entity.order)) %>% 
+    ggplot(aes(x=value, y=metric)) +
+        geom_boxplot() +
+        scale_y_discrete(labels = c("Explicit actors", "Actors", "Entities"), limits=rev) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+
+#ggsave(paste0(figdir, 'entities.pdf'), width=4, height=1.5)
+```
+
+Finally, we visualize the distribution of interactions.
+One step in a use case (i.e., one item in a scenario) can contain multiple interactions.
+
+```{r interactions}
+interaction.order <- c("interactions", "pureinteractions", "consecutive")
+
+d  %>% 
+    filter(Form=="description" & Procedural) %>% 
+    pivot_longer(
+        cols = c(interactions, pureinteractions, consecutive), 
+        names_to = "metric") %>% 
+    mutate(metric = factor(metric, levels=interaction.order)) %>% 
+    ggplot(aes(x=value, y=metric)) +
+        geom_boxplot() +
+        scale_y_discrete(labels = c("Consecutive interactions", "User-System interactions", "Interactions"), limits=rev) +
+        theme(axis.title.x = element_blank(), axis.title.y = element_blank())
+
+#ggsave(paste0(figdir, 'interactions.pdf'), width=4, height=1.5)
+```

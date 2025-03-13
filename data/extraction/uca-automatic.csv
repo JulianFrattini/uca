@@ -1,0 +1,6 @@
+req,ucid,entities,actors,actors_explicit,interactions,pureinteractions,consecutive
+REQ-0001,uc1,2,1,1,6,6,3
+REQ-0001,uc2,2,1,1,7,7,6
+REQ-0002,uc1,4,1,1,6,4,3
+REQ-0003,uc1,3,1,0,4,2,3
+REQ-0003,uc2,4,2,1,6,3,5

@@ -1,0 +1,103 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+```
+
+# Data Mocking: Full Data
+
+Because we cannot share the real, sensitive data from this case study, we provide a script that simulates data.
+This simulated data can then be used in the [visualization-full.Rmd](./../visualization/visualization-full.Rmd) script.
+
+## Aggregating Annotations
+
+The full data includes the attributes measured during the manual and automatic data extraction.
+
+```{r load-annotations}
+annotations <- read.csv('data/output/uca-annotations.csv')
+```
+
+Since one requirement can contain more than one use case, the values must be aggregated per requirement.
+
+```{r aggregate-data}
+annotations.aggregated <- annotations %>% 
+    group_by(req)  %>% 
+    summarize(
+        nuc = n(),
+        form = dplyr::first(Form),
+        procedural = mean(Procedural, na.rm=TRUE),
+        location = dplyr::first(Location),
+        level = dplyr::first(Level),
+        textorder = mean(Text.Order, na.rm=TRUE),
+        dependencies = mean(Dependencies, na.rm=TRUE),
+        coherence = mean(Coherent, na.rm=TRUE),
+        steps = mean(Steps, na.rm=TRUE),
+        steps.functional = mean(Functional.Steps, na.rm=TRUE),
+        steps.beyond = mean(Whitebox.Steps, na.rm=TRUE),
+        steps.mis.variations = mean(Misplaced.Variations, na.rm=TRUE),
+        steps.mis.main = mean(Misplaced.Main, na.rm=TRUE),
+        steps.consistent = mean(Consistent.Grammar, na.rm=TRUE),
+        sequence.main = mean(Sequence.Main, na.rm=TRUE),
+        sequence.alt = mean(Sequence.Alt, na.rm=TRUE),
+        numbering = mean(Numbering, na.rm=TRUE),
+        entities = mean(entities, na.rm=TRUE),
+        actors = mean(actors, na.rm=TRUE),
+        actors_explicit = mean(actors.explicit, na.rm=TRUE),
+        totalinteractions = sum(interactions, na.rm=TRUE),
+        interactions = mean(interactions, na.rm=TRUE),
+        pureinteractions = mean(pureinteractions, na.rm=TRUE),
+        consecutive = mean(consecutive, na.rm=TRUE)
+    )
+```
+
+## Merging Data
+
+Once aggregated, these values can be joined with the requirement-level data.
+
+```{r load-reqs}
+reqs <- read.csv('data/output/reqs-mocked.csv')
+```
+
+Additionally, associate each requirement with an author and an owner.
+
+```{r author-owner}
+reqs <- reqs %>% 
+    mutate(
+        author = sample(paste0('author', 1:30), nrow(reqs), replace = TRUE),
+        owner = sample(paste0('owner', 1:10), nrow(reqs), replace = TRUE)
+    )
+```
+
+```{r merge-data}
+d <- merge(reqs, annotations.aggregated, by="req", all.x=TRUE)
+```
+
+## Response variable
+
+The response variable is the time that a requirement spends during design (`S2`).
+We mock these values via random draws from a Poisson distribution.
+
+```{r mock-response-variable}
+d <- d %>% 
+    mutate(
+        month = sample(seq(as.Date('2020/01/01'), as.Date('2024/12/31'), by="month"), nrow(d), replace=TRUE), # random date of completing the S1 (i.e., the requirements engineering) stage
+        lambda = 25 + 30*complexity + 
+            ifelse(is.na(nuc), 0, 5*nuc+ ifelse(form=="description" & procedural, 10*steps.beyond, 0)),
+        s2 = rpois(nrow(d), lambda) # mocked value for the design duration
+    )
+```
+
+Plotting the repsonse variable shows the differences between the three levels of complexity.
+
+```{r visualize}
+d %>% 
+    mutate(cplx = factor(d$cplx, levels=c("Low Complexity", "Medium Complexity", "High Complexity"), ordered = TRUE)) %>% 
+    ggplot(aes(x = s2)) +
+    geom_histogram() +
+    facet_wrap(vars(cplx), nrow=3)
+```
+
+Finally, export the data to make it usable to the analysis.
+
+```{r export-data}
+write.csv(d, 'data/output/uca-aggregated.csv')
+```

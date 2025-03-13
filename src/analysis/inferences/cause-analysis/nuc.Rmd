@@ -1,0 +1,178 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+
+# library for Bayesian modeling
+library(brms)
+library(ggdag)
+```
+
+# Inferential Analysis: Causes of Number of Use Cases
+
+This notebook contains the inferential analysis about the causes of use case description quality.
+In particular, we investigate which factors influence the number of use cases in a requirement.
+
+The analysis consists of three steps according to the framework for statistical causal inference by Siebert:[^1]
+
+1. Modeling: explicit visualization of causal assumptions
+2. Identification: selection of variables from the causal model to involve in the statistical model
+3. Estimation: implementation of a regression model to detect statistically significant effects.
+
+```{r figdir}
+figdir <- 'figures/inferential/causes/nuc/'
+```
+
+## Modeling
+
+We start by making our causal assumptions explicit.
+The following directed, acyclic graph represents a set of variables connected by edges where we assume a causal relationship.
+
+```{r dag}
+dag <- dagify(
+        nuc ~ cplx + owner + author,
+
+        exposure = "cplx",
+        outcome = "nuc",
+
+        labels = c(owner = "requirements owner", author = "requirements author", cplx = "complexity", nuc = "number of use cases"),
+        coords = list(x = c(cplx = 0, owner = 0, author = 0, nuc = 1),
+                        y = c(cplx = 1, nuc = 1, author = 0, owner = 2))
+)
+
+ggdag_status(dag.size, use_labels="label", text = FALSE) +
+  guides(fill = "none", color = "none") + 
+  theme_dag()
+```
+
+## Identification
+
+To deconfound the effect of the exposure on the outcome variable, we need to identify the adjustment set, i.e., the set of variables to control.
+
+```{r identification}
+ggdag_adjustment_set(dag, exposure = "cplx", outcome = "nuc") +
+  theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(), axis.title.x = element_blank(), 
+        axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.title.y = element_blank())
+```
+
+## Estimation
+
+In the third step, we estimate the average causal effect (ACE) of the exposure on the outcome.
+
+### Formula and Distribution
+
+The following regression formula represents our statistical model derived from the causal model.
+
+```{r formula}
+f <- bf(nuc ~ cplx + (1|owner) + (1|author))
+```
+
+### Data Preparation
+
+```{r data-loading}
+d <- read.csv('data/output/uca-aggregated.csv')
+d$cplx <- factor(d$cplx, levels=c("Low Complexity", "Medium Complexity", "High Complexity"), ordered=TRUE)
+```
+
+We filter out all incomplete data points.
+
+```{r filter-complete}
+d  <- d[complete.cases(d$cplx), ]
+d  <- d[complete.cases(d$owner), ]
+d  <- d[complete.cases(d$author), ]
+
+d <- d  %>% filter(nuc > 0 & form == "description" & procedural > 0)
+```
+
+### Priors
+
+We need to assign a prior distribution to the coefficient of each predictor involved in the statistical model.
+
+```{r eligible-priors}
+get_prior(f, family = poisson, data = d)
+```
+
+We select uninformative priors for each coefficient.
+
+```{r set-priors}
+priors <- c(
+    prior(normal(0, 1), class = Intercept),
+    prior(normal(0, 1), class = b),
+    prior(exponential(1), class = sd)
+)
+```
+
+To confirm the eligibility of the priors, we run a prior predictive check.
+To this end, we sample from the model without updating the coefficients based on the data.
+
+```{r model-prior}
+m.prior <-
+  brm(data = d, family = poisson, f, prior = priors,
+    iter = 4000, warmup = 1000, chains = 4, cores = 4,
+    seed = 4, sample_prior="only",
+    file = "./src/analysis/fits/cause.nuc.prior"
+  )
+```
+
+Then, we draw 100 random samples from the prior model to assess, whether the priors are proper.
+
+```{r prior-predictive-check}
+brms::pp_check(m.prior, ndraws = 100)
+```
+
+Note that we would typically aim to see that the samples $y_{rep}$ encompass the actually observed data $y$. 
+This may not be the case for the mocked data.
+
+### Model Training
+
+With the priors confirmed, we can train the model, i.e., update the coefficients based on the observed data.
+
+```{r model}
+m <-
+  brm(data = d, family = poisson, f, prior = priors,
+    iter = 4000, warmup = 1000, chains = 4, cores = 4,
+    seed = 4, 
+    file = "./src/analysis/fits/cause.nuc"
+  )
+```
+
+Similarly, we can draw 100 random samples from the trained model to confirm that the model has updated its priors accordingly.
+
+```{r posterior-predictive-check}
+brms::pp_check(m, ndraws = 100)
+```
+
+### Evaluation
+
+Finally, we can evaluate the model and derive conclusions from it.
+
+#### Path Coefficients
+
+To evaluate the model, we can inspect the posterior distribution of the path coefficients.
+
+```{r coefficients}
+summary(m)
+```
+
+These can also be visualized in an `mcmc_plot`.
+Factors where the confidence does not overlap with 0 can be considered significant.
+
+```{r mcmc-plot}
+mcmc_plot(m)
+```
+
+#### Marginal Plots
+
+Additionally, we can plot the marginal effects of specific predictors on the response variable of interest.
+These marginal effects represent the isolated effect of the predictor on the response variable while holding all other predictors constant at representative values.
+
+```{r marginal-cplx}
+c_eff <- conditional_effects(m, effects="cplx")
+plot(c_eff, plot = FALSE)[[1]] +
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed") +
+  theme(axis.title.y = element_blank()) + 
+  labs(y = "Number of use cases") + 
+  scale_x_discrete(limits=rev) +
+  coord_flip()
+
+#ggsave(paste0(figdir, 'marginal-cplx.pdf'), width=4, height=1)
+```

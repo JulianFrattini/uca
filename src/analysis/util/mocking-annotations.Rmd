@@ -1,0 +1,128 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+```
+
+# Data Mocking: Annotations
+
+Because we cannot share the real, sensitive data from this case study, we provide a script that simulates data.
+This simulated data can then be used in the [visualization-annotations.Rmd](./../visualization/visualization-annotations.Rmd) script.
+
+```{r create_requirements}
+n <- 1000
+
+reqs <- data.frame(
+    req = paste0("req", 1:n), # create n requirements
+    nuc = rbinom(n, 5, 0.3), # associate each requirement with up to 5 use cases
+    complexity = sample(1:3, n, replace=TRUE)
+)
+
+reqs.export <- reqs %>% 
+    mutate(
+        cplx = ifelse(complexity == 1, "Low Complexity", 
+        ifelse(complexity == 2, "Medium Complexity", "High Complexity"))
+    ) %>% 
+    select(req, cplx, complexity)
+write.csv(reqs.export, 'data/output/reqs-mocked.csv')
+```
+
+### Use Cases
+
+For every use case associated with a requirement, create a separate row.
+
+```{r expand-ucs}
+ucs <- reqs %>% 
+    filter(nuc > 0) %>%  # focus on the requirements with at least one use case
+    group_by(req) %>% 
+    rowwise() %>% 
+    mutate(ucid = list(paste0("uc", 1:nuc))) %>% 
+    unnest(cols = c(ucid)) %>% 
+    select(req, ucid, complexity)
+```
+
+Assign a `Form` to each use case with the following method
+
+```{r select-form}
+get_form <- function() {
+    random <- runif(1)
+    if (random < 0.5) {
+        return ("description")
+    } else if (random >= 0.5 && random < 0.8) {
+        return ("title")
+    } else if (random >=0.8 && random < 0.9) {
+        return ("user story")
+    } else {
+        return ("informal")
+    }
+}
+
+ucs <- ucs %>% 
+    mutate(Form = get_form())
+```
+
+### Use Case Descriptions
+
+For all use cases with the form `description`, determine if they are `Procedural` or not.
+
+```{r procedural}
+fields <- c("actor", "level", "preconditions", "postconditions", "extensions",
+    "assumptions", "additional information", "solution hints", "dependencies", "limitations", "revision history")
+
+ucs.descriptions <- ucs %>% 
+    filter(Form == "description") %>% 
+    mutate(
+        Procedural = (rbinom(1, 1, 0.95)==1),
+        Fields = paste0(c("title", "main scenario", sample(fields, rbinom(1, length(fields), 0.5))), collapse= "; ")
+    )
+```
+
+### Procedural Use Case Descriptions
+
+For all procedural use case descriptions, mock the values that will be used in the subsequent analyses.
+
+```{r attributes}
+ucs.procedural <- ucs.descriptions %>% 
+    filter(Procedural) %>% 
+    rowwise() %>% 
+    mutate(
+        Location = sample(c("Business Background", "Business Requirements", "Solution Proposal", "default"), 1),
+        Level = sample(c("User", "System", "Business", "(no level)"), 1),
+
+        # data obtained from the manual data extraction of quality attributes
+        Text.Order = (rbinom(1, 1, 0.95)==1),
+        Dependencies = (rbinom(1, 1, 0.9)==1),
+        Coherent = runif(1),
+        Steps = rbinom(1, 8+complexity*2, 0.6),
+        Functional.Steps = rbinom(1, Steps, 0.8),
+        Whitebox.Steps = rbinom(1, Functional.Steps, 0.1+0.3*(Location == "Solution Proposal")),
+        Misplaced.Variations = rbinom(1, Functional.Steps, 0.2),
+        Misplaced.Main = rbinom(1, Functional.Steps, 0.1),
+        Sequence.Main = (rbinom(1, 1, 0.98)==1),
+        Sequence.Alt = (rbinom(1, 1, 0.98)==1),
+        Numbering = (rbinom(1, 1, 0.98)==1),
+        Consistent.Grammar = rbinom(1, Steps, 0.1),
+
+        # data obtained from the automatic data extraction
+        entities = rbinom(1, 3, 0.3),
+        actors = rbinom(1, entities, 0.5),
+        actors.explicit = rbinom(1, actors, 0.3),
+        interactions = rbinom(1, Steps*2, 0.6),
+        pureinteractions = rbinom(1, interactions, 0.3+actors*0.2),
+        consecutive = rbinom(1, interactions, 0.6)
+    )
+```
+
+## Finalize
+
+Assemble all data frames again
+
+```{r assembly}
+ucs <- merge(ucs, ucs.descriptions, all.x = TRUE)
+ucs <- merge(ucs, ucs.procedural, all.x = TRUE)
+```
+
+Finally, export and save the mocked file.
+
+```{r export}
+write.csv(ucs, 'data/output/uca-annotations.csv')
+```

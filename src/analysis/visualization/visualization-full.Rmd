@@ -1,0 +1,393 @@
+```{r setup, include=FALSE}
+# cluster of libraries for easier R syntax
+library(tidyverse)
+```
+
+# Data Visualization: Full
+
+This notebook visualizes the annotation data generated in scope of this project.
+The unit of analysis is per requirement (i.e., aggregated use cases).
+
+```{r directory}
+figdir <- 'figures/descriptive/req/'
+```
+
+## Load and Prepare Data
+
+To begin, load the aggregated data from the `uca-aggregated.csv` file.
+
+```{r data-loading}
+d <- read.csv('data/output/uca-aggregated.csv')
+d$month <- ymd(d$month)
+```
+
+Create one helper variable: `uca` (i.e., use case approach) whether a requirement contains any use case at all.
+
+```{r detect-uca}
+d <- d %>% 
+    mutate(uca = ifelse(!is.na(nuc), nuc>0, 0))
+```
+
+## Visualize Data
+
+Next, we generate descriptive statistics from the assembled data.
+The statistics are categorized by certain levels that apply filters to the dataset:
+
+1. [All requirements](#all-requirements): all requirements in the database
+2. [Use Case approach](#use-case-approach): requirements containing at least one use case
+3. [Use Case descriptions](#use-case-descriptions): requirements containing at least one use case description
+4. [Procedural Use Case Descriptions](#procedural-uce-case-descriptions): requirements containing at least one procedural use case description
+
+### All Requirements
+
+We are interested in the relative number of requirements per month that contained any use case at all.
+
+```{r uca-relative}
+d %>% 
+    select(month, uca) %>% 
+    group_by(month) %>% 
+    summarize(uc = mean(uca)) %>%  # percentage of requirements with use cases
+    ggplot(aes(x=month, y=uc)) + 
+        geom_line() +
+        geom_smooth(method = "lm") +
+        scale_y_continuous(labels = scales::percent) +
+        labs(y="Fraction of requirements that contain at least one use case", x="Months")
+
+#ggsave(paste0(figdir, 'uca-relative.pdf'), width=10, height=4)
+```
+
+Additionally, we can compare the number of requirements containing at least one use case with the number of requirements per month.
+
+```{r uca-absolute}
+d %>% 
+    select(month, uca) %>% 
+    group_by(month) %>% 
+    summarize(
+        nreq = n(), # number of requirements
+        uc = sum(as.numeric(uca)) # percentage of requirements with use cases
+    ) %>% 
+    pivot_longer(cols=c(nreq, uc), names_to="type") %>% 
+    ggplot(aes(x=month, y=value, color=type)) + 
+        geom_line() + 
+        geom_smooth(method = "lm") +
+        scale_color_discrete(labels = c("All Requirements", "Requirements with at least one use case")) +
+            theme(legend.position="bottom") +
+        labs(y="Absolute number of requirements", x="Months", color="Requirement type")
+
+#ggsave(paste0(figdir, 'uca-absolute.pdf'), width=10, height=4)
+```
+
+### Use Case approach
+
+The following set of figures only applies to requirements that contain at least one use case (i.e., `uca==TRUE`).
+
+```{r data-d3}
+d3 <- d %>% 
+    filter(uca == TRUE)
+```
+
+First, we visualize how the average number of use cases per requirement developed over time.
+
+```{r nouc}
+d3 %>%
+    select(month, nuc) %>% 
+    group_by(month) %>%
+    summarize(n = mean(nuc)) %>% 
+    ggplot(aes(x = month, y = n)) +
+        geom_line() + 
+        geom_smooth(method = "lm") +
+        labs(y = "Average number of use cases per Requirement", y="Month")
+        
+#ggsave(paste0(figdir, 'nouc.pdf'), width=10, height=4)
+```
+
+Next, we want to see how the distribution of forms of use cases changed over time.
+
+```{r forms-relative}
+d3 %>%
+    select(month, form) %>% 
+    group_by(month) %>% 
+    summarize(
+        n = n(), # number of requirements
+        n_desc = sum(form == "description"),
+        n_title = sum(form == "title"),
+        n_inf = sum(form=="informal"),
+        n_us = sum(form=="user story")
+    ) %>% 
+    mutate(
+        frac_desc = n_desc/n,
+        frac_title = n_title/n,
+        frac_inf = n_inf/n,
+        frac_us = n_us/n
+    ) %>% 
+    pivot_longer(cols=c(frac_desc, frac_title, frac_inf, frac_us), names_to = 'form', values_to = "value")  %>% 
+    ggplot(aes(x = month, y = value, fill = form)) +
+        geom_bar(position="stack", stat="identity") +
+            scale_y_continuous(labels = scales::percent) +
+            scale_fill_discrete(labels = c("description", "informal", "title", "user story")) +
+            theme(legend.position="bottom") +
+        labs(y = "Fraction of requirements with use cases in a specific form", y="Month")
+        
+#ggsave(paste0(figdir, 'forms-relative.pdf'), width=10, height=4)
+```
+
+### Use Case Description
+
+The following set of figures only applies to requirements that contain at least one use case (i.e., `uca==TRUE`) that has the form `description`.
+
+```{r data-d4}
+d4 <- d3 %>% 
+    filter(form == "description")
+```
+
+Visualize the level on which use cases are specified.
+
+```{r level}
+d4 %>% 
+    select(month, level) %>% 
+    group_by(month) %>% 
+    summarize(
+        n = n(), # number of requirements
+        n_sys = sum(level == "System"),
+        n_bus = sum(level == "Business"),
+        n_user = sum(level == "User"),
+        n_no = sum(level == "(no level)")
+    ) %>% 
+    mutate(
+        frac_sys = n_sys/n,
+        frac_bus = n_bus/n,
+        frac_user = n_user/n,
+        frac_no = n_no/n
+    ) %>% 
+    pivot_longer(cols=c(frac_sys, frac_bus, frac_user, frac_no), names_to = 'level', values_to = "value")  %>% 
+    ggplot(aes(x = month, y = value, fill = level)) +
+        geom_bar(position="stack", stat="identity") +
+            scale_y_continuous(labels = scales::percent) +
+            scale_fill_discrete(labels = c("business", "(no level)", "system", "user")) +
+            theme(legend.position="bottom") +
+        labs(y = "Fraction of requirements with use case descriptions on a specific level", y="Month")
+            
+#ggsave(paste0(figdir, 'level.pdf'), width=10, height=4)
+```
+
+Visualize the fraction of requirements per month that contain use case descriptions that are procedural.
+
+```{r procedural}
+d4 %>% 
+    select(month, procedural) %>% 
+    group_by(month) %>% 
+    summarize(proc = mean(procedural)) %>% 
+    ggplot(aes(x=month, y=proc)) +
+        geom_line() +
+        geom_smooth(method="lm") +
+            scale_y_continuous(labels = scales::percent) +
+        labs(y = "Fraction of requirements with procedural use case descriptions", y="Month")
+
+#ggsave(paste0(figdir, 'procedural.pdf'), width=10, height=4)
+```
+
+### Procedural Use Case Descriptions
+
+The following set of figures only applies to requirements that contain at least one use case (i.e., `uca==TRUE`) that has the form `description` and is `procedural`.
+
+```{r data-d4}
+d5 <- d4 %>% 
+    filter(procedural > 0)
+```
+
+Visualize the proportion of requirements containing procedural use case descriptions with a proper, cogent text order.
+
+```{r textorder}
+d5 %>% 
+    select(month, textorder) %>% 
+    group_by(month) %>% 
+    summarize(order = mean(textorder)) %>% 
+    ggplot(aes(x=month, y=order)) +
+        geom_line() +
+        geom_smooth(method="lm") +
+            scale_y_continuous(labels = scales::percent) +
+        labs(y = "Fraction of requirements with a procedural use case description of proper text order", y="Month")
+
+#ggsave(paste0(figdir, 'textorder.pdf'), width=10, height=4)
+```
+
+Visualize the proportion of requirements containing procedural use case descriptions with end-to-end dependencies.
+Such requirements start with a user-to-system interaction and end with a system-to-user interaction.
+
+```{r dependencies}
+d5 %>% 
+    select(month, dependencies) %>% 
+    group_by(month) %>% 
+    summarize(dep = mean(dependencies)) %>% 
+    ggplot(aes(x=month, y=dep)) +
+        geom_line() +
+        geom_smooth(method="lm") +
+            scale_y_continuous(labels = scales::percent) +
+        labs(y = "Fraction of requirements with a procedural use case description and end-to-end dependencies", y="Month")
+        
+#ggsave(paste0(figdir, 'dependencies.pdf'), width=10, height=4)
+```
+
+Visualize the evolution of the average coherence.
+
+```{r coherence}
+d5 %>% 
+    select(month, coherence) %>% 
+    group_by(month) %>% 
+    summarize(coh = mean(coherence)) %>% 
+    ggplot(aes(x=month, y=coh)) +
+        geom_line() +
+        geom_smooth(method="lm") +
+            scale_y_continuous(labels = scales::percent) +
+        labs(y = "Average level of coherence", y="Month")
+        
+#ggsave(paste0(figdir, 'coherence.pdf'), width=10, height=4)
+```
+
+Visualize the evolution of the adherence to the correct ordering of sequences (i.e., the main success scenario and the alternative scenarios).
+
+```{r sequence}
+d5 %>% 
+    select(month, sequence.main, sequence.alt, numbering) %>% 
+    group_by(month) %>% 
+    summarize(
+        main = mean(sequence.main),
+        alt = mean(sequence.alt),
+        numb = mean(numbering)
+    ) %>% 
+    pivot_longer(cols=c(main, alt, numb), names_to = "part")  %>% 
+    ggplot(aes(x=month, y=value, color=part)) +
+        geom_line() +
+            scale_y_continuous(labels = scales::percent) +
+            scale_fill_discrete(labels = c("separate alternative scenario", "numbered main scenario", "numbered alternative scenario")) +
+            theme(legend.position="bottom") +
+        labs(y = "Fraction of properly numbered scenarios", y="Month")
+        
+#ggsave(paste0(figdir, 'sequence.pdf'), width=10, height=4)
+```
+
+#### Steps
+
+Next, visualize the steps recorded per use case.
+
+```{r steps}
+d5 %>% 
+    select(month, steps) %>% 
+    group_by(month) %>% 
+    summarize(
+        n = n(),
+        avg = mean(steps),
+        var = var(steps),
+    ) %>% 
+    ggplot(aes(x=month, y=avg)) +
+        geom_line() + 
+        geom_ribbon(aes(ymin=avg-var, ymax=avg+var), alpha=0.3) +
+            labs(y="Average number of steps", x="Month")
+        
+#ggsave(paste0(figdir, 'steps.pdf'), width=10, height=4)
+```
+
+```{r steps-all}
+d5 %>% 
+    select(month, steps, steps.functional, steps.mis.main, steps.mis.variations, steps.consistent) %>% 
+    group_by(month) %>% 
+    summarize(
+        n = n(),
+        step = mean(steps),
+        step.fun = mean(steps.functional),
+        step.mis.main = mean(steps.mis.main),
+        step.mis.var = mean(steps.mis.variations),
+        step.con = mean(steps.consistent)
+    ) %>% 
+    pivot_longer(
+        cols = c(step, step.fun, step.mis.main, step.mis.var, step.con),
+        names_to = 'steptype') %>% 
+    ggplot(aes(x=month, y=value, color = steptype)) +
+        geom_line() + 
+            labs(y="Average number of steps", x="Month", color="Type of Step") +
+            scale_color_discrete(labels = c("steps", "conssistent grammar", "functional steps", "misplaced main step", "misplaced variation")) +
+            theme(legend.position="bottom")
+
+#ggsave(paste0(figdir, 'steps-all.pdf'), width=10, height=4)
+```
+
+#### Interactions
+
+On a more detailed level: visualize the number of interactions per use case.
+
+```{r interactions}
+d5 %>% 
+    select(month, interactions) %>% 
+    group_by(month) %>% 
+    summarize(
+        n = n(),
+        avg = mean(interactions),
+        var = var(interactions),
+    ) %>% 
+    ggplot(aes(x=month, y=avg)) +
+        geom_line() + 
+        geom_ribbon(aes(ymin=avg-var, ymax=avg+var), alpha=0.3) +
+            labs(y="Average number of Interactions", x="Month")
+        
+#ggsave(paste0(figdir, 'interactions.pdf'), width=10, height=4)
+```
+
+```{r interactions-all}
+d5 %>% 
+    select(month, interactions, steps.beyond, pureinteractions, consecutive) %>% 
+    group_by(month) %>% 
+    summarize(
+        n = n(),
+        int = mean(interactions),
+        int.beyond = mean(steps.beyond),
+        int.pure = mean(pureinteractions),
+        int.consecutive = mean(consecutive)
+    ) %>% 
+    pivot_longer(
+        cols = c(int, int.beyond, int.pure, int.consecutive),
+        names_to = 'inttype') %>% 
+    ggplot(aes(x=month, y=value, color = inttype)) +
+        geom_line() + 
+            labs(y="Average number of interactions", x="Month", color="Type of interaction") +
+            scale_color_discrete(
+                labels = c(
+                    "interactions",
+                    "system-system interactions",
+                    "consecutive interactions",
+                    "system-user interactions")
+            ) +
+            theme(legend.position="bottom")
+
+        
+#ggsave(paste0(figdir, 'interactions-all.pdf'), width=10, height=4)
+```
+
+#### Actors
+
+Finally, visualize the evolution of entities in the use cases.
+
+```{r entities-all}
+d5 %>% 
+    select(month, entities, actors, actors_explicit) %>% 
+    group_by(month) %>% 
+    summarize(
+        ent = mean(entities),
+        act = mean(actors),
+        expl = mean(actors_explicit)
+    ) %>% 
+    pivot_longer(
+        cols = c(ent, act, expl),
+        names_to = 'enttype') %>% 
+    ggplot(aes(x=month, y=value, color = enttype)) +
+        geom_line() + 
+            labs(y="Average number of entities", x="Month", color="Type of entity") +
+            scale_color_discrete(
+                labels = c(
+                    "actors",
+                    "entities",
+                    "explicit actors")
+            ) +
+            theme(legend.position="bottom")
+        
+#ggsave(paste0(figdir, 'entities.pdf'), width=10, height=4)
+```
