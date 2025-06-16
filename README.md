@@ -1,6 +1,7 @@
 # Use Case Adoption: Case Study Replication Package
 
 [![GitHub](https://img.shields.io/github/license/JulianFrattini/uca)](./LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15672950.svg)](https://doi.org/10.5281/zenodo.15672950)
 
 This repository contains the replication package for the case study on **use case adoption** at a large, globally-distributed company.
 In this study, we investigate three research questions:
@@ -33,9 +34,21 @@ This work was produced by the following authors:
 
 *Cite this article as*: Frattini, J., & Frattini, A. (2025, September). Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study. In 2025 IEEE 33rd International Requirements Engineering Conference (RE). IEEE.
 
+```bibtex
+@inproceedings{frattini2025adopting,
+  title={Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study},
+  author={Frattini, Julian and Frattini, Anja},
+  booktitle={2025 IEEE 33rd International Requirements Engineering Conference (RE)},
+  year={2025},
+  organization={IEEE}
+}
+```
+
+You can use the `CITATION.cff` file to generate an appropriate citation from GitHub directly.
+
 ## Artifact Location
 
-The artifact is permanently archived at TBD and available for collaboration at https://github.com/JulianFrattini/uca.
+The artifact is permanently archived at https://doi.org/10.5281/zenodo.15672950 and available for collaboration at https://github.com/JulianFrattini/uca.
 
 ## Description of Artifact
 

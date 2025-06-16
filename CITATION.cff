@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it as below."
+authors:
+  - family-names: "Frattini"
+    given-names: "Julian"
+    orcid: "https://orcid.org/0000-0003-3995-6125"
+    affiliation: "Chalmers University of Technology"
+title: "Replication package for the paper: Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study"
+version: 1.1
+doi: 10.5281/zenodo.15672950
+date-released: 2025-06-16
+url: "https://github.com/JulianFrattini/uca"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Frattini"
+      given-names: "Julian"
+    - family-names: "Frattini"
+      given-names: "Anja"
+  doi: "tbd"
+  booktitle: "2025 IEEE 33rd International Requirements Engineering Conference (RE)"
+  title: "Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study",
+  year: 2025,
+  organization: "IEEE"
