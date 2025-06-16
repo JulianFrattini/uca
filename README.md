@@ -1,5 +1,7 @@
 # Use Case Adoption: Case Study Replication Package
 
+[![GitHub](https://img.shields.io/github/license/JulianFrattini/uca)](./LICENSE)
+
 This repository contains the replication package for the case study on **use case adoption** at a large, globally-distributed company.
 In this study, we investigate three research questions:
 
@@ -10,7 +12,7 @@ In this study, we investigate three research questions:
 RQ1 is of descriptive nature, RQ2 and RQ3 of inferential nature.
 This repository contains the material to replicate a study with all three research questions.
 
-> [!WARNING]
+> [!info]
 > Note that the case study that this replication package accompanies uses sensitive data which **cannot be shared**. However, we provide mocked data to make our code and scripts executable.
 
 ## Summary of Artifact
@@ -136,7 +138,7 @@ Once you followed the initial part of the [R setup](#r-scripts), open the visual
 The data analysis scripts contained in *src/analysis/inferences* are Rmarkdown (`.Rmd`) files that require the full [R setup](#r-scripts) described above.
 Open the analysis files in an IDE of your choice (e.g., VS Code or RStudio) and execute them cell by cell.
 
-> [!warning]
+> [!info]
 > Note that the training of Bayesian models with `brms` may take up to a few minutes per model. 
 
 ## License
