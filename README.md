@@ -13,7 +13,29 @@ This repository contains the material to replicate a study with all three resear
 > [!WARNING]
 > Note that the case study that this replication package accompanies uses sensitive data which **cannot be shared**. However, we provide mocked data to make our code and scripts executable.
 
-## Content
+## Summary of Artifact
+
+This artifact contains the material to replicate the study titled "Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study" published at the [33rd Requirements Engineering Conference](https://conf.researchr.org/home/RE-2025).
+The package consists of data extraction and transformation guidelines, the collected (and anonymized) data, as well as our data visualization and analysis scripts.
+
+## Author Information
+
+This work was produced by the following authors:
+
+| Name | Affiliation | Contact |
+|---|---|---|
+| Julian Frattini\* | Chalmers University of Technology and University of Gothenburg, Sweden | julian.frattini@chalmers.se |
+| Anja Frattini | FernUniversität Hagen, Germany | |
+
+\* corresponding author
+
+*Cite this article as*: Frattini, J., & Frattini, A. (2025, September). Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study. In 2025 IEEE 33rd International Requirements Engineering Conference (RE). IEEE.
+
+## Artifact Location
+
+The artifact is permanently archived at TBD and available for collaboration at https://github.com/JulianFrattini/uca.
+
+## Description of Artifact
 
 This repository contains the following files.
 
@@ -58,10 +80,7 @@ Keep in mind that the anonymization and de-sensitivization of the material requi
 For example, the extraction guidelines do not contain any sensitive terminology or examples.
 However, we provide mocked examples of data (e.g., in *data/transformation* or *data/output*) to allow executing the provided scripts.
 
-Note that the *figures* directory contains the figures generated from the real data.
-We commented out all `ggplot2::ggsave` commands that would save a figure to the disk from the visualization scripts as they would overwrite the real figures with ones generated from the provided mocked data.
-
-## System Requirements
+## System Requirements and Installation Instructions
 
 To view `.md` Markdown files contained in this repository, consider a Markdown viewer like the one [integrated into Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown).
 To display and edit graphs specified in `.graphml` format, use a graph editor like [yEd](https://www.yworks.com/products/yed) by yworks.
@@ -87,7 +106,10 @@ To run the scripts performing the inferential statistics (i.e., the causal analy
 4. Install all required packages via `install.packages(c("tidyverse", "brms", "ggdag"))` to set up the main libraries.
 5. Create a folder called *fits* within *src/analysis* such that `brms` has a location to place all Bayesian models.
 
-## Usage
+## Usage Instructions and Steps to Reproduce
+
+The following instructions guide the usage of the provided artifacts.
+For this replication package, this conincides with the necessary steps to reproduce the results reported in our manuscript.
 
 ### Data Processing Script
 
@@ -105,12 +127,19 @@ We provide exemplary use cases specified as sequence diagrams in the *data/trans
 The data visualization scripts contained in *src/analysis/visualization* are Rmarkdown (`.Rmd`) files that require R and the `tidyverse` library.
 Once you followed the initial part of the [R setup](#r-scripts), open the visualization files in an IDE of your choice (e.g., VS Code or RStudio) and execute them cell by cell.
 
+> [!warning]
+> Note that the *figures* directory contains the figures generated from the real data.
+> We commented out all `ggplot2::ggsave` commands that would save a figure to the disk from the visualization scripts as they would overwrite the real figures with ones generated from the provided mocked data.
+
 ### Data Analysis Scripts
 
 The data analysis scripts contained in *src/analysis/inferences* are Rmarkdown (`.Rmd`) files that require the full [R setup](#r-scripts) described above.
 Open the analysis files in an IDE of your choice (e.g., VS Code or RStudio) and execute them cell by cell.
-Note that the training of Bayesian models with `brms` may take up to a few minutes per model.
+
+> [!warning]
+> Note that the training of Bayesian models with `brms` may take up to a few minutes per model. 
 
 ## License
 
+Copyright © 2025 Julian Frattini.
 This repository is available under the [MIT license](./LICENSE.md).
