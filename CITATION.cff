@@ -10,6 +10,13 @@ version: 1.1
 doi: 10.5281/zenodo.15672950
 date-released: 2025-06-16
 url: "https://github.com/JulianFrattini/uca"
+keywords:
+  - use case description
+  - requirements artifact
+  - requirements quality
+  - case study
+  - statistical causal inference
+license: MIT
 preferred-citation:
   type: conference-paper
   authors:
@@ -18,7 +25,8 @@ preferred-citation:
     - family-names: "Frattini"
       given-names: "Anja"
   doi: "tbd"
-  booktitle: "2025 IEEE 33rd International Requirements Engineering Conference (RE)"
+  conference:
+      name: "2025 IEEE 33rd International Requirements Engineering Conference (RE)"
+      date-start: "2025-09-01"
+      date-end: "2025-09-05"
   title: "Adopting Use Case Descriptions for Requirements Specification: an Industrial Case Study"
-  year: 2025
-  organization: "IEEE"
