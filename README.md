@@ -25,7 +25,7 @@ This work was produced by the following authors:
 | Name | Affiliation | Contact |
 |---|---|---|
 | Julian Frattini\* | Chalmers University of Technology and University of Gothenburg, Sweden | julian.frattini@chalmers.se |
-| Anja Frattini | FernUniversität Hagen, Germany | |
+| Anja Frattini | FernUniversität in Hagen, Germany | |
 
 \* corresponding author
 
