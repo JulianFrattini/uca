@@ -2,6 +2,7 @@
 
 [![GitHub](https://img.shields.io/github/license/JulianFrattini/uca)](./LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15672950.svg)](https://doi.org/10.5281/zenodo.15672950)
+[![arXiv](https://img.shields.io/badge/arXiv-2506.13303-b31b1b.svg)](https://arxiv.org/abs/2506.13303)
 
 This repository contains the replication package for the case study on **use case adoption** at a large, globally-distributed company.
 In this study, we investigate three research questions:
